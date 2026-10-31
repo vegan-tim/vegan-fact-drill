@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Fact Drill">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
+<title>Vegan Fact Drill</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="theme-color" content="#e9eee8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: one narrow column of index cards on a sage desk; the question card is the hero, controls sit beneath it. */
+:root {
+  --desk: #e9eee8;
+  --card: #ffffff;
+  --ink: #18211c;
+  --ink-2: #4c5a51;
+  --rule: #d5ddd5;
+  --accent: #2c6a4c;
+  --accent-ink: #ffffff;
+  --accent-soft: #dcebe2;
+  --right: #1d7a45;
+  --right-soft: #dff2e6;
+  --wrong: #b23b2a;
+  --wrong-soft: #f8e3df;
+  --src: #6b4fa3;
+  --src-soft: #ece6f6;
+  --note: #8a5a00;
+  --note-soft: #fbefd6;
+  --shadow: 0 1px 0 rgba(24,33,28,.06), 0 8px 24px -12px rgba(24,33,28,.25);
+  --f-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --f-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --desk: #111613; --card: #1a211d; --ink: #e6ede8; --ink-2: #a3b2a8; --rule: #2d3832;
+    --accent: #7cc59d; --accent-ink: #0f1a14; --accent-soft: #223a2d;
+    --right: #6fd39a; --right-soft: #1d3527; --wrong: #f0907f; --wrong-soft: #3b211d;
+    --src: #b9a2ea; --src-soft: #2b2540; --note: #f0c26a; --note-soft: #3a2f17;
+    --shadow: 0 1px 0 rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --desk: #111613; --card: #1a211d; --ink: #e6ede8; --ink-2: #a3b2a8; --rule: #2d3832;
+  --accent: #7cc59d; --accent-ink: #0f1a14; --accent-soft: #223a2d;
+  --right: #6fd39a; --right-soft: #1d3527; --wrong: #f0907f; --wrong-soft: #3b211d;
+  --src: #b9a2ea; --src-soft: #2b2540; --note: #f0c26a; --note-soft: #3a2f17;
+  --shadow: 0 1px 0 rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--desk); color: var(--ink);
+  font: 17px/1.5 var(--f-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 20px 40px;
+  -webkit-tap-highlight-color: transparent;
+}
+main { max-width: 560px; margin: 0 auto; display: grid; gap: 18px; }
+h1, h2, h3 { font-family: var(--f-display); margin: 0; text-wrap: balance; line-height: 1.15; }
+h1 { font-size: 1.9rem; font-weight: 800; letter-spacing: -0.01em; }
+h2 { font-size: 1.3rem; font-weight: 700; }
+p { margin: 0; }
+button, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+button:focus-visible, a:focus-visible, textarea:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.mono { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; }
+.muted { color: var(--ink-2); }
+
+.mast { display: flex; justify-content: space-between; align-items: end; gap: 12px; flex-wrap: wrap; }
+.mast .mono { color: var(--accent); }
+
+.card {
+  background: var(--card); border-radius: 14px; box-shadow: var(--shadow);
+  padding: 18px 18px 20px; display: grid; gap: 14px; min-width: 0;
+}
+.card-head {
+  display: flex; justify-content: space-between; align-items: center; gap: 10px;
+  padding-bottom: 10px; border-bottom: 2px solid var(--rule); flex-wrap: wrap;
+}
+.chip { display: inline-flex; align-items: center; gap: 6px; font-size: .9rem; font-weight: 700; }
+.cardid { color: var(--ink-2); }
+
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.stat { display: grid; gap: 2px; }
+.stat b { font-family: var(--f-display); font-size: 1.6rem; font-variant-numeric: tabular-nums; line-height: 1; }
+.meter { height: 8px; background: var(--rule); border-radius: 99px; overflow: hidden; }
+.meter i { display: block; height: 100%; background: var(--accent); border-radius: 99px; transition: width .4s ease; }
+
+.group { display: grid; gap: 8px; }
+.pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill {
+  border: 1.5px solid var(--rule); background: var(--card); border-radius: 99px;
+  padding: 8px 14px; font-size: .95rem; display: inline-flex; gap: 6px; align-items: center;
+}
+.pill[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.pill:disabled { opacity: .45; cursor: default; }
+.pill .n { font-family: var(--f-mono); font-size: .75rem; opacity: .8; }
+.hint { font-size: .88rem; }
+
+/* Difficulty: two descriptive tiles rather than bare pills */
+.modes { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.mode {
+  text-align: left; border: 1.5px solid var(--rule); background: var(--card); border-radius: 12px;
+  padding: 12px; display: grid; gap: 4px; align-content: start;
+}
+.mode b { font-family: var(--f-display); font-size: 1.05rem; }
+.mode span { font-size: .85rem; color: var(--ink-2); line-height: 1.35; }
+.mode[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); box-shadow: inset 0 0 0 1px var(--accent); }
+
+.btn {
+  border: 0; border-radius: 12px; padding: 15px 18px; font-weight: 700; font-size: 1.05rem;
+  background: var(--accent); color: var(--accent-ink); width: 100%;
+}
+.btn.ghost { background: transparent; color: var(--accent); border: 1.5px solid var(--accent); }
+.btn.small { padding: 10px 14px; font-size: .95rem; width: auto; }
+.row { display: flex; gap: 10px; flex-wrap: wrap; }
+.row > .btn { flex: 1; }
+
+.progress { display: flex; align-items: center; gap: 10px; }
+.progress .meter { flex: 1; }
+.tagrow { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.part { display: inline-flex; align-items: center; gap: 6px; padding: 3px 9px; border-radius: 6px; width: fit-content; }
+.part.value { background: var(--accent-soft); color: var(--accent); }
+.part.source { background: var(--src-soft); color: var(--src); }
+.part.level { background: var(--desk); color: var(--ink-2); }
+.ask { font-size: 1.22rem; line-height: 1.4; font-weight: 700; }
+.opts { display: grid; gap: 10px; }
+.opt {
+  display: grid; grid-template-columns: 30px 1fr; gap: 10px; align-items: center; text-align: left;
+  border: 1.5px solid var(--rule); background: var(--card); border-radius: 12px; padding: 12px 14px;
+  min-height: 56px; transition: border-color .15s, background .15s;
+}
+.opt .k {
+  font-family: var(--f-mono); font-size: .8rem; width: 26px; height: 26px; border-radius: 7px;
+  display: grid; place-items: center; background: var(--desk); color: var(--ink-2);
+}
+.opt:not(:disabled):hover { border-color: var(--accent); }
+.opt:disabled { cursor: default; }
+.opt.right { border-color: var(--right); background: var(--right-soft); }
+.opt.right .k { background: var(--right); color: var(--card); }
+.opt.wrong { border-color: var(--wrong); background: var(--wrong-soft); }
+.opt.wrong .k { background: var(--wrong); color: var(--card); }
+.opt.dim { opacity: .5; }
+.source-opts .opt .t { font-size: .95rem; }
+
+.verdict { font-weight: 700; display: flex; gap: 8px; align-items: center; }
+.verdict.ok { color: var(--right); }
+.verdict.no { color: var(--wrong); }
+.reveal { display: grid; gap: 12px; border-top: 2px dashed var(--rule); padding-top: 14px; }
+.say { border-left: 3px solid var(--accent); padding-left: 12px; font-style: italic; }
+
+/* Feedback */
+.fb-toggle {
+  justify-self: start; background: none; border: 1.5px dashed var(--rule); border-radius: 99px;
+  padding: 6px 12px; font-size: .88rem; color: var(--ink-2); display: inline-flex; gap: 6px; align-items: center;
+}
+.fb-toggle .count { font-family: var(--f-mono); font-size: .72rem; background: var(--note-soft); color: var(--note); border-radius: 99px; padding: 1px 7px; }
+.fb { display: grid; gap: 10px; background: var(--note-soft); border-radius: 12px; padding: 14px; }
+.fb .pill { font-size: .85rem; padding: 6px 11px; }
+.fb .pill[aria-pressed="true"] { background: var(--note); border-color: var(--note); color: var(--card); }
+.fb textarea {
+  width: 100%; min-height: 92px; resize: vertical; border: 1.5px solid var(--rule); border-radius: 10px;
+  padding: 10px 12px; background: var(--card); line-height: 1.45; font-size: 16px;
+}
+.fb .status { font-size: .88rem; }
+.fb .status.ok { color: var(--right); }
+.fb .status.err { color: var(--wrong); }
+
+.list { display: grid; gap: 10px; }
+.miss { display: grid; gap: 4px; padding: 12px 0; border-top: 1px solid var(--rule); }
+.miss:first-child { border-top: 0; padding-top: 0; }
+.note-item { display: grid; gap: 6px; padding: 12px 0; border-top: 1px solid var(--rule); }
+.note-item:first-child { border-top: 0; padding-top: 0; }
+.note-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.note-tags span { font-family: var(--f-mono); font-size: .68rem; text-transform: uppercase; letter-spacing: .05em; background: var(--note-soft); color: var(--note); padding: 2px 7px; border-radius: 5px; }
+details.cardrow { border-top: 1px solid var(--rule); padding: 12px 0 0; }
+details.cardrow:first-of-type { border-top: 0; padding-top: 0; }
+details.cardrow summary { cursor: pointer; font-weight: 700; list-style: none; display: flex; gap: 8px; align-items: baseline; }
+details.cardrow summary::-webkit-details-marker { display: none; }
+details.cardrow summary::before { content: "+"; font-family: var(--f-mono); color: var(--accent); width: 1ch; }
+details.cardrow[open] summary::before { content: "−"; }
+details.cardrow .body { display: grid; gap: 10px; padding: 10px 0 4px 18px; }
+.foot { text-align: center; font-size: .85rem; display: grid; gap: 4px; }
+.linkbtn { background: none; border: 0; color: var(--ink-2); text-decoration: underline; padding: 4px; font-size: .85rem; }
+a { color: var(--accent); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+</head>
+<body>
+<main id="app" aria-live="polite"></main>
+
+<!--DATA-->
+<script id="quiz-data" type="application/json">{"builtAt": "2026-10-31 21:22 UTC", "cards": [{"id": "planet-emissions-001", "title": "Agriculture's share of global emissions", "category": "Planet", "categoryIcon": "🌍", "subcategory": "Emissions", "subcategoryIcon": "💨", "tags": ["planet/emissions", "planet/land-use"], "dataYear": 2023, "lastChecked": "2026-10-31", "takeaway": "Producing our food causes roughly a fifth to a third of all human greenhouse gas emissions, depending on what you count. Counting the whole food system, from farm and land clearing to processing, transport, retail and waste, it is about a third (32% in 2023).", "sayIt": "\"About a third of global emissions come from the food system. That's the UN Food and Agriculture Organization's own figure (FAO, 2025). Even if you only count farms and land clearing, it's over a fifth.\""}, {"id": "planet-emissions-002", "title": "Livestock's share of global emissions", "category": "Planet", "categoryIcon": "🌍", "subcategory": "Emissions", "subcategoryIcon": "💨", "tags": ["planet/emissions"], "dataYear": 2015, "lastChecked": "2026-10-31", "takeaway": "Raising animals for meat, milk and eggs causes about 12% of all human greenhouse gas emissions (FAO, 2023). Animal-based foods produce more than half (57%) of food-production emissions (Xu et al., 2021) while supplying under a fifth (18%) of the world's calories (Poore & Nemecek, 2018).", "sayIt": "\"Livestock alone cause about 12% of global emissions. That's the latest estimate from the UN Food and Agriculture Organization (FAO, 2023). Animal foods are over half of food's climate footprint but give us less than a fifth of our calories.\""}], "questions": [{"id": "planet-emissions-001-q1", "card": "planet-emissions-001", "ask": "Counting the whole food system (farming, land clearing, processing, transport, retail and waste), roughly what share of global greenhouse gas emissions does food cause?", "answer": "About a third (32%)", "distractors": ["About 5%", "About half (50%)", "About two-thirds (65%)"], "level": "core", "source": "UN Food and Agriculture Organization (FAO), 2025", "sourceDistractors": ["Intergovernmental Panel on Climate Change (IPCC), 2022", "Poore & Nemecek, 2018", "International Energy Agency (IEA), 2024"], "explain": "The UN Food and Agriculture Organization's 2025 brief puts agrifood systems at 16.5 Gt CO₂eq in 2023, 32% of global emissions. Crippa et al. (2021) independently found 34% for 2015."}, {"id": "planet-emissions-001-q2", "card": "planet-emissions-001", "ask": "Which boundary gives the Intergovernmental Panel on Climate Change's (IPCC) figure of about 22% of global emissions?", "answer": "AFOLU: agriculture, forestry & other land use", "distractors": ["The whole food system, including supply chains", "Farm-gate emissions only", "Livestock only"], "level": "detail", "source": "Intergovernmental Panel on Climate Change (IPCC), 2022", "sourceDistractors": ["UN Food and Agriculture Organization (FAO), 2025", "Crippa et al., 2021", "Xu et al., 2021"], "explain": "The IPCC's Sixth Assessment Report (Working Group III) found AFOLU produced 22% of global emissions in 2019. It covers farming plus land use (mainly deforestation), but not processing, transport or retail."}, {"id": "planet-emissions-001-q3", "card": "planet-emissions-001", "ask": "Counting only farm-gate emissions (crop and livestock production and on-farm energy), what share of global emissions is that?", "answer": "About 16%", "distractors": ["About 4%", "About 32%", "About 45%"], "level": "detail", "source": "UN Food and Agriculture Organization (FAO), 2025", "sourceDistractors": ["Intergovernmental Panel on Climate Change (IPCC), 2019", "Xu et al., 2021", "Poore & Nemecek, 2018"], "explain": "Farm gate was 8.1 Gt CO₂eq of the food system's 16.5 Gt in 2023, which works out to ~16% of global emissions. 32% is the whole food system, not the farm gate."}, {"id": "planet-emissions-001-q4", "card": "planet-emissions-001", "ask": "Which component makes up the largest part of food-system emissions?", "answer": "Farm-gate production (~49%)", "distractors": ["Land-use change (deforestation)", "Pre- and post-production (supply chain)", "Household cooking"], "level": "detail", "source": "UN Food and Agriculture Organization (FAO), 2025", "sourceDistractors": ["Intergovernmental Panel on Climate Change (IPCC), 2022", "Crippa et al., 2021", "Poore & Nemecek, 2018"], "explain": "In 2023: farm gate 8.1 Gt (49%), supply chain 5.2 Gt (32%), land-use change 3.2 Gt (19%)."}, {"id": "planet-emissions-001-q5", "card": "planet-emissions-001", "ask": "The food system's share of global emissions fell from 38% (2001) to 32% (2023). What happened to its actual emissions over that period?", "answer": "They rose by about 21%", "distractors": ["They fell by about 20%", "They stayed the same", "They roughly doubled"], "level": "detail", "source": "UN Food and Agriculture Organization (FAO), 2025", "sourceDistractors": ["Tubiello et al., 2022", "Intergovernmental Panel on Climate Change (IPCC), 2022", "Xu et al., 2021"], "explain": "The share fell only because other sectors grew faster. Food-system emissions rose 21% between 2001 and 2023."}, {"id": "planet-emissions-002-q1", "card": "planet-emissions-002", "ask": "According to the UN Food and Agriculture Organization's (FAO) latest life-cycle estimate, what share of all human greenhouse gas emissions comes from livestock?", "answer": "About 12%", "distractors": ["About 3%", "About 30%", "About 51%"], "level": "core", "source": "UN Food and Agriculture Organization (FAO), 2023", "sourceDistractors": ["Xu et al., 2021", "Intergovernmental Panel on Climate Change (IPCC), 2022", "Poore & Nemecek, 2018"], "explain": "The FAO's 2023 Pathways report gives 6.2 Gt CO₂eq, about 12% of global emissions (reference year 2015). Avoid '51%': it comes from a non-peer-reviewed 2009 magazine article."}, {"id": "planet-emissions-002-q2", "card": "planet-emissions-002", "ask": "What was the UN Food and Agriculture Organization's (FAO) earlier, widely quoted 2013 estimate of livestock's share of global emissions?", "answer": "14.5%", "distractors": ["5%", "25%", "40%"], "level": "detail", "source": null, "sourceDistractors": [], "explain": "Gerber et al. (FAO, 2013, reference year 2005) estimated 7.1 Gt CO₂eq, 14.5%. FAO's current figure is 12%. The methods changed, and the drop doesn't mean emissions fell."}, {"id": "planet-emissions-002-q3", "card": "planet-emissions-002", "ask": "What share of global food-production emissions comes from animal-based foods?", "answer": "About 57%", "distractors": ["About 15%", "About 30%", "About 85%"], "level": "core", "source": "Xu et al., 2021", "sourceDistractors": ["UN Food and Agriculture Organization (FAO), 2025", "Crippa et al., 2021", "Intergovernmental Panel on Climate Change (IPCC), 2022"], "explain": "Xu et al. (Nature Food, 2021) found animal-based foods produce 57% of food-production emissions and plant-based foods 29%. Beef alone accounts for 25%."}, {"id": "planet-emissions-002-q4", "card": "planet-emissions-002", "ask": "Meat and dairy produce over half of food's emissions. What share of the world's calories do they provide?", "answer": "About 18%", "distractors": ["About 5%", "About 40%", "About 60%"], "level": "core", "source": "Poore & Nemecek, 2018", "sourceDistractors": ["Xu et al., 2021", "UN Food and Agriculture Organization (FAO), 2023", "Tubiello et al., 2022"], "explain": "Poore & Nemecek (Science, 2018): meat and dairy provide 18% of calories and 37% of protein, but use 83% of farmland."}, {"id": "planet-emissions-002-q5", "card": "planet-emissions-002", "ask": "Which animals account for the largest share of livestock emissions?", "answer": "Cattle (over 60%)", "distractors": ["Pigs", "Chickens", "Sheep and goats"], "level": "detail", "source": "UN Food and Agriculture Organization (FAO), 2023", "sourceDistractors": ["Poore & Nemecek, 2018", "Crippa et al., 2021", "Intergovernmental Panel on Climate Change (IPCC), 2022"], "explain": "FAO (2023): cattle cause over 60% of livestock emissions, mostly from enteric methane. Pigs are ~15% and chickens ~9%."}, {"id": "planet-emissions-002-q6", "card": "planet-emissions-002", "ask": "Where does the often-repeated claim that livestock cause '51% of global emissions' come from?", "answer": "A 2009 World Watch magazine article that was not peer-reviewed", "distractors": ["The Intergovernmental Panel on Climate Change's (IPCC) Sixth Assessment Report", "The UN Food and Agriculture Organization's (FAO) 2023 Pathways report", "A 2018 study in the journal Science"], "level": "core", "source": null, "sourceDistractors": [], "explain": "Goodland & Anhang (2009) published it in World Watch magazine, and the film Cowspiracy popularised it. It's widely criticised, so use FAO's 12% instead."}]}</script>
+
+<script>
+(() => {
+  // Where feedback goes when this page is NOT running on claude.ai (e.g. GitHub Pages):
+  // set to "owner/repo" to offer a pre-filled GitHub issue. Empty = keep notes on this device.
+  const CONFIG = { githubRepo: "vegan-tim/vegan-fact-drill" };
+
+  const DATA = JSON.parse(document.getElementById("quiz-data").textContent || "{}");
+  const CARDS = Object.fromEntries((DATA.cards || []).map(c => [c.id, c]));
+  const QS = DATA.questions || [];
+  const QBYID = Object.fromEntries(QS.map(q => [q.id, q]));
+  const app = document.getElementById("app");
+  const KEY = "vegan-fact-drill-v1";
+  const ALL_CATS = [["Planet", "🌍"], ["Ethics", "🐾"], ["Health", "❤️"]];
+  const FB_TAGS = ["Wording unclear", "Answer looks wrong", "Distractor too close", "Source issue", "Idea"];
+
+  // ---------- local storage (per device; safe if blocked) ----------
+  function load() { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; } }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(store)); } catch {} }
+  const store = load();
+  store.stats ||= {};
+  store.prefs = Object.assign({ cat: "All", len: 10, level: "core", sources: true }, store.prefs);
+  store.localNotes ||= [];
+  const statOf = id => store.stats[id] || (store.stats[id] = { seen: 0, right: 0, srcRight: 0, streak: 0 });
+  const mastered = id => (store.stats[id]?.streak || 0) >= 3;
+
+  // ---------- feedback inbox (claude.ai shared store, when available) ----------
+  const FB = { mode: "local", db: null, uid: null, notes: [] };   // mode: "local" | "inbox"
+  const allNotes = () => FB.mode === "inbox" ? FB.notes : store.localNotes;
+  const notesFor = qid => allNotes().filter(n => n.qid === qid);
+  (async () => {
+    try {
+      if (!window.claude?.use) return;
+      const [db, user] = await Promise.all([claude.use("db"), claude.use("user")]);
+      const uid = db && user ? await user.id() : null;
+      if (!db || !uid) return;
+      FB.db = db; FB.uid = uid; FB.mode = "inbox";
+      const col = db.collection("feedback/" + uid + "/notes");
+      col.onSnapshot(snap => {
+        FB.notes = snap.docs.filter(d => d.exists).map(d => ({ id: d.id, ...d.data() }))
+          .sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
+        refreshNoteBits();
+      }, () => {});
+      // Move any notes written before the inbox connected.
+      if (store.localNotes.length) {
+        for (const n of store.localNotes.splice(0)) { try { await col.doc(n.id).set(n); } catch { store.localNotes.push(n); } }
+        save();
+      }
+      refreshNoteBits();
+    } catch { /* stay local */ }
+  })();
+  function refreshNoteBits() {
+    if (!S) { if (document.getElementById("notes-section")) home(); return; }
+    const c = document.getElementById("fb-count");
+    if (c && S.cur) { const n = notesFor(S.cur.q.id).length; c.textContent = n; c.hidden = !n; }
+  }
+  async function saveNote(note) {
+    if (FB.mode === "inbox") {
+      await FB.db.collection("feedback/" + FB.uid + "/notes").doc(note.id).set(note);
+      // Marker doc so the inbox owner can list who has left notes.
+      FB.db.doc("feedback/" + FB.uid).set({ lastNoteAt: note.createdAt }).catch(() => {});
+      return "inbox";
+    }
+    store.localNotes.unshift(note); save();
+    return "local";
+  }
+  async function deleteNote(id) {
+    if (FB.mode === "inbox") { await FB.db.collection("feedback/" + FB.uid + "/notes").doc(id).delete(); return; }
+    store.localNotes = store.localNotes.filter(n => n.id !== id); save(); home();
+  }
+  function issueUrl(note) {
+    const q = QBYID[note.qid] || {};
+    const body = `**Question** (${note.qid}): ${q.ask || ""}\n**Part:** ${note.part}\n**Tags:** ${note.tags.join(", ") || "none"}\n\n${note.text}`;
+    return `https://github.com/${CONFIG.githubRepo}/issues/new?labels=quiz-feedback&title=${encodeURIComponent("Quiz feedback: " + note.qid)}&body=${encodeURIComponent(body)}`;
+  }
+
+  // ---------- helpers ----------
+  const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+  const catOf = q => CARDS[q.card]?.category;
+  const inLevel = (q, level) => level === "detail" || q.level === "core";
+  const pool = (cat, level) => QS.filter(q => (cat === "All" || catOf(q) === cat) && inLevel(q, level));
+  function weight(q) { const s = store.stats[q.id]; if (!s || !s.seen) return 3; return [3, 1.6, 0.8][s.streak] ?? 0.35; }
+  function pickSession({ cat, len, level }) {
+    const items = pool(cat, level).map(q => ({ q, k: Math.pow(Math.random(), 1 / weight(q)) }));
+    items.sort((a, b) => b.k - a.k);
+    return items.slice(0, len === "all" ? items.length : len).map(x => x.q);
+  }
+  const newId = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+
+  let S = null;
+
+  // ---------- home ----------
+  function home() {
+    S = null;
+    const { cat, len, level, sources } = store.prefs;
+    const scope = pool(cat, level);
+    const done = scope.filter(q => mastered(q.id)).length;
+    const seen = scope.filter(q => store.stats[q.id]?.seen).length;
+    const pct = scope.length ? Math.round(100 * done / scope.length) : 0;
+    const counts = Object.fromEntries(ALL_CATS.map(([c]) => [c, pool(c, level).length]));
+    const nCore = QS.filter(q => q.level === "core").length;
+    const notes = allNotes();
+    app.innerHTML = `
+      <header class="mast">
+        <div style="display:grid;gap:4px">
+          <span class="mono">${QS.length} questions · ${Object.keys(CARDS).length} fact cards</span>
+          <h1>Vegan Fact Drill</h1>
+        </div>
+      </header>
+
+      <section class="card">
+        <div class="group">
+          <span class="mono muted">Difficulty</span>
+          <div class="modes" role="group" aria-label="Difficulty">
+            <button class="mode" id="lvl-core" data-level="core" aria-pressed="${level === "core"}"><b>Overview</b><span>The key takeaways only · ${nCore} questions</span></button>
+            <button class="mode" id="lvl-detail" data-level="detail" aria-pressed="${level === "detail"}"><b>Detailed</b><span>Every question, incl. definitions and breakdowns · ${QS.length}</span></button>
+          </div>
+        </div>
+        <div class="group">
+          <span class="mono muted">Topic</span>
+          <div class="pills" role="group" aria-label="Topic">
+            <button class="pill" id="cat-All" data-cat="All" aria-pressed="${cat === "All"}">All <span class="n">${pool("All", level).length}</span></button>
+            ${ALL_CATS.map(([c, i]) => `<button class="pill" id="cat-${c}" data-cat="${c}" aria-pressed="${cat === c}" ${counts[c] ? "" : "disabled"}>${i} ${c} <span class="n">${counts[c] || "soon"}</span></button>`).join("")}
+          </div>
+        </div>
+        <div class="group">
+          <span class="mono muted">Session length</span>
+          <div class="pills" role="group" aria-label="Session length">
+            ${[5, 10, "all"].map(n => `<button class="pill" id="len-${n}" data-len="${n}" aria-pressed="${String(len) === String(n)}">${n === "all" ? "All" : n + " questions"}</button>`).join("")}
+          </div>
+        </div>
+        <div class="group">
+          <span class="mono muted">Sources</span>
+          <div class="pills" role="group" aria-label="Sources">
+            <button class="pill" id="src-on" data-src="1" aria-pressed="${sources}">Also name the source</button>
+            <button class="pill" id="src-off" data-src="0" aria-pressed="${!sources}">Facts only</button>
+          </div>
+        </div>
+        <button class="btn" id="start" ${scope.length ? "" : "disabled"}>Start drill</button>
+      </section>
+
+      <section class="card" aria-label="Your progress">
+        <div class="card-head"><h2>Progress</h2><span class="mono muted">${level === "core" ? "Overview" : "Detailed"}${cat === "All" ? "" : " · " + cat}</span></div>
+        <div class="stats">
+          <div class="stat"><b>${done}</b><span class="muted">mastered</span></div>
+          <div class="stat"><b>${seen}</b><span class="muted">seen</span></div>
+          <div class="stat"><b>${scope.length - seen}</b><span class="muted">new</span></div>
+        </div>
+        <div class="meter" aria-label="${pct}% mastered"><i style="width:${pct}%"></i></div>
+        <p class="muted hint">Mastered means 3 right in a row. Missed questions come back more often.</p>
+      </section>
+
+      <section class="card">
+        <div class="card-head"><h2>Fact cards</h2><span class="mono muted">Read before you drill</span></div>
+        <div class="list">${Object.values(CARDS).map(cardRow).join("")}</div>
+      </section>
+
+      <section class="card" id="notes-section">
+        <div class="card-head"><h2>Your feedback</h2><span class="mono muted">${notes.length} note${notes.length === 1 ? "" : "s"}</span></div>
+        <p class="muted hint">${FB.mode === "inbox"
+          ? "Notes go to the shared feedback inbox, where Claude can read them when improving the cards."
+          : "Notes are saved on this device only." + (CONFIG.githubRepo ? " Each one can also be sent as a GitHub issue." : "")}
+          Add one with the 💬 button on any question.</p>
+        ${notes.length ? `<div class="list">${notes.slice(0, 30).map(noteRow).join("")}</div>` : ""}
+      </section>
+
+      <div class="foot muted"><span>Progress is saved on this device only. Questions updated ${esc(DATA.builtAt || "")}.</span><span><button class="linkbtn" id="reset">Reset progress</button></span></div>
+    `;
+    app.querySelectorAll("[data-cat]").forEach(b => b.onclick = () => { store.prefs.cat = b.dataset.cat; save(); home(); });
+    app.querySelectorAll("[data-len]").forEach(b => b.onclick = () => { const v = b.dataset.len; store.prefs.len = v === "all" ? "all" : +v; save(); home(); });
+    app.querySelectorAll("[data-level]").forEach(b => b.onclick = () => { store.prefs.level = b.dataset.level; save(); home(); });
+    app.querySelectorAll("[data-src]").forEach(b => b.onclick = () => { store.prefs.sources = b.dataset.src === "1"; save(); home(); });
+    app.querySelectorAll("[data-del]").forEach(b => b.onclick = () => {
+      if (b.dataset.armed) { deleteNote(b.dataset.del).catch(() => { b.textContent = "Couldn't delete"; }); return; }
+      b.dataset.armed = "1"; b.textContent = "Tap again to delete";
+    });
+    app.querySelector("#start").onclick = start;
+    app.querySelector("#reset").onclick = confirmReset;
+  }
+
+  function cardRow(c) {
+    const qs = QS.filter(q => q.card === c.id), m = qs.filter(q => mastered(q.id)).length;
+    return `<details class="cardrow">
+      <summary><span>${c.categoryIcon}${c.subcategoryIcon}</span><span style="flex:1">${esc(c.title)}</span><span class="mono muted">${m}/${qs.length}</span></summary>
+      <div class="body">
+        ${c.takeaway ? `<p>${esc(c.takeaway)}</p>` : ""}
+        ${c.sayIt ? `<p class="say">${esc(c.sayIt)}</p>` : ""}
+        <p class="mono muted">${esc(c.subcategory)} · data ${esc(c.dataYear ?? "")} · checked ${esc(c.lastChecked)}</p>
+      </div>
+    </details>`;
+  }
+
+  function noteRow(n) {
+    const q = QBYID[n.qid];
+    return `<div class="note-item">
+      <p class="muted hint">${esc(q ? q.ask : n.qid)}</p>
+      ${n.tags?.length ? `<div class="note-tags">${n.tags.map(t => `<span>${esc(t)}</span>`).join("")}</div>` : ""}
+      ${n.text ? `<p>${esc(n.text)}</p>` : ""}
+      <div class="tagrow"><span class="mono muted">${esc((n.createdAt || "").slice(0, 10))} · ${esc(n.part)}</span>
+        ${FB.mode === "local" && CONFIG.githubRepo ? `<a href="${esc(issueUrl(n))}" target="_blank" rel="noopener">Send as GitHub issue</a>` : ""}
+        <button class="linkbtn" data-del="${esc(n.id)}" id="del-${esc(n.id)}">Delete</button></div>
+    </div>`;
+  }
+
+  function confirmReset() {
+    const foot = app.querySelector(".foot");
+    foot.innerHTML = `<span>Clear quiz progress on this device? Your feedback notes are kept.</span><span><button class="linkbtn" id="yes">Yes, reset</button> <button class="linkbtn" id="no">Cancel</button></span>`;
+    foot.querySelector("#yes").onclick = () => { store.stats = {}; save(); home(); };
+    foot.querySelector("#no").onclick = home;
+  }
+
+  // ---------- drill ----------
+  function start() {
+    const qs = pickSession(store.prefs);
+    if (!qs.length) return;
+    S = { qs, i: 0, part: "value", score: 0, srcScore: 0, srcTotal: 0, missed: [], cur: null, done: 0, withSources: store.prefs.sources };
+    question();
+    window.scrollTo({ top: 0 });
+  }
+  const hasSourcePart = q => S.withSources && !!q.source;
+
+  function question() {
+    const q = S.qs[S.i], c = CARDS[q.card] || {};
+    const isSrc = S.part === "source";
+    const right = isSrc ? q.source : q.answer;
+    const opts = shuffle([right, ...(isSrc ? q.sourceDistractors : q.distractors).slice(0, 4)]);
+    const two = hasSourcePart(q);
+    S.cur = { q, opts, right, answered: false };
+    const pct = Math.round(100 * (S.i + (isSrc ? 0.5 : 0)) / S.qs.length);
+    const nNotes = notesFor(q.id).length;
+    app.innerHTML = `
+      <div class="progress">
+        <button class="linkbtn" id="quit" aria-label="End session">✕ End</button>
+        <div class="meter"><i style="width:${pct}%"></i></div>
+        <span class="mono muted">${S.i + 1}/${S.qs.length}</span>
+      </div>
+      <article class="card">
+        <div class="card-head">
+          <span class="chip">${c.categoryIcon || ""}${c.subcategoryIcon || ""} ${esc(c.subcategory || "")}</span>
+          <span class="mono cardid">${esc(q.card)}</span>
+        </div>
+        <div class="tagrow">
+          <span class="part ${isSrc ? "source" : "value"} mono">${two ? `Part ${isSrc ? 2 : 1} of 2 · ` : ""}${isSrc ? "Source" : "The fact"}</span>
+          <span class="part level mono">${q.level === "core" ? "Overview" : "Detailed"}</span>
+        </div>
+        ${isSrc ? `<p class="muted">${esc(q.ask)}</p><p><b>${esc(q.answer)}</b></p>` : ""}
+        <p class="ask">${isSrc ? "Which source is this from?" : esc(q.ask)}</p>
+        <div class="opts ${isSrc ? "source-opts" : ""}" role="group" aria-label="Answers">
+          ${opts.map((o, i) => `<button class="opt" id="opt-${i}" data-i="${i}"><span class="k">${"ABCDE"[i]}</span><span class="t">${esc(o)}</span></button>`).join("")}
+        </div>
+        <div id="after"></div>
+        <button class="fb-toggle" id="fb-open" aria-expanded="false">💬 Feedback on this question <span class="count" id="fb-count" ${nNotes ? "" : "hidden"}>${nNotes}</span></button>
+        <div id="fb-slot"></div>
+      </article>
+    `;
+    app.querySelectorAll(".opt").forEach(b => b.onclick = () => answer(+b.dataset.i));
+    app.querySelector("#quit").onclick = results;
+    app.querySelector("#fb-open").onclick = openFeedback;
+  }
+
+  function openFeedback() {
+    const slot = app.querySelector("#fb-slot"), toggle = app.querySelector("#fb-open");
+    if (slot.firstChild) { slot.innerHTML = ""; toggle.setAttribute("aria-expanded", "false"); return; }
+    toggle.setAttribute("aria-expanded", "true");
+    const { q } = S.cur, part = S.part;
+    const prev = notesFor(q.id);
+    slot.innerHTML = `
+      <div class="fb">
+        <div class="pills" role="group" aria-label="What kind of issue?">
+          ${FB_TAGS.map((t, i) => `<button class="pill" id="fbtag-${i}" data-tag="${esc(t)}" aria-pressed="false">${esc(t)}</button>`).join("")}
+        </div>
+        <label for="fb-text" class="mono muted">Your note</label>
+        <textarea id="fb-text" placeholder="e.g. 'About a third' and '32%' feel like the same thing. Or: this distractor could also be right because…"></textarea>
+        <div class="row" style="align-items:center">
+          <button class="btn small" id="fb-save">Save note</button>
+          <button class="linkbtn" id="fb-cancel">Cancel</button>
+          <span class="status" id="fb-status" role="status"></span>
+        </div>
+        ${prev.length ? `<p class="muted hint">You've left ${prev.length} earlier note${prev.length > 1 ? "s" : ""} on this question.</p>` : ""}
+      </div>`;
+    slot.querySelectorAll("[data-tag]").forEach(b => b.onclick = () => b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") !== "true"));
+    slot.querySelector("#fb-cancel").onclick = openFeedback;
+    slot.querySelector("#fb-text").focus({ preventScroll: true });
+    slot.scrollIntoView({ block: "nearest" });
+    slot.querySelector("#fb-save").onclick = async e => {
+      const text = slot.querySelector("#fb-text").value.trim();
+      const tags = [...slot.querySelectorAll('[data-tag][aria-pressed="true"]')].map(b => b.dataset.tag);
+      const status = slot.querySelector("#fb-status");
+      if (!text && !tags.length) { status.className = "status err"; status.textContent = "Pick a tag or write a note first."; return; }
+      e.target.disabled = true;
+      const note = {
+        id: newId(), qid: q.id, card: q.card, part: part === "source" ? "source" : "fact",
+        tags, text: text.slice(0, 2000), answered: S.cur.answered, createdAt: new Date().toISOString(),
+        questionsVersion: DATA.builtAt || "",
+      };
+      try {
+        const where = await saveNote(note);
+        status.className = "status ok";
+        status.innerHTML = where === "inbox" ? "Saved to the feedback inbox ✓"
+          : "Saved on this device ✓" + (CONFIG.githubRepo ? ` · <a href="${esc(issueUrl(note))}" target="_blank" rel="noopener">Send as GitHub issue</a>` : "");
+        slot.querySelector("#fb-text").value = "";
+        slot.querySelectorAll('[data-tag]').forEach(b => b.setAttribute("aria-pressed", "false"));
+        refreshNoteBits();
+      } catch {
+        status.className = "status err"; status.textContent = "Couldn't save. Check your connection and try again.";
+      }
+      e.target.disabled = false;
+    };
+  }
+
+  function answer(i) {
+    const { q, opts, right } = S.cur;
+    if (S.cur.answered) return;
+    S.cur.answered = true;
+    const ok = opts[i] === right, isSrc = S.part === "source";
+    app.querySelectorAll(".opt").forEach((b, j) => {
+      b.disabled = true;
+      if (opts[j] === right) b.classList.add("right");
+      else if (j === i) b.classList.add("wrong");
+      else b.classList.add("dim");
+    });
+    const st = statOf(q.id);
+    if (!isSrc) { st.seen++; if (ok) { st.right++; S.score++; } S.valueOk = ok; }
+    else { S.srcTotal++; if (ok) { st.srcRight++; S.srcScore++; } }
+    const last = isSrc || !hasSourcePart(q);
+    if (last) {
+      S.done++;
+      const allOk = S.valueOk && (!hasSourcePart(q) || ok);
+      st.streak = allOk ? st.streak + 1 : 0;
+      if (!allOk) S.missed.push({ q, value: S.valueOk, src: hasSourcePart(q) ? ok : null });
+    }
+    save();
+    const c = CARDS[q.card] || {};
+    const nextLabel = !last ? "Next: name the source" : (S.i + 1 < S.qs.length ? "Next question" : "See results");
+    app.querySelector("#after").innerHTML = `
+      <div class="reveal">
+        <p class="verdict ${ok ? "ok" : "no"}">${ok ? "✓ Correct" : "✗ Not quite. Answer: " + esc(right)}</p>
+        ${last ? `<p>${esc(q.explain)}</p>${q.source ? `<p class="mono" style="color:var(--src)">${esc(q.source)}</p>` : ""}${c.sayIt ? `<p class="say">${esc(c.sayIt)}</p>` : ""}` : ""}
+        <button class="btn" id="next">${nextLabel}</button>
+      </div>`;
+    const nb = app.querySelector("#next");
+    nb.onclick = () => {
+      if (!last) { S.part = "source"; question(); }
+      else { S.i++; S.part = "value"; if (S.i < S.qs.length) question(); else results(); }
+      window.scrollTo({ top: 0 });
+    };
+    nb.focus({ preventScroll: true });
+    nb.scrollIntoView({ block: "nearest", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+  }
+
+  function results() {
+    const lvl = store.prefs.level;
+    app.innerHTML = `
+      <header class="mast"><div style="display:grid;gap:4px"><span class="mono">Session complete · ${lvl === "core" ? "Overview" : "Detailed"}</span><h1>${S.score} of ${S.done} facts right</h1></div></header>
+      <section class="card">
+        <div class="stats">
+          <div class="stat"><b>${S.score}</b><span class="muted">facts right</span></div>
+          <div class="stat"><b>${S.withSources ? `${S.srcScore}/${S.srcTotal}` : "–"}</b><span class="muted">sources right</span></div>
+          <div class="stat"><b>${pool(store.prefs.cat, lvl).filter(q => mastered(q.id)).length}</b><span class="muted">mastered</span></div>
+        </div>
+      </section>
+      ${S.missed.length ? `<section class="card">
+        <div class="card-head"><h2>To review</h2><span class="mono muted">${S.missed.length} missed</span></div>
+        <div class="list">${S.missed.map(({ q, value, src }) => `
+          <div class="miss">
+            <p class="muted" style="font-size:.92rem">${esc(q.ask)}</p>
+            <p><b>${esc(q.answer)}</b></p>
+            ${q.source ? `<p class="mono" style="color:var(--src)">${esc(q.source)}</p>` : ""}
+            <p class="mono muted">${[value ? "" : "missed the fact", src === false ? "missed the source" : ""].filter(Boolean).join(" · ")}</p>
+          </div>`).join("")}</div>
+      </section>` : ""}
+      <div class="row"><button class="btn" id="again">Drill again</button><button class="btn ghost" id="home">Home</button></div>
+    `;
+    app.querySelector("#again").onclick = start;
+    app.querySelector("#home").onclick = home;
+    window.scrollTo({ top: 0 });
+  }
+
+  home();
+})();
+</script>
+
+</body>
+</html>

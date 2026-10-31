@@ -1,0 +1,239 @@
+{
+  "builtAt": "2026-10-31 21:22 UTC",
+  "cards": [
+    {
+      "id": "planet-emissions-001",
+      "title": "Agriculture's share of global emissions",
+      "category": "Planet",
+      "categoryIcon": "🌍",
+      "subcategory": "Emissions",
+      "subcategoryIcon": "💨",
+      "tags": [
+        "planet/emissions",
+        "planet/land-use"
+      ],
+      "dataYear": 2023,
+      "lastChecked": "2026-10-31",
+      "takeaway": "Producing our food causes roughly a fifth to a third of all human greenhouse gas emissions, depending on what you count. Counting the whole food system, from farm and land clearing to processing, transport, retail and waste, it is about a third (32% in 2023).",
+      "sayIt": "\"About a third of global emissions come from the food system. That's the UN Food and Agriculture Organization's own figure (FAO, 2025). Even if you only count farms and land clearing, it's over a fifth.\""
+    },
+    {
+      "id": "planet-emissions-002",
+      "title": "Livestock's share of global emissions",
+      "category": "Planet",
+      "categoryIcon": "🌍",
+      "subcategory": "Emissions",
+      "subcategoryIcon": "💨",
+      "tags": [
+        "planet/emissions"
+      ],
+      "dataYear": 2015,
+      "lastChecked": "2026-10-31",
+      "takeaway": "Raising animals for meat, milk and eggs causes about 12% of all human greenhouse gas emissions (FAO, 2023). Animal-based foods produce more than half (57%) of food-production emissions (Xu et al., 2021) while supplying under a fifth (18%) of the world's calories (Poore & Nemecek, 2018).",
+      "sayIt": "\"Livestock alone cause about 12% of global emissions. That's the latest estimate from the UN Food and Agriculture Organization (FAO, 2023). Animal foods are over half of food's climate footprint but give us less than a fifth of our calories.\""
+    }
+  ],
+  "questions": [
+    {
+      "id": "planet-emissions-001-q1",
+      "card": "planet-emissions-001",
+      "ask": "Counting the whole food system (farming, land clearing, processing, transport, retail and waste), roughly what share of global greenhouse gas emissions does food cause?",
+      "answer": "About a third (32%)",
+      "distractors": [
+        "About 5%",
+        "About half (50%)",
+        "About two-thirds (65%)"
+      ],
+      "level": "core",
+      "source": "UN Food and Agriculture Organization (FAO), 2025",
+      "sourceDistractors": [
+        "Intergovernmental Panel on Climate Change (IPCC), 2022",
+        "Poore & Nemecek, 2018",
+        "International Energy Agency (IEA), 2024"
+      ],
+      "explain": "The UN Food and Agriculture Organization's 2025 brief puts agrifood systems at 16.5 Gt CO₂eq in 2023, 32% of global emissions. Crippa et al. (2021) independently found 34% for 2015."
+    },
+    {
+      "id": "planet-emissions-001-q2",
+      "card": "planet-emissions-001",
+      "ask": "Which boundary gives the Intergovernmental Panel on Climate Change's (IPCC) figure of about 22% of global emissions?",
+      "answer": "AFOLU: agriculture, forestry & other land use",
+      "distractors": [
+        "The whole food system, including supply chains",
+        "Farm-gate emissions only",
+        "Livestock only"
+      ],
+      "level": "detail",
+      "source": "Intergovernmental Panel on Climate Change (IPCC), 2022",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2025",
+        "Crippa et al., 2021",
+        "Xu et al., 2021"
+      ],
+      "explain": "The IPCC's Sixth Assessment Report (Working Group III) found AFOLU produced 22% of global emissions in 2019. It covers farming plus land use (mainly deforestation), but not processing, transport or retail."
+    },
+    {
+      "id": "planet-emissions-001-q3",
+      "card": "planet-emissions-001",
+      "ask": "Counting only farm-gate emissions (crop and livestock production and on-farm energy), what share of global emissions is that?",
+      "answer": "About 16%",
+      "distractors": [
+        "About 4%",
+        "About 32%",
+        "About 45%"
+      ],
+      "level": "detail",
+      "source": "UN Food and Agriculture Organization (FAO), 2025",
+      "sourceDistractors": [
+        "Intergovernmental Panel on Climate Change (IPCC), 2019",
+        "Xu et al., 2021",
+        "Poore & Nemecek, 2018"
+      ],
+      "explain": "Farm gate was 8.1 Gt CO₂eq of the food system's 16.5 Gt in 2023, which works out to ~16% of global emissions. 32% is the whole food system, not the farm gate."
+    },
+    {
+      "id": "planet-emissions-001-q4",
+      "card": "planet-emissions-001",
+      "ask": "Which component makes up the largest part of food-system emissions?",
+      "answer": "Farm-gate production (~49%)",
+      "distractors": [
+        "Land-use change (deforestation)",
+        "Pre- and post-production (supply chain)",
+        "Household cooking"
+      ],
+      "level": "detail",
+      "source": "UN Food and Agriculture Organization (FAO), 2025",
+      "sourceDistractors": [
+        "Intergovernmental Panel on Climate Change (IPCC), 2022",
+        "Crippa et al., 2021",
+        "Poore & Nemecek, 2018"
+      ],
+      "explain": "In 2023: farm gate 8.1 Gt (49%), supply chain 5.2 Gt (32%), land-use change 3.2 Gt (19%)."
+    },
+    {
+      "id": "planet-emissions-001-q5",
+      "card": "planet-emissions-001",
+      "ask": "The food system's share of global emissions fell from 38% (2001) to 32% (2023). What happened to its actual emissions over that period?",
+      "answer": "They rose by about 21%",
+      "distractors": [
+        "They fell by about 20%",
+        "They stayed the same",
+        "They roughly doubled"
+      ],
+      "level": "detail",
+      "source": "UN Food and Agriculture Organization (FAO), 2025",
+      "sourceDistractors": [
+        "Tubiello et al., 2022",
+        "Intergovernmental Panel on Climate Change (IPCC), 2022",
+        "Xu et al., 2021"
+      ],
+      "explain": "The share fell only because other sectors grew faster. Food-system emissions rose 21% between 2001 and 2023."
+    },
+    {
+      "id": "planet-emissions-002-q1",
+      "card": "planet-emissions-002",
+      "ask": "According to the UN Food and Agriculture Organization's (FAO) latest life-cycle estimate, what share of all human greenhouse gas emissions comes from livestock?",
+      "answer": "About 12%",
+      "distractors": [
+        "About 3%",
+        "About 30%",
+        "About 51%"
+      ],
+      "level": "core",
+      "source": "UN Food and Agriculture Organization (FAO), 2023",
+      "sourceDistractors": [
+        "Xu et al., 2021",
+        "Intergovernmental Panel on Climate Change (IPCC), 2022",
+        "Poore & Nemecek, 2018"
+      ],
+      "explain": "The FAO's 2023 Pathways report gives 6.2 Gt CO₂eq, about 12% of global emissions (reference year 2015). Avoid '51%': it comes from a non-peer-reviewed 2009 magazine article."
+    },
+    {
+      "id": "planet-emissions-002-q2",
+      "card": "planet-emissions-002",
+      "ask": "What was the UN Food and Agriculture Organization's (FAO) earlier, widely quoted 2013 estimate of livestock's share of global emissions?",
+      "answer": "14.5%",
+      "distractors": [
+        "5%",
+        "25%",
+        "40%"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Gerber et al. (FAO, 2013, reference year 2005) estimated 7.1 Gt CO₂eq, 14.5%. FAO's current figure is 12%. The methods changed, and the drop doesn't mean emissions fell."
+    },
+    {
+      "id": "planet-emissions-002-q3",
+      "card": "planet-emissions-002",
+      "ask": "What share of global food-production emissions comes from animal-based foods?",
+      "answer": "About 57%",
+      "distractors": [
+        "About 15%",
+        "About 30%",
+        "About 85%"
+      ],
+      "level": "core",
+      "source": "Xu et al., 2021",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2025",
+        "Crippa et al., 2021",
+        "Intergovernmental Panel on Climate Change (IPCC), 2022"
+      ],
+      "explain": "Xu et al. (Nature Food, 2021) found animal-based foods produce 57% of food-production emissions and plant-based foods 29%. Beef alone accounts for 25%."
+    },
+    {
+      "id": "planet-emissions-002-q4",
+      "card": "planet-emissions-002",
+      "ask": "Meat and dairy produce over half of food's emissions. What share of the world's calories do they provide?",
+      "answer": "About 18%",
+      "distractors": [
+        "About 5%",
+        "About 40%",
+        "About 60%"
+      ],
+      "level": "core",
+      "source": "Poore & Nemecek, 2018",
+      "sourceDistractors": [
+        "Xu et al., 2021",
+        "UN Food and Agriculture Organization (FAO), 2023",
+        "Tubiello et al., 2022"
+      ],
+      "explain": "Poore & Nemecek (Science, 2018): meat and dairy provide 18% of calories and 37% of protein, but use 83% of farmland."
+    },
+    {
+      "id": "planet-emissions-002-q5",
+      "card": "planet-emissions-002",
+      "ask": "Which animals account for the largest share of livestock emissions?",
+      "answer": "Cattle (over 60%)",
+      "distractors": [
+        "Pigs",
+        "Chickens",
+        "Sheep and goats"
+      ],
+      "level": "detail",
+      "source": "UN Food and Agriculture Organization (FAO), 2023",
+      "sourceDistractors": [
+        "Poore & Nemecek, 2018",
+        "Crippa et al., 2021",
+        "Intergovernmental Panel on Climate Change (IPCC), 2022"
+      ],
+      "explain": "FAO (2023): cattle cause over 60% of livestock emissions, mostly from enteric methane. Pigs are ~15% and chickens ~9%."
+    },
+    {
+      "id": "planet-emissions-002-q6",
+      "card": "planet-emissions-002",
+      "ask": "Where does the often-repeated claim that livestock cause '51% of global emissions' come from?",
+      "answer": "A 2009 World Watch magazine article that was not peer-reviewed",
+      "distractors": [
+        "The Intergovernmental Panel on Climate Change's (IPCC) Sixth Assessment Report",
+        "The UN Food and Agriculture Organization's (FAO) 2023 Pathways report",
+        "A 2018 study in the journal Science"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Goodland & Anhang (2009) published it in World Watch magazine, and the film Cowspiracy popularised it. It's widely criticised, so use FAO's 12% instead."
+    }
+  ]
+}
