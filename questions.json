@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-31 21:49 UTC",
+  "builtAt": "2026-10-31 22:14 UTC",
   "cards": [
     {
       "id": "planet-emissions-001",
@@ -76,6 +76,66 @@
       "lastChecked": "2026-10-31",
       "takeaway": "For the same nutrition, animal foods need far more water than plant foods. Per calorie, beef's water footprint is about 20 times that of cereals and starchy roots. Per gram of protein, meat's footprint is 1.5 to 6 times that of pulses (beans, lentils, peas). The main reason is that animals turn only a small part of their feed into food (Mekonnen & Hoekstra, 2012).",
       "sayIt": "\"Calorie for calorie, beef takes about 20 times more water than grains or potatoes. Even for protein, meat needs up to six times more water than beans or lentils (Mekonnen & Hoekstra, 2012).\""
+    },
+    {
+      "id": "planet-land-003",
+      "title": "Agriculture and deforestation",
+      "category": "Planet",
+      "categoryIcon": "🌍",
+      "subcategory": "Land use & deforestation",
+      "subcategoryIcon": "🌳",
+      "tags": [
+        "planet/land-use"
+      ],
+      "dataYear": 2018,
+      "lastChecked": "2026-10-31",
+      "takeaway": "Agriculture drives almost 90% of global deforestation. Livestock grazing alone accounts for 38.5% (FAO, 2022). In the tropics, cattle pasture is the single biggest driver, causing about 41% of tropical deforestation, more than palm oil and soy combined (Pendrill et al., 2019).",
+      "sayIt": "\"Farming causes almost 90% of the world's deforestation, and grazing livestock alone account for nearly 40% of it. That's the UN Food and Agriculture Organization's own satellite survey (FAO, 2022).\""
+    },
+    {
+      "id": "planet-land-002",
+      "title": "Land saved by plant-based diets",
+      "category": "Planet",
+      "categoryIcon": "🌍",
+      "subcategory": "Land use & deforestation",
+      "subcategoryIcon": "🌳",
+      "tags": [
+        "planet/land-use"
+      ],
+      "dataYear": 2010,
+      "lastChecked": "2026-10-31",
+      "takeaway": "If the world stopped eating meat and dairy, global farmland use could fall by more than 75%. That's an area about the size of the USA, China, the European Union and Australia combined, and the world would still be fed (Poore & Nemecek, 2018).",
+      "sayIt": "\"If we all ate plant-based, we'd need over 75% less farmland. That frees up an area the size of the US, China, the EU and Australia put together, and we'd still feed everyone (Poore & Nemecek, 2018).\""
+    },
+    {
+      "id": "planet-land-004",
+      "title": "Land use of animal vs plant foods",
+      "category": "Planet",
+      "categoryIcon": "🌍",
+      "subcategory": "Land use & deforestation",
+      "subcategoryIcon": "🌳",
+      "tags": [
+        "planet/land-use"
+      ],
+      "dataYear": 2010,
+      "lastChecked": "2026-10-31",
+      "takeaway": "For the same amount of protein, beef from beef herds needs about 164 m² of land per 100 g of protein. Peas need about 3.4 m²: roughly 50 times less. Even the lowest-impact beef uses about 36 times more land than peas (Poore & Nemecek, 2018).",
+      "sayIt": "\"Getting your protein from beef takes about 50 times more land than getting it from peas. Even the most efficient beef farms use over 30 times more land (Poore & Nemecek, 2018).\""
+    },
+    {
+      "id": "planet-land-001",
+      "title": "Livestock's share of agricultural land",
+      "category": "Planet",
+      "categoryIcon": "🌍",
+      "subcategory": "Land use & deforestation",
+      "subcategoryIcon": "🌳",
+      "tags": [
+        "planet/land-use"
+      ],
+      "dataYear": 2019,
+      "lastChecked": "2026-10-31",
+      "takeaway": "Farming covers almost half (44%) of the world's habitable land. About 80% of that farmland is used for livestock, as grazing land and cropland for animal feed. Yet meat, dairy and farmed fish supply only 17% of the world's calories and 38% of its protein (Ritchie & Roser, 2019, from FAO data).",
+      "sayIt": "\"Around 80% of the world's farmland goes to raising animals, but they give us less than a fifth of our calories (Our World in Data, using UN Food and Agriculture Organization data).\""
     }
   ],
   "questions": [
@@ -510,6 +570,290 @@
       "source": null,
       "sourceDistractors": [],
       "explain": "It's feed conversion. Drinking water is a tiny share (~0.6% of global freshwater use); the water is embedded in the feed."
+    },
+    {
+      "id": "planet-land-003-q1",
+      "card": "planet-land-003",
+      "ask": "Roughly what share of global deforestation is driven by agricultural expansion?",
+      "answer": "Almost 90%",
+      "distractors": [
+        "About 10%",
+        "About 30%",
+        "About 50%"
+      ],
+      "level": "core",
+      "source": "UN Food and Agriculture Organization (FAO), 2022",
+      "sourceDistractors": [
+        "Intergovernmental Panel on Climate Change (IPCC), 2019",
+        "Poore & Nemecek, 2018",
+        "Our World in Data, 2019"
+      ],
+      "explain": "The UN Food and Agriculture Organization's (FAO) satellite survey (FRA 2020 Remote Sensing Survey, published 2022) found agricultural expansion drove almost 90% of global deforestation in 2000–2018."
+    },
+    {
+      "id": "planet-land-003-q2",
+      "card": "planet-land-003",
+      "ask": "According to the UN Food and Agriculture Organization's (FAO) satellite survey, what share of global deforestation was caused by livestock grazing (2000–2018)?",
+      "answer": "38.5%",
+      "distractors": [
+        "3.5%",
+        "12%",
+        "75%"
+      ],
+      "level": "detail",
+      "source": "UN Food and Agriculture Organization (FAO), 2022",
+      "sourceDistractors": [
+        "Xu et al., 2021",
+        "Pendrill et al., 2022",
+        "Crippa et al., 2021"
+      ],
+      "explain": "Livestock grazing caused 38.5% and cropland expansion (incl. oil palm) almost 50%. Together, agriculture drove almost 90%."
+    },
+    {
+      "id": "planet-land-003-q3",
+      "card": "planet-land-003",
+      "ask": "Which single commodity is the biggest driver of tropical deforestation?",
+      "answer": "Cattle (beef) pasture: ~41%",
+      "distractors": [
+        "Palm oil",
+        "Soy for tofu and soy milk",
+        "Timber"
+      ],
+      "level": "core",
+      "source": "Pendrill et al., 2019",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2025",
+        "Mekonnen & Hoekstra, 2012",
+        "Intergovernmental Panel on Climate Change (IPCC), 2022"
+      ],
+      "explain": "Pendrill et al. (2019), summarised by Our World in Data: cattle pasture caused ~41% of tropical deforestation, more than all oilseeds (soy and palm oil) combined (~18%)."
+    },
+    {
+      "id": "planet-land-003-q5",
+      "card": "planet-land-003",
+      "ask": "What share of the world's soy is eaten directly by people as tofu, soy milk, tempeh or edamame?",
+      "answer": "About 7%",
+      "distractors": [
+        "About 40%",
+        "About 60%",
+        "About 90%"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Only ~7% of soy is eaten as tofu, soy milk, tempeh or edamame. 77% is fed to livestock (2018 data, Fraanje & Garnett via Our World in Data)."
+    },
+    {
+      "id": "planet-land-003-q4",
+      "card": "planet-land-003",
+      "ask": "What share of tropical deforestation is driven directly or indirectly by agriculture?",
+      "answer": "90–99%",
+      "distractors": [
+        "10–20%",
+        "40–50%",
+        "60–70%"
+      ],
+      "level": "detail",
+      "source": "Pendrill et al., 2022",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2013",
+        "Weindl et al., 2017",
+        "Tubiello et al., 2022"
+      ],
+      "explain": "Pendrill et al. (Science, 2022): 90–99% of tropical deforestation is agriculture-driven, but only 45–65% of cleared land goes into active production."
+    },
+    {
+      "id": "planet-land-002-q1",
+      "card": "planet-land-002",
+      "ask": "If the world removed meat and dairy from diets, by roughly how much could global farmland use fall?",
+      "answer": "By more than 75%",
+      "distractors": [
+        "By about 5%",
+        "By about 25%",
+        "It would increase"
+      ],
+      "level": "core",
+      "source": "Poore & Nemecek, 2018",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2022",
+        "Xu et al., 2021",
+        "Hoekstra & Mekonnen, 2012"
+      ],
+      "explain": "Poore & Nemecek (Science, 2018) found farmland could fall by more than 75% while still feeding the world."
+    },
+    {
+      "id": "planet-land-002-q2",
+      "card": "planet-land-002",
+      "ask": "The farmland that a plant-based world could free up is roughly equivalent to the area of:",
+      "answer": "The USA, China, the EU and Australia combined",
+      "distractors": [
+        "The United Kingdom",
+        "France",
+        "India"
+      ],
+      "level": "core",
+      "source": "Poore & Nemecek, 2018",
+      "sourceDistractors": [
+        "Our World in Data, 2019",
+        "Pendrill et al., 2022",
+        "Intergovernmental Panel on Climate Change (IPCC), 2019"
+      ],
+      "explain": "About 3.1 billion hectares, equal to the USA, China, the EU and Australia combined."
+    },
+    {
+      "id": "planet-land-002-q3",
+      "card": "planet-land-002",
+      "ask": "In a plant-based world, what would happen to the area of cropland (not just grazing land)?",
+      "answer": "It would also fall, because feed crops would no longer be needed",
+      "distractors": [
+        "It would need to roughly double",
+        "It would stay exactly the same",
+        "It would rise slightly to replace meat"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Feed crops take a large share of cropland, and animals convert feed to food inefficiently. Growing food for people directly needs less cropland, not more."
+    },
+    {
+      "id": "planet-land-004-q1",
+      "card": "planet-land-004",
+      "ask": "Per 100 g of protein, roughly how much more land does beef (from beef herds) need than peas?",
+      "answer": "About 50 times more",
+      "distractors": [
+        "About the same",
+        "About 2 times more",
+        "About 500 times more"
+      ],
+      "level": "core",
+      "source": "Poore & Nemecek, 2018",
+      "sourceDistractors": [
+        "Mekonnen & Hoekstra, 2012",
+        "UN Food and Agriculture Organization (FAO), 2023",
+        "Pendrill et al., 2022"
+      ],
+      "explain": "About 164 m² for beef vs 3.4 m² for peas per 100 g of protein, about 48×."
+    },
+    {
+      "id": "planet-land-004-q2",
+      "card": "planet-land-004",
+      "ask": "How does the lowest-impact beef compare with peas for land use per unit of protein?",
+      "answer": "It still uses about 36 times more land",
+      "distractors": [
+        "It uses less land than peas",
+        "It uses about the same land",
+        "It uses about twice the land"
+      ],
+      "level": "core",
+      "source": "Poore & Nemecek, 2018",
+      "sourceDistractors": [
+        "Weindl et al., 2017",
+        "Our World in Data, 2019",
+        "Intergovernmental Panel on Climate Change (IPCC), 2022"
+      ],
+      "explain": "Even the lowest-impact beef uses ~36× more land and causes ~6× more greenhouse gases than peas. Grass-fed doesn't close the gap."
+    },
+    {
+      "id": "planet-land-004-q3",
+      "card": "planet-land-004",
+      "ask": "Per 100 g of protein, which of these uses the MOST land?",
+      "answer": "Lamb & mutton (~185 m²)",
+      "distractors": [
+        "Pig meat",
+        "Poultry meat",
+        "Nuts"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Lamb (~185 m²) and beef from beef herds (~164 m²) are far above everything else. Pig meat is ~11 m², poultry ~7.1 m² and nuts ~7.9 m²."
+    },
+    {
+      "id": "planet-land-004-q4",
+      "card": "planet-land-004",
+      "ask": "Per 100 g of protein, roughly how much land does poultry meat need compared with peas?",
+      "answer": "About twice as much",
+      "distractors": [
+        "About 50 times as much",
+        "Less than peas",
+        "About the same"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Poultry is ~7.1 m² and peas ~3.4 m² per 100 g of protein. Chicken is much more land-efficient than beef, but still about 2× peas."
+    },
+    {
+      "id": "planet-land-001-q1",
+      "card": "planet-land-001",
+      "ask": "Roughly what share of the world's farmland (grazing land plus cropland for feed) is used for livestock?",
+      "answer": "About 80%",
+      "distractors": [
+        "About 10%",
+        "About 30%",
+        "About 50%"
+      ],
+      "level": "core",
+      "source": "Our World in Data, 2019",
+      "sourceDistractors": [
+        "Intergovernmental Panel on Climate Change (IPCC), 2022",
+        "Xu et al., 2021",
+        "Weindl et al., 2017"
+      ],
+      "explain": "Our World in Data (Ritchie & Roser), using UN Food and Agriculture Organization data, puts livestock at ~80% of agricultural land. Poore & Nemecek (2018) give 83%."
+    },
+    {
+      "id": "planet-land-001-q2",
+      "card": "planet-land-001",
+      "ask": "Livestock use most of the world's farmland. Roughly what share of the world's calories do meat, dairy and farmed fish supply?",
+      "answer": "Under a fifth (~17%)",
+      "distractors": [
+        "About half",
+        "About two-thirds",
+        "About 80%"
+      ],
+      "level": "core",
+      "source": "Our World in Data, 2019",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2025",
+        "Mekonnen & Hoekstra, 2012",
+        "Crippa et al., 2021"
+      ],
+      "explain": "Meat, dairy and farmed fish supply ~17% of calories and ~38% of protein, while using ~80% of farmland."
+    },
+    {
+      "id": "planet-land-001-q3",
+      "card": "planet-land-001",
+      "ask": "Roughly what share of the world's habitable land (excluding glaciers and deserts) is used for agriculture?",
+      "answer": "Almost half (44%)",
+      "distractors": [
+        "About 5%",
+        "About 20%",
+        "About 85%"
+      ],
+      "level": "detail",
+      "source": "Our World in Data, 2019",
+      "sourceDistractors": [
+        "Intergovernmental Panel on Climate Change (IPCC), 2019",
+        "Poore & Nemecek, 2018",
+        "Pendrill et al., 2022"
+      ],
+      "explain": "44% of habitable land is farmed (an older version of the chart said 50%). Habitable land excludes glaciers (~10% of land) and barren land (~14%)."
+    },
+    {
+      "id": "planet-land-001-q4",
+      "card": "planet-land-001",
+      "ask": "How is the world's agricultural land roughly split between grazing land and cropland?",
+      "answer": "Two-thirds grazing, one-third cropland",
+      "distractors": [
+        "One-third grazing, two-thirds cropland",
+        "Half and half",
+        "90% cropland, 10% grazing"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "About two-thirds of agricultural land is grazing land. Of the remaining third (cropland), a large part grows animal feed."
     }
   ]
 }
