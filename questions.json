@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-31 21:22 UTC",
+  "builtAt": "2026-10-31 21:49 UTC",
   "cards": [
     {
       "id": "planet-emissions-001",
@@ -31,6 +31,51 @@
       "lastChecked": "2026-10-31",
       "takeaway": "Raising animals for meat, milk and eggs causes about 12% of all human greenhouse gas emissions (FAO, 2023). Animal-based foods produce more than half (57%) of food-production emissions (Xu et al., 2021) while supplying under a fifth (18%) of the world's calories (Poore & Nemecek, 2018).",
       "sayIt": "\"Livestock alone cause about 12% of global emissions. That's the latest estimate from the UN Food and Agriculture Organization (FAO, 2023). Animal foods are over half of food's climate footprint but give us less than a fifth of our calories.\""
+    },
+    {
+      "id": "planet-freshwater-001",
+      "title": "Agriculture's share of freshwater use",
+      "category": "Planet",
+      "categoryIcon": "🌍",
+      "subcategory": "Freshwater use",
+      "subcategoryIcon": "💧",
+      "tags": [
+        "planet/freshwater"
+      ],
+      "dataYear": 2024,
+      "lastChecked": "2026-10-31",
+      "takeaway": "Farming is by far the largest user of fresh water. It takes about 70% of all freshwater withdrawn from rivers, lakes and aquifers (72% in FAO's latest data). Counting rainwater used by crops as well, agriculture makes up 92% of humanity's total water footprint (Hoekstra & Mekonnen, 2012).",
+      "sayIt": "\"Around 70% of the fresh water we take from rivers and aquifers goes to farming. That's the UN Food and Agriculture Organization's figure (FAO, 2025). Industry and households share the rest.\""
+    },
+    {
+      "id": "planet-freshwater-002",
+      "title": "Animal products' share of agricultural water",
+      "category": "Planet",
+      "categoryIcon": "🌍",
+      "subcategory": "Freshwater use",
+      "subcategoryIcon": "💧",
+      "tags": [
+        "planet/freshwater"
+      ],
+      "dataYear": 2010,
+      "lastChecked": "2026-10-31",
+      "takeaway": "Producing meat, dairy and eggs accounts for nearly a third of agriculture's total water footprint (Mekonnen & Hoekstra, 2012), and over half if all water on grazing land is counted (Weindl et al., 2017). Most of this is rainwater, mainly for feed and pasture. Counting only irrigation water, animal products' share is much smaller (roughly a sixth).",
+      "sayIt": "\"Nearly a third of farming's water footprint goes to animal products (Mekonnen & Hoekstra, 2012). That's mostly rainwater on feed crops and pasture, so the bigger issue is how inefficiently animals turn that water into food.\""
+    },
+    {
+      "id": "planet-freshwater-003",
+      "title": "Water footprint of animal vs plant foods",
+      "category": "Planet",
+      "categoryIcon": "🌍",
+      "subcategory": "Freshwater use",
+      "subcategoryIcon": "💧",
+      "tags": [
+        "planet/freshwater"
+      ],
+      "dataYear": 2005,
+      "lastChecked": "2026-10-31",
+      "takeaway": "For the same nutrition, animal foods need far more water than plant foods. Per calorie, beef's water footprint is about 20 times that of cereals and starchy roots. Per gram of protein, meat's footprint is 1.5 to 6 times that of pulses (beans, lentils, peas). The main reason is that animals turn only a small part of their feed into food (Mekonnen & Hoekstra, 2012).",
+      "sayIt": "\"Calorie for calorie, beef takes about 20 times more water than grains or potatoes. Even for protein, meat needs up to six times more water than beans or lentils (Mekonnen & Hoekstra, 2012).\""
     }
   ],
   "questions": [
@@ -234,6 +279,237 @@
       "source": null,
       "sourceDistractors": [],
       "explain": "Goodland & Anhang (2009) published it in World Watch magazine, and the film Cowspiracy popularised it. It's widely criticised, so use FAO's 12% instead."
+    },
+    {
+      "id": "planet-freshwater-001-q1",
+      "card": "planet-freshwater-001",
+      "ask": "Roughly what share of the fresh water withdrawn from rivers, lakes and aquifers worldwide is used by agriculture?",
+      "answer": "About 70%",
+      "distractors": [
+        "About 10%",
+        "About 30%",
+        "About 95%"
+      ],
+      "level": "core",
+      "source": "UN Food and Agriculture Organization (FAO), 2025",
+      "sourceDistractors": [
+        "Intergovernmental Panel on Climate Change (IPCC), 2022",
+        "Poore & Nemecek, 2018",
+        "International Energy Agency (IEA), 2024"
+      ],
+      "explain": "The UN Food and Agriculture Organization's (FAO) 2025 AQUASTAT snapshot puts agriculture at 72% of freshwater withdrawals, industry at 15% and municipal use at 13%."
+    },
+    {
+      "id": "planet-freshwater-001-q2",
+      "card": "planet-freshwater-001",
+      "ask": "What share of global freshwater withdrawals goes to municipal use (homes and services)?",
+      "answer": "About 13%",
+      "distractors": [
+        "About 2%",
+        "About 40%",
+        "About 60%"
+      ],
+      "level": "detail",
+      "source": "UN Food and Agriculture Organization (FAO), 2025",
+      "sourceDistractors": [
+        "Hoekstra & Mekonnen, 2012",
+        "Intergovernmental Panel on Climate Change (IPCC), 2019",
+        "Xu et al., 2021"
+      ],
+      "explain": "Municipal use is about 13% and industry 15%. Agriculture takes 72%, so diet matters far more for water than shower length."
+    },
+    {
+      "id": "planet-freshwater-001-q3",
+      "card": "planet-freshwater-001",
+      "ask": "Counting rainwater used by crops and the water needed to dilute pollution, what share of humanity's total water footprint comes from agriculture?",
+      "answer": "92%",
+      "distractors": [
+        "45%",
+        "60%",
+        "99%"
+      ],
+      "level": "detail",
+      "source": "Hoekstra & Mekonnen, 2012",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2023",
+        "Poore & Nemecek, 2018",
+        "Crippa et al., 2021"
+      ],
+      "explain": "Hoekstra & Mekonnen (PNAS, 2012) found agriculture accounts for 92% of the global water footprint of 9,087 billion m³ a year (1996–2005)."
+    },
+    {
+      "id": "planet-freshwater-001-q4",
+      "card": "planet-freshwater-001",
+      "ask": "In water-footprint accounting, what is 'green water'?",
+      "answer": "Rainwater stored in the soil and used by plants",
+      "distractors": [
+        "Water taken from rivers and aquifers for irrigation",
+        "Water needed to dilute pollution",
+        "Recycled wastewater"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Green = rainwater in the soil. Blue = surface and groundwater (irrigation). Grey = the water needed to dilute pollution to safe levels."
+    },
+    {
+      "id": "planet-freshwater-002-q1",
+      "card": "planet-freshwater-002",
+      "ask": "Roughly what share of agriculture's total water footprint (rainwater, irrigation and pollution combined) goes to producing animal products?",
+      "answer": "Nearly a third (29%)",
+      "distractors": [
+        "About 5%",
+        "About 10%",
+        "About 90%"
+      ],
+      "level": "core",
+      "source": "Mekonnen & Hoekstra, 2012",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2025",
+        "Poore & Nemecek, 2018",
+        "Intergovernmental Panel on Climate Change (IPCC), 2019"
+      ],
+      "explain": "Mekonnen & Hoekstra (Ecosystems, 2012) found 29% of agriculture's water footprint is for animal products. Counting all water on grazing land, Weindl et al. (2017) get 56%."
+    },
+    {
+      "id": "planet-freshwater-002-q2",
+      "card": "planet-freshwater-002",
+      "ask": "What kind of water makes up most of the water footprint of animal production?",
+      "answer": "Rainwater (green water) used by feed crops and pasture: ~87%",
+      "distractors": [
+        "Irrigation water from rivers and aquifers",
+        "Drinking water for the animals",
+        "Water used in slaughterhouses and processing"
+      ],
+      "level": "core",
+      "source": "Mekonnen & Hoekstra, 2012",
+      "sourceDistractors": [
+        "Crippa et al., 2021",
+        "UN Food and Agriculture Organization (FAO), 2023",
+        "Xu et al., 2021"
+      ],
+      "explain": "Of 2,422 billion m³ a year, 87% is green (rain), 7% grey (pollution) and 6% blue (irrigation and drinking). Drinking water is a tiny part."
+    },
+    {
+      "id": "planet-freshwater-002-q3",
+      "card": "planet-freshwater-002",
+      "ask": "Counting all water used on grazing land, what share of agricultural water consumption is linked to livestock?",
+      "answer": "About 56%",
+      "distractors": [
+        "About 6%",
+        "About 20%",
+        "About 90%"
+      ],
+      "level": "detail",
+      "source": "Weindl et al., 2017",
+      "sourceDistractors": [
+        "Hoekstra & Mekonnen, 2012",
+        "UN Food and Agriculture Organization (FAO), 2025",
+        "Poore & Nemecek, 2018"
+      ],
+      "explain": "Weindl et al. (Global Environmental Change, 2017) estimate livestock-related water is 56% of agricultural water consumption, when all water on grazing land is counted."
+    },
+    {
+      "id": "planet-freshwater-002-q4",
+      "card": "planet-freshwater-002",
+      "ask": "Counting only irrigation (blue) water, roughly what share of agriculture's water footprint goes to animal products?",
+      "answer": "Roughly a sixth (~16%)",
+      "distractors": [
+        "Under 1%",
+        "About half",
+        "About 80%"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Calculated from Mekonnen & Hoekstra's figures: 151 of ~945 billion m³ of agricultural blue water. Most irrigation water goes to crops people eat directly, like rice and wheat."
+    },
+    {
+      "id": "planet-freshwater-002-q5",
+      "card": "planet-freshwater-002",
+      "ask": "Drinking and servicing water for farm animals is roughly what share of global freshwater use?",
+      "answer": "Under 1% (~0.6%)",
+      "distractors": [
+        "About 8%",
+        "About 20%",
+        "About 35%"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Drinking water is tiny (~0.6%, cited in Weindl et al., 2017). Livestock's water is almost all embedded in feed."
+    },
+    {
+      "id": "planet-freshwater-003-q1",
+      "card": "planet-freshwater-003",
+      "ask": "Per calorie, roughly how much larger is beef's water footprint than that of cereals and starchy roots?",
+      "answer": "About 20 times",
+      "distractors": [
+        "About the same",
+        "About 2 times",
+        "About 200 times"
+      ],
+      "level": "core",
+      "source": "Mekonnen & Hoekstra, 2012",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2025",
+        "Xu et al., 2021",
+        "Intergovernmental Panel on Climate Change (IPCC), 2022"
+      ],
+      "explain": "Mekonnen & Hoekstra (Ecosystems, 2012): the average water footprint per calorie for beef is 20 times that of cereals and starchy roots."
+    },
+    {
+      "id": "planet-freshwater-003-q2",
+      "card": "planet-freshwater-003",
+      "ask": "Per gram of protein, how does meat's water footprint compare with that of pulses (beans, lentils, peas)?",
+      "answer": "1.5 to 6 times larger",
+      "distractors": [
+        "About the same",
+        "Smaller",
+        "50 to 100 times larger"
+      ],
+      "level": "core",
+      "source": "Mekonnen & Hoekstra, 2012",
+      "sourceDistractors": [
+        "Poore & Nemecek, 2018",
+        "Weindl et al., 2017",
+        "UN Food and Agriculture Organization (FAO), 2023"
+      ],
+      "explain": "Chicken is at the low end (~1.5×) and beef at the high end (~6×). Even for protein, plants need much less water."
+    },
+    {
+      "id": "planet-freshwater-003-q3",
+      "card": "planet-freshwater-003",
+      "ask": "What is the global average water footprint (green + blue + grey) of 1 kg of beef?",
+      "answer": "About 15,000 litres",
+      "distractors": [
+        "About 150 litres",
+        "About 1,500 litres",
+        "About 150,000 litres"
+      ],
+      "level": "detail",
+      "source": "Mekonnen & Hoekstra, 2012",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2025",
+        "Crippa et al., 2021",
+        "Poore & Nemecek, 2018"
+      ],
+      "explain": "About 15,000 L/kg for beef, compared with ~6,000 for pork and ~4,300 for chicken. Most of it is rainwater on feed and pasture, so don't imply it all comes from taps or rivers."
+    },
+    {
+      "id": "planet-freshwater-003-q4",
+      "card": "planet-freshwater-003",
+      "ask": "Why do animal foods have larger water footprints than plant foods of the same nutritional value?",
+      "answer": "Animals convert only a small share of their feed into food, and the feed needs water to grow",
+      "distractors": [
+        "Animals drink very large amounts of water",
+        "Slaughterhouses use most of the water",
+        "Animal foods contain more water"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "It's feed conversion. Drinking water is a tiny share (~0.6% of global freshwater use); the water is embedded in the feed."
     }
   ]
 }
