@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-31 22:14 UTC",
+  "builtAt": "2026-11-01 22:50 UTC",
   "cards": [
     {
       "id": "planet-emissions-001",
@@ -16,6 +16,22 @@
       "lastChecked": "2026-10-31",
       "takeaway": "Producing our food causes roughly a fifth to a third of all human greenhouse gas emissions, depending on what you count. Counting the whole food system, from farm and land clearing to processing, transport, retail and waste, it is about a third (32% in 2023).",
       "sayIt": "\"About a third of global emissions come from the food system. That's the UN Food and Agriculture Organization's own figure (FAO, 2025). Even if you only count farms and land clearing, it's over a fifth.\""
+    },
+    {
+      "id": "planet-emissions-003",
+      "title": "Animal farming vs AI data centres",
+      "category": "Planet",
+      "categoryIcon": "🌍",
+      "subcategory": "Emissions",
+      "subcategoryIcon": "💨",
+      "tags": [
+        "planet/emissions",
+        "planet/freshwater"
+      ],
+      "dataYear": 2024,
+      "lastChecked": "2026-11-01",
+      "takeaway": "All the world's data centres (AI included) emit about 180 million tonnes of CO₂ a year, about 0.5% of global energy CO₂ (IEA, 2025). Livestock emit about 34 times as much (6.2 billion tonnes CO₂eq, FAO, 2023). Switching the world to plant-based diets would cut ~37 times more emissions than shutting down every data centre. On water, livestock's irrigation and drinking water alone is about 270 times data centres' total water consumption. 🧮",
+      "sayIt": "\"If you're worried about AI's footprint, that's fair, but it's small next to what's on our plates. Livestock emit around 30 times more than all the world's data centres, and use hundreds of times more water.\""
     },
     {
       "id": "planet-emissions-002",
@@ -233,6 +249,89 @@
         "Xu et al., 2021"
       ],
       "explain": "The share fell only because other sectors grew faster. Food-system emissions rose 21% between 2001 and 2023."
+    },
+    {
+      "id": "planet-emissions-003-q1",
+      "card": "planet-emissions-003",
+      "ask": "Roughly how do livestock's greenhouse gas emissions compare with those of all the world's data centres (including AI)?",
+      "answer": "Livestock emit about 30 times more",
+      "distractors": [
+        "About the same",
+        "Data centres emit about twice as much",
+        "Livestock emit about 3 times more"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Livestock: ~6,200 Mt CO₂eq a year (FAO, 2023). Data centres: ~180 Mt CO₂ (International Energy Agency, 2025). That's ~34×, or ~24× counting only on-farm livestock emissions."
+    },
+    {
+      "id": "planet-emissions-003-q2",
+      "card": "planet-emissions-003",
+      "ask": "About how much CO₂ do all the world's data centres emit per year from their electricity use?",
+      "answer": "About 180 million tonnes (~0.5% of energy CO₂)",
+      "distractors": [
+        "About 18 million tonnes",
+        "About 1.8 billion tonnes",
+        "About 6 billion tonnes"
+      ],
+      "level": "detail",
+      "source": "International Energy Agency (IEA), 2025",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2023",
+        "Our World in Data, 2019",
+        "Crippa et al., 2021"
+      ],
+      "explain": "The International Energy Agency's Energy and AI report (2025) puts data centres at ~180 Mt CO₂, about 0.5% of combustion emissions, rising to ~1% by 2030 in its base case."
+    },
+    {
+      "id": "planet-emissions-003-q3",
+      "card": "planet-emissions-003",
+      "ask": "How does the emissions saving from a global switch to plant-based diets compare with shutting down every data centre?",
+      "answer": "The diet switch saves roughly 35–40 times more",
+      "distractors": [
+        "Shutting down data centres saves more",
+        "They save about the same",
+        "The diet switch saves about twice as much"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "A plant-based world cuts ~6,600 Mt CO₂eq (Poore & Nemecek, 2018). All data centres emit ~180 Mt CO₂ (IEA, 2025). That's ~37×."
+    },
+    {
+      "id": "planet-emissions-003-q4",
+      "card": "planet-emissions-003",
+      "ask": "Roughly how does the irrigation and drinking water (blue water) consumed for animal products compare with all data centres' total water consumption?",
+      "answer": "Animal products use a few hundred times more",
+      "distractors": [
+        "About the same",
+        "Data centres use more",
+        "Animal products use about 5 times more"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Animal products' blue water is ~151 km³ a year (Mekonnen & Hoekstra, 2012). Data centres consume ~0.56 km³, including water for their electricity (IEA). That's ~270×."
+    },
+    {
+      "id": "planet-emissions-003-q5",
+      "card": "planet-emissions-003",
+      "ask": "Of data centres' total water consumption, roughly what share is direct cooling water?",
+      "answer": "About a quarter (most is water used to generate their electricity)",
+      "distractors": [
+        "Nearly all of it",
+        "About three-quarters",
+        "None of it"
+      ],
+      "level": "detail",
+      "source": "International Energy Agency (IEA), 2025",
+      "sourceDistractors": [
+        "Hoekstra & Mekonnen, 2012",
+        "UN Food and Agriculture Organization (FAO), 2025",
+        "Weindl et al., 2017"
+      ],
+      "explain": "Of ~560 billion litres in 2023, ~140 billion was direct (cooling) and ~373 billion indirect (electricity generation). The rest was chip and hardware manufacturing."
     },
     {
       "id": "planet-emissions-002-q1",
