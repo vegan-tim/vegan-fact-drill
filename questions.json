@@ -1,6 +1,84 @@
 {
-  "builtAt": "2026-11-01 22:50 UTC",
+  "builtAt": "2026-11-01 23:09 UTC",
   "cards": [
+    {
+      "id": "ethics-animal-suffering-001",
+      "title": "Animals killed for food each year",
+      "category": "Ethics",
+      "categoryIcon": "🐾",
+      "subcategory": "Animal suffering",
+      "subcategoryIcon": "😢",
+      "tags": [
+        "ethics/animal-suffering"
+      ],
+      "dataYear": 2024,
+      "lastChecked": "2026-11-01",
+      "takeaway": "Around 88 billion land animals were slaughtered for food in 2024, about 2,800 every second. Nearly 9 in 10 are chickens (FAOSTAT via Faunalytics, 2026). Fish numbers are far larger: an estimated 1.1–2.2 trillion wild fish caught each year (Mood & Brooke, 2024) and around 124 billion farmed fish killed (Mood et al., 2023).",
+      "sayIt": "\"Every second, about 2,800 land animals are killed for food, mostly chickens. That's 88 billion a year, over ten for every person on Earth. And that's before counting fish, which run to over a trillion.\""
+    },
+    {
+      "id": "ethics-farming-practices-003",
+      "title": "Male calves in the dairy industry",
+      "category": "Ethics",
+      "categoryIcon": "🐾",
+      "subcategory": "Farming practices",
+      "subcategoryIcon": "🏭",
+      "tags": [
+        "ethics/farming-practices",
+        "ethics/animal-suffering"
+      ],
+      "dataYear": 2020,
+      "lastChecked": "2026-11-01",
+      "takeaway": "To produce milk, a cow must give birth, and about half her calves are male. Male calves of dairy breeds are of little use to the dairy industry: most are killed within days or raised for veal or beef. In New Zealand alone, about 2 million \"bobby calves\" are produced each year. Around 1.7 million are slaughtered at about 4 days old, and ~245,000 are killed on the farm (DairyNZ estimates, 2021). There is no reliable global count.",
+      "sayIt": "\"Cows only make milk after giving birth, so dairy farms produce millions of calves they don't need. In New Zealand, around 1.7 million calves a year are sent to slaughter at just four days old.\""
+    },
+    {
+      "id": "ethics-farming-practices-002",
+      "title": "Male chicks culled by the egg industry",
+      "category": "Ethics",
+      "categoryIcon": "🐾",
+      "subcategory": "Farming practices",
+      "subcategoryIcon": "🏭",
+      "tags": [
+        "ethics/farming-practices",
+        "ethics/animal-suffering"
+      ],
+      "dataYear": 2024,
+      "lastChecked": "2026-11-01",
+      "takeaway": "The egg industry kills an estimated 7.8 billion male chicks a year (2024), up from 7.1 billion in 2019. That's about 250 every second. Male chicks of egg-laying breeds can't lay eggs and grow too slowly to be raised profitably for meat, so they are killed within hours of hatching, usually by maceration (high-speed grinding) or gassing (Faunalytics, 2026).",
+      "sayIt": "\"For every egg-laying hen, a brother chick was killed on his first day. That's nearly 8 billion male chicks a year, usually ground up or gassed. It happens on free-range and organic farms too, because they buy hens from the same hatcheries.\""
+    },
+    {
+      "id": "ethics-farming-practices-004",
+      "title": "Pigs stunned with carbon dioxide gas",
+      "category": "Ethics",
+      "categoryIcon": "🐾",
+      "subcategory": "Farming practices",
+      "subcategoryIcon": "🏭",
+      "tags": [
+        "ethics/farming-practices",
+        "ethics/animal-suffering"
+      ],
+      "dataYear": 2024,
+      "lastChecked": "2026-11-01",
+      "takeaway": "In England and Wales, 90% of pigs are stunned before slaughter with high-concentration carbon dioxide (CO₂) (Food Standards Agency, 2024). Pigs are lowered in groups into a pit of CO₂, which the European Food Safety Authority (EFSA) and UK advisory bodies say is aversive and causes severe pain and distress before the animals lose consciousness. The UK's Animal Welfare Committee recommended phasing it out within five years (2025). It remains the standard method.",
+      "sayIt": "\"Nine in ten pigs slaughtered in England and Wales are gassed with CO₂ first. The UK government's own advisers and the EU's food safety authority say it causes pigs severe pain and distress, yet it's still the industry standard.\""
+    },
+    {
+      "id": "ethics-farming-practices-001",
+      "title": "Share of farmed animals on factory farms",
+      "category": "Ethics",
+      "categoryIcon": "🐾",
+      "subcategory": "Farming practices",
+      "subcategoryIcon": "🏭",
+      "tags": [
+        "ethics/farming-practices"
+      ],
+      "dataYear": 2022,
+      "lastChecked": "2026-11-01",
+      "takeaway": "An estimated three-quarters (74%) of the world's farmed land animals live on factory farms: about 23 billion animals at any one time. Including farmed fish, it's about 94%. In the United States, over 99% of farmed animals are factory-farmed (Our World in Data, 2023, from Sentience Institute estimates).",
+      "sayIt": "\"Most farm animals don't live on the farms people picture. About three-quarters of the world's farmed land animals are on factory farms, and in the US it's over 99%.\""
+    },
     {
       "id": "planet-emissions-001",
       "title": "Agriculture's share of global emissions",
@@ -155,6 +233,376 @@
     }
   ],
   "questions": [
+    {
+      "id": "ethics-animal-suffering-001-q1",
+      "card": "ethics-animal-suffering-001",
+      "ask": "Roughly how many land animals were slaughtered for food worldwide in 2024?",
+      "answer": "About 88 billion",
+      "distractors": [
+        "About 900 million",
+        "About 8 billion",
+        "About 880 billion"
+      ],
+      "level": "core",
+      "source": "Faunalytics, 2026",
+      "sourceDistractors": [
+        "Intergovernmental Panel on Climate Change (IPCC), 2022",
+        "Poore & Nemecek, 2018",
+        "Our World in Data, 2019"
+      ],
+      "explain": "FAOSTAT data compiled by Faunalytics: 87.9 billion land animals slaughtered in 2024, over ten for every person on Earth."
+    },
+    {
+      "id": "ethics-animal-suffering-001-q2",
+      "card": "ethics-animal-suffering-001",
+      "ask": "About how many land animals are slaughtered for food every second?",
+      "answer": "About 2,800",
+      "distractors": [
+        "About 3",
+        "About 280",
+        "About 28,000"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "88 billion a year ÷ 31.5 million seconds ≈ 2,800 per second, about 240 million a day. Most are chickens."
+    },
+    {
+      "id": "ethics-animal-suffering-001-q3",
+      "card": "ethics-animal-suffering-001",
+      "ask": "What share of land animals slaughtered for food are chickens?",
+      "answer": "Nearly 9 in 10 (78.5 of 88 billion)",
+      "distractors": [
+        "About 1 in 10",
+        "About a third",
+        "About half"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "78.5 billion chickens out of ~88 billion land animals in 2024. Cattle are only ~0.3%."
+    },
+    {
+      "id": "ethics-animal-suffering-001-q4",
+      "card": "ethics-animal-suffering-001",
+      "ask": "Roughly how many pigs are slaughtered worldwide each year?",
+      "answer": "About 1.5 billion (~4 million a day)",
+      "distractors": [
+        "About 15 million",
+        "About 150 million",
+        "About 15 billion"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "FAOSTAT 2024: ~1.5 billion pigs, about 4.1 million per day."
+    },
+    {
+      "id": "ethics-animal-suffering-001-q5",
+      "card": "ethics-animal-suffering-001",
+      "ask": "Roughly how many wild fish are caught each year?",
+      "answer": "1.1–2.2 trillion",
+      "distractors": [
+        "1–2 million",
+        "1–2 billion",
+        "100–200 billion"
+      ],
+      "level": "core",
+      "source": "Mood & Brooke, 2024",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2025",
+        "Xu et al., 2021",
+        "Pendrill et al., 2022"
+      ],
+      "explain": "Mood & Brooke (Animal Welfare, 2024) estimate 1.1–2.2 trillion wild fish caught a year (2000–2019 average). About half go to fishmeal and fish oil, mostly animal feed."
+    },
+    {
+      "id": "ethics-animal-suffering-001-q6",
+      "card": "ethics-animal-suffering-001",
+      "ask": "Roughly how many farmed fish were killed for food in 2019?",
+      "answer": "About 124 billion (range 78–171 billion)",
+      "distractors": [
+        "About 1.2 billion",
+        "About 12 billion",
+        "About 12 trillion"
+      ],
+      "level": "detail",
+      "source": "Mood et al., 2023",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2022",
+        "Weindl et al., 2017",
+        "Crippa et al., 2021"
+      ],
+      "explain": "Mood et al. (Animal Welfare, 2023): ~124 billion farmed fish killed in 2019, a nine-fold increase since 1990."
+    },
+    {
+      "id": "ethics-farming-practices-003-q1",
+      "card": "ethics-farming-practices-003",
+      "ask": "Why does the dairy industry produce large numbers of unwanted male calves?",
+      "answer": "Cows must give birth to produce milk, and about half the calves are male",
+      "distractors": [
+        "Male calves are bred to guard the herd",
+        "Bulls are needed to produce milk",
+        "Male calves are needed for milk testing"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Dairy cows are made pregnant about once a year. Males of dairy breeds are poor for beef, so most are killed young or raised briefly for veal or beef."
+    },
+    {
+      "id": "ethics-farming-practices-003-q2",
+      "card": "ethics-farming-practices-003",
+      "ask": "Roughly how many 'bobby calves' (surplus dairy calves) does New Zealand's dairy industry produce each year?",
+      "answer": "About 2 million",
+      "distractors": [
+        "About 20,000",
+        "About 200,000",
+        "About 20 million"
+      ],
+      "level": "core",
+      "source": "DairyNZ, 2021",
+      "sourceDistractors": [
+        "Agriculture and Horticulture Development Board (UK) (AHDB), 2025",
+        "UN Food and Agriculture Organization (FAO), 2023",
+        "Faunalytics, 2026"
+      ],
+      "explain": "DairyNZ estimates for 2020: ~2 million bobby calves, ~1.7 million sent to slaughter at about 4 days old, ~245,000 killed on farm."
+    },
+    {
+      "id": "ethics-farming-practices-003-q3",
+      "card": "ethics-farming-practices-003",
+      "ask": "At about what age are New Zealand bobby calves sent to slaughter?",
+      "answer": "About 4 days old",
+      "distractors": [
+        "About 6 months old",
+        "About 2 years old",
+        "About 5 years old"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "New Zealand law requires calves to be at least 4 days old before transport to slaughter. Most go at 4–6 days."
+    },
+    {
+      "id": "ethics-farming-practices-003-q4",
+      "card": "ethics-farming-practices-003",
+      "ask": "By how much have dairy bull calf births in Great Britain fallen over the past decade, mainly due to sexed semen?",
+      "answer": "About 65%",
+      "distractors": [
+        "About 5%",
+        "About 25%",
+        "They have risen"
+      ],
+      "level": "detail",
+      "source": "Agriculture and Horticulture Development Board (UK) (AHDB), 2025",
+      "sourceDistractors": [
+        "DairyNZ, 2021",
+        "Our World in Data, 2023",
+        "Food Standards Agency (UK) (FSA), 2024"
+      ],
+      "explain": "The Agriculture and Horticulture Development Board (AHDB) reports a 65% fall. Sexed semen now makes up 84% of dairy semen sales."
+    },
+    {
+      "id": "ethics-farming-practices-002-q1",
+      "card": "ethics-farming-practices-002",
+      "ask": "Roughly how many male chicks does the egg industry kill worldwide each year?",
+      "answer": "Nearly 8 billion",
+      "distractors": [
+        "About 8 million",
+        "About 80 million",
+        "About 800 million"
+      ],
+      "level": "core",
+      "source": "Faunalytics, 2026",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2022",
+        "Our World in Data, 2023",
+        "Mood & Brooke, 2024"
+      ],
+      "explain": "Faunalytics (2026) estimates 7.83 billion in 2024, up from 7.08 billion in 2019. That's about 250 every second."
+    },
+    {
+      "id": "ethics-farming-practices-002-q2",
+      "card": "ethics-farming-practices-002",
+      "ask": "Why are male chicks of egg-laying breeds killed?",
+      "answer": "They can't lay eggs and grow too slowly to be profitable for meat",
+      "distractors": [
+        "They carry diseases that threaten the hens",
+        "They are too aggressive to keep",
+        "It is required by food safety law"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Laying breeds are bred for egg output. Males are economically 'surplus' and are killed within hours of hatching."
+    },
+    {
+      "id": "ethics-farming-practices-002-q3",
+      "card": "ethics-farming-practices-002",
+      "ask": "What are the two main methods used to kill male chicks?",
+      "answer": "Maceration (high-speed grinding) and gassing",
+      "distractors": [
+        "Lethal injection and electrocution",
+        "Drowning and freezing",
+        "They are released into the wild"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "The EU permits only maceration and gassing (CO₂ or inert gas). Maceration dominates in the US and Australia."
+    },
+    {
+      "id": "ethics-farming-practices-002-q4",
+      "card": "ethics-farming-practices-002",
+      "ask": "Does buying free-range or organic eggs avoid chick culling?",
+      "answer": "Generally no: hens come from hatcheries that cull their brothers",
+      "distractors": [
+        "Yes, free-range farms keep all the males",
+        "Yes, organic rules ban culling worldwide",
+        "Yes, free-range hens are a breed with no male chicks"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Only eggs from in-ovo sexing or brother-rearing schemes avoid it. That's standard only where culling is banned (Germany, Austria, France, and Italy from 2027)."
+    },
+    {
+      "id": "ethics-farming-practices-002-q5",
+      "card": "ethics-farming-practices-002",
+      "ask": "Which country banned chick culling from 1 January 2022?",
+      "answer": "Germany",
+      "distractors": [
+        "United States",
+        "United Kingdom",
+        "Australia"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Germany banned it from 1 January 2022, followed by Austria (July 2022) and France (2023). Italy's ban applies from 2027. The US has no ban."
+    },
+    {
+      "id": "ethics-farming-practices-004-q1",
+      "card": "ethics-farming-practices-004",
+      "ask": "In England and Wales, what share of pigs are stunned with high-concentration carbon dioxide gas before slaughter?",
+      "answer": "90%",
+      "distractors": [
+        "5%",
+        "25%",
+        "50%"
+      ],
+      "level": "core",
+      "source": "Food Standards Agency (UK) (FSA), 2024",
+      "sourceDistractors": [
+        "Agriculture and Horticulture Development Board (UK) (AHDB), 2025",
+        "Faunalytics, 2026",
+        "Our World in Data, 2023"
+      ],
+      "explain": "The Food Standards Agency's 2024 Slaughter Sector Survey found 90% of pigs were stunned with high-concentration CO₂. Most of the rest were stunned electrically."
+    },
+    {
+      "id": "ethics-farming-practices-004-q2",
+      "card": "ethics-farming-practices-004",
+      "ask": "What do the European Food Safety Authority (EFSA) and UK advisers say about high-concentration CO₂ stunning of pigs?",
+      "answer": "It is aversive and causes severe pain and distress before unconsciousness, and should be phased out",
+      "distractors": [
+        "It is the most humane method available",
+        "It causes no distress because pigs can't smell CO₂",
+        "It is banned across the EU"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Both have recommended phasing it out. In 2025 the UK Animal Welfare Committee proposed ending it within five years, which the industry opposes."
+    },
+    {
+      "id": "ethics-farming-practices-004-q3",
+      "card": "ethics-farming-practices-004",
+      "ask": "In England and Wales, roughly what share of meat chickens are gas-stunned before slaughter?",
+      "answer": "About 77%",
+      "distractors": [
+        "About 7%",
+        "About 25%",
+        "None: gas stunning is not used for poultry"
+      ],
+      "level": "detail",
+      "source": "Food Standards Agency (UK) (FSA), 2024",
+      "sourceDistractors": [
+        "DairyNZ, 2021",
+        "Mood et al., 2023",
+        "International Energy Agency (IEA), 2025"
+      ],
+      "explain": "The 2024 Food Standards Agency survey found ~77% of meat chickens were gas-stunned."
+    },
+    {
+      "id": "ethics-farming-practices-001-q1",
+      "card": "ethics-farming-practices-001",
+      "ask": "Roughly what share of the world's farmed land animals are estimated to live on factory farms?",
+      "answer": "About three-quarters (74%)",
+      "distractors": [
+        "About 10%",
+        "About a third",
+        "Over 99%"
+      ],
+      "level": "core",
+      "source": "Our World in Data, 2023",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2023",
+        "Faunalytics, 2026",
+        "Poore & Nemecek, 2018"
+      ],
+      "explain": "Our World in Data (Ritchie, 2023), using Sentience Institute estimates: ~74% of farmed land animals, about 23 billion at any time. Over 99% is the US figure."
+    },
+    {
+      "id": "ethics-farming-practices-001-q2",
+      "card": "ethics-farming-practices-001",
+      "ask": "What share of farmed animals in the United States live on factory farms?",
+      "answer": "Over 99%",
+      "distractors": [
+        "About 25%",
+        "About 50%",
+        "About 75%"
+      ],
+      "level": "core",
+      "source": "Our World in Data, 2023",
+      "sourceDistractors": [
+        "Food Standards Agency (UK) (FSA), 2024",
+        "Mood et al., 2023",
+        "International Energy Agency (IEA), 2025"
+      ],
+      "explain": "Sentience Institute's 2022 estimate from US agricultural census data: over 99% of US farmed animals, just over 10 billion, are factory-farmed."
+    },
+    {
+      "id": "ethics-farming-practices-001-q3",
+      "card": "ethics-farming-practices-001",
+      "ask": "Including farmed fish, roughly what share of farmed animals worldwide are factory-farmed?",
+      "answer": "About 94%",
+      "distractors": [
+        "About 30%",
+        "About 50%",
+        "About 65%"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Farmed fish are assumed to be almost all factory-farmed. With ~111 billion farmed fish alive at any time included, the share rises to ~94%."
+    },
+    {
+      "id": "ethics-farming-practices-001-q4",
+      "card": "ethics-farming-practices-001",
+      "ask": "What definition do factory-farming estimates usually rely on?",
+      "answer": "Concentrated animal feeding operations: confined 45+ days a year, no outdoor grazing, above a size threshold",
+      "distractors": [
+        "Any farm with more than 10 animals",
+        "Farms that use antibiotics",
+        "Farms owned by corporations rather than families"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "There's no universal legal definition. Estimates use the US concentrated animal feeding operation (CAFO) criteria."
+    },
     {
       "id": "planet-emissions-001-q1",
       "card": "planet-emissions-001",
