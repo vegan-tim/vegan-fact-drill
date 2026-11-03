@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-01 23:09 UTC",
+  "builtAt": "2026-11-03 22:36 UTC",
   "cards": [
     {
       "id": "ethics-animal-suffering-001",
@@ -13,8 +13,8 @@
       ],
       "dataYear": 2024,
       "lastChecked": "2026-11-01",
-      "takeaway": "Around 88 billion land animals were slaughtered for food in 2024, about 2,800 every second. Nearly 9 in 10 are chickens (FAOSTAT via Faunalytics, 2026). Fish numbers are far larger: an estimated 1.1–2.2 trillion wild fish caught each year (Mood & Brooke, 2024) and around 124 billion farmed fish killed (Mood et al., 2023).",
-      "sayIt": "\"Every second, about 2,800 land animals are killed for food, mostly chickens. That's 88 billion a year, over ten for every person on Earth. And that's before counting fish, which run to over a trillion.\""
+      "takeaway": "Around 88 billion land animals were slaughtered for food in 2024, about 2,800 every second (FAOSTAT via Faunalytics, 2026). On top of that, around 124 billion farmed fish are killed each year (Mood et al., 2023), and an estimated 1.1–2.2 trillion wild fish are caught (Mood & Brooke, 2024).",
+      "sayIt": "\"Every second, about 2,800 land animals are killed for food. That's 88 billion a year, over ten for every person on Earth. And that's before counting fish, which run to over a trillion.\""
     },
     {
       "id": "ethics-farming-practices-003",
@@ -265,7 +265,7 @@
       "level": "core",
       "source": null,
       "sourceDistractors": [],
-      "explain": "88 billion a year ÷ 31.5 million seconds ≈ 2,800 per second, about 240 million a day. Most are chickens."
+      "explain": "88 billion a year ÷ 31.5 million seconds ≈ 2,800 per second, about 240 million a day."
     },
     {
       "id": "ethics-animal-suffering-001-q3",
@@ -277,7 +277,7 @@
         "About a third",
         "About half"
       ],
-      "level": "core",
+      "level": "detail",
       "source": null,
       "sourceDistractors": [],
       "explain": "78.5 billion chickens out of ~88 billion land animals in 2024. Cattle are only ~0.3%."
