@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-03 22:36 UTC",
+  "builtAt": "2026-11-10 16:02 UTC",
   "cards": [
     {
       "id": "ethics-animal-suffering-001",
@@ -363,7 +363,7 @@
       "level": "core",
       "source": "DairyNZ, 2021",
       "sourceDistractors": [
-        "Agriculture and Horticulture Development Board (UK) (AHDB), 2025",
+        "UK Agriculture and Horticulture Development Board (AHDB), 2025",
         "UN Food and Agriculture Organization (FAO), 2023",
         "Faunalytics, 2026"
       ],
@@ -395,11 +395,11 @@
         "They have risen"
       ],
       "level": "detail",
-      "source": "Agriculture and Horticulture Development Board (UK) (AHDB), 2025",
+      "source": "UK Agriculture and Horticulture Development Board (AHDB), 2025",
       "sourceDistractors": [
         "DairyNZ, 2021",
         "Our World in Data, 2023",
-        "Food Standards Agency (UK) (FSA), 2024"
+        "UK Food Standards Agency (FSA), 2024"
       ],
       "explain": "The Agriculture and Horticulture Development Board (AHDB) reports a 65% fall. Sexed semen now makes up 84% of dairy semen sales."
     },
@@ -493,9 +493,9 @@
         "50%"
       ],
       "level": "core",
-      "source": "Food Standards Agency (UK) (FSA), 2024",
+      "source": "UK Food Standards Agency (FSA), 2024",
       "sourceDistractors": [
-        "Agriculture and Horticulture Development Board (UK) (AHDB), 2025",
+        "UK Agriculture and Horticulture Development Board (AHDB), 2025",
         "Faunalytics, 2026",
         "Our World in Data, 2023"
       ],
@@ -527,7 +527,7 @@
         "None: gas stunning is not used for poultry"
       ],
       "level": "detail",
-      "source": "Food Standards Agency (UK) (FSA), 2024",
+      "source": "UK Food Standards Agency (FSA), 2024",
       "sourceDistractors": [
         "DairyNZ, 2021",
         "Mood et al., 2023",
@@ -567,7 +567,7 @@
       "level": "core",
       "source": "Our World in Data, 2023",
       "sourceDistractors": [
-        "Food Standards Agency (UK) (FSA), 2024",
+        "UK Food Standards Agency (FSA), 2024",
         "Mood et al., 2023",
         "International Energy Agency (IEA), 2025"
       ],
