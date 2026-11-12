@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-12 21:42 UTC",
+  "builtAt": "2026-11-12 22:24 UTC",
   "cards": [
     {
       "id": "ethics-animal-suffering-001",
@@ -78,6 +78,96 @@
       "lastChecked": "2026-11-01",
       "takeaway": "An estimated three-quarters (74%) of the world's farmed land animals live on factory farms: about 23 billion animals at any one time. Including farmed fish, it's about 94%. In the United States, over 99% of farmed animals are factory-farmed (Our World in Data, 2023, from Sentience Institute estimates).",
       "sayIt": "\"Most farm animals don't live on the farms people picture. About three-quarters of the world's farmed land animals are on factory farms, and in the US it's over 99%.\""
+    },
+    {
+      "id": "health-chronic-disease-002",
+      "title": "Plant-based diets and heart disease",
+      "category": "Health",
+      "categoryIcon": "❤️",
+      "subcategory": "Chronic disease",
+      "subcategoryIcon": "🩺",
+      "tags": [
+        "health/chronic-disease"
+      ],
+      "dataYear": 2019,
+      "lastChecked": "2026-11-12",
+      "takeaway": "People eating vegetarian and vegan diets have about a quarter lower risk of ischaemic (coronary) heart disease than meat eaters: 25% lower in a pooled analysis of studies (Dinu et al., 2017) and 22% lower in a UK study of 48,000 people followed for 18 years (Tong et al., 2019). They also have lower body weight, cholesterol and blood sugar, and vegetarians have 8% lower total cancer incidence (vegans 15%). The same UK study found a 20% higher risk of stroke in vegetarians.",
+      "sayIt": "\"Vegetarians and vegans have roughly a quarter lower risk of coronary heart disease than meat eaters, along with lower cholesterol and body weight. That's from large long-term studies.\""
+    },
+    {
+      "id": "health-chronic-disease-001",
+      "title": "Processed and red meat and cancer",
+      "category": "Health",
+      "categoryIcon": "❤️",
+      "subcategory": "Chronic disease",
+      "subcategoryIcon": "🩺",
+      "tags": [
+        "health/chronic-disease"
+      ],
+      "dataYear": 2015,
+      "lastChecked": "2026-11-12",
+      "takeaway": "The World Health Organization's cancer agency classifies processed meat as carcinogenic to humans (Group 1): it causes bowel (colorectal) cancer. Red meat is classified as probably carcinogenic (Group 2A). Every 50 g of processed meat eaten daily raises bowel cancer risk by about 18% (IARC, 2015).",
+      "sayIt": "\"The World Health Organization's cancer agency says processed meat like bacon, ham and sausages causes bowel cancer. Eating about 50 grams a day raises your risk by around 18%. Red meat is classed as a probable cause.\""
+    },
+    {
+      "id": "health-nutrition-001",
+      "title": "Dietetic associations on plant-based diets",
+      "category": "Health",
+      "categoryIcon": "❤️",
+      "subcategory": "Nutrition",
+      "subcategoryIcon": "🥦",
+      "tags": [
+        "health/nutrition"
+      ],
+      "dataYear": 2025,
+      "lastChecked": "2026-11-12",
+      "takeaway": "The British Dietetic Association states that \"plant-based diets can support healthy living at every age and life stage\", including childhood, pregnancy and breastfeeding, when well planned (BDA, 2021). The US Academy of Nutrition and Dietetics says appropriately planned vegetarian and vegan diets \"can be nutritionally adequate and can offer long-term health benefits\" for adults (Academy of Nutrition and Dietetics, 2025).",
+      "sayIt": "\"The British Dietetic Association, the professional body for UK dietitians, says a well-planned plant-based diet can support healthy living at every age and life stage. The main thing you need to add is vitamin B12.\""
+    },
+    {
+      "id": "health-nutrition-002",
+      "title": "Getting key nutrients from plants",
+      "category": "Health",
+      "categoryIcon": "❤️",
+      "subcategory": "Nutrition",
+      "subcategoryIcon": "🥦",
+      "tags": [
+        "health/nutrition"
+      ],
+      "dataYear": 2021,
+      "lastChecked": "2026-11-12",
+      "takeaway": "A varied plant-based diet can supply every nutrient people need except vitamin B12, which is made by bacteria and must come from fortified foods or a supplement. Protein needs are easily met from beans, lentils, chickpeas, tofu, nuts and seeds. A few nutrients need some planning: iodine, omega-3, calcium, iron and zinc (British Dietetic Association, 2021).",
+      "sayIt": "\"Plants cover everything except vitamin B12, which comes from bacteria, so vegans take a supplement or eat fortified foods. Protein is the easy part: beans, lentils, tofu, nuts and seeds.\""
+    },
+    {
+      "id": "health-pandemics-antibiotics-001",
+      "title": "Animal farming and zoonotic disease",
+      "category": "Health",
+      "categoryIcon": "❤️",
+      "subcategory": "Pandemics & antibiotics",
+      "subcategoryIcon": "🦠",
+      "tags": [
+        "health/pandemics-antibiotics"
+      ],
+      "dataYear": 2026,
+      "lastChecked": "2026-11-12",
+      "takeaway": "About 60% of known human infectious diseases and 75% of emerging ones come from animals. The UN Environment Programme names rising demand for animal protein and intensive, unsustainable farming among the seven main drivers of new outbreaks (UNEP, 2020). The 2009 swine flu pandemic, which originated in pigs in Mexico (Mena et al., 2016), killed an estimated 151,700–575,400 people in its first year (Dawood et al., 2012).",
+      "sayIt": "\"Three-quarters of new infectious diseases come from animals, and the UN lists demand for animal protein and intensive farming among the main drivers. The 2009 swine flu pandemic came from pig farming and killed hundreds of thousands of people.\""
+    },
+    {
+      "id": "health-pandemics-antibiotics-002",
+      "title": "Antibiotic use in farm animals",
+      "category": "Health",
+      "categoryIcon": "❤️",
+      "subcategory": "Pandemics & antibiotics",
+      "subcategoryIcon": "🦠",
+      "tags": [
+        "health/pandemics-antibiotics"
+      ],
+      "dataYear": 2021,
+      "lastChecked": "2026-11-12",
+      "takeaway": "An estimated 73% of all antimicrobials sold worldwide are used in animals raised for food (Van Boeckel et al., 2019). Resistance in farm animals is rising fast: in low- and middle-income countries, the share of antibiotics that fail more than half the time nearly tripled in chickens and pigs between 2000 and 2018. Antibiotic-resistant infections directly killed 1.14 million people in 2021 and are forecast to kill 39 million between 2025 and 2050 (GRAM Project, 2024).",
+      "sayIt": "\"Nearly three-quarters of the world's antibiotics are used on farm animals, not people. Resistant infections already kill over a million people a year, and overuse on farms is one of the things driving resistance.\""
     },
     {
       "id": "planet-emissions-001",
@@ -602,6 +692,569 @@
       "source": null,
       "sourceDistractors": [],
       "explain": "There's no universal legal definition. Estimates use the US concentrated animal feeding operation (CAFO) criteria."
+    },
+    {
+      "id": "health-chronic-disease-002-q1",
+      "card": "health-chronic-disease-002",
+      "ask": "Compared with meat eaters, roughly how much lower is the risk of ischaemic (coronary) heart disease in vegetarians and vegans?",
+      "answer": "About a quarter lower (22–25%)",
+      "distractors": [
+        "About 2% lower",
+        "About 75% lower",
+        "No different"
+      ],
+      "level": "core",
+      "source": "Dinu et al., 2017",
+      "sourceDistractors": [
+        "International Agency for Research on Cancer (IARC), 2015",
+        "British Dietetic Association (BDA), 2021",
+        "Van Boeckel et al., 2019"
+      ],
+      "explain": "Dinu et al.'s pooled analysis found 25% lower. The UK EPIC-Oxford study (Tong et al., 2019) found 22% lower over 18 years."
+    },
+    {
+      "id": "health-chronic-disease-002-q2",
+      "card": "health-chronic-disease-002",
+      "ask": "In the UK EPIC-Oxford study of 48,000 people, how did vegetarians' risk of stroke compare with meat eaters'?",
+      "answer": "20% higher (about 3 more cases per 1,000 people over 10 years)",
+      "distractors": [
+        "20% lower",
+        "The same",
+        "Twice as high"
+      ],
+      "level": "detail",
+      "source": "Tong et al., 2019",
+      "sourceDistractors": [
+        "Dinu et al., 2017",
+        "World Cancer Research Fund (WCRF), 2018",
+        "GRAM Project, 2024"
+      ],
+      "explain": "The same study found 10 fewer heart disease cases per 1,000 over 10 years. Concede the stroke finding and give both numbers."
+    },
+    {
+      "id": "health-chronic-disease-002-q3",
+      "card": "health-chronic-disease-002",
+      "ask": "How does total cancer incidence in vegans compare with meat eaters, in pooled studies?",
+      "answer": "About 15% lower",
+      "distractors": [
+        "About 60% lower",
+        "About 15% higher",
+        "No different"
+      ],
+      "level": "detail",
+      "source": "Dinu et al., 2017",
+      "sourceDistractors": [
+        "Tong et al., 2019",
+        "International Agency for Research on Cancer (IARC), 2015",
+        "UN Environment Programme (UNEP), 2020"
+      ],
+      "explain": "Dinu et al. found total cancer incidence 8% lower in vegetarians and 15% lower in vegans."
+    },
+    {
+      "id": "health-chronic-disease-002-q4",
+      "card": "health-chronic-disease-002",
+      "ask": "Do pooled studies show that vegetarians and vegans have lower all-cause mortality (live longer)?",
+      "answer": "No: no significant difference was found",
+      "distractors": [
+        "Yes: about 25% lower",
+        "Yes: about 50% lower",
+        "No: mortality was higher"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Dinu et al. (2017) found lower heart disease and cancer incidence, but no significant difference in all-cause mortality. Don't claim vegans live longer."
+    },
+    {
+      "id": "health-chronic-disease-002-q5",
+      "card": "health-chronic-disease-002",
+      "ask": "Which risk factors are significantly lower in vegetarians and vegans than in meat eaters?",
+      "answer": "Body mass index, total and LDL cholesterol, and blood glucose",
+      "distractors": [
+        "Vitamin D and iron levels only",
+        "Blood pressure only",
+        "None"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Dinu et al. pooled 86 cross-sectional studies and found all of these significantly lower."
+    },
+    {
+      "id": "health-chronic-disease-001-q1",
+      "card": "health-chronic-disease-001",
+      "ask": "How does the World Health Organization's cancer agency classify processed meat such as bacon, ham and sausages?",
+      "answer": "Group 1: carcinogenic to humans",
+      "distractors": [
+        "Group 2B: possibly carcinogenic",
+        "Group 3: not classifiable",
+        "It has not been assessed"
+      ],
+      "level": "core",
+      "source": "International Agency for Research on Cancer (IARC), 2015",
+      "sourceDistractors": [
+        "British Dietetic Association (BDA), 2021",
+        "UN Food and Agriculture Organization (FAO), 2023",
+        "Dinu et al., 2017"
+      ],
+      "explain": "The International Agency for Research on Cancer (2015) found sufficient evidence that processed meat causes colorectal cancer. Red meat is Group 2A, probably carcinogenic."
+    },
+    {
+      "id": "health-chronic-disease-001-q2",
+      "card": "health-chronic-disease-001",
+      "ask": "Which cancer does processed meat cause, according to the International Agency for Research on Cancer?",
+      "answer": "Bowel (colorectal) cancer",
+      "distractors": [
+        "Lung cancer",
+        "Skin cancer",
+        "Leukaemia"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "The agency concluded that eating processed meat causes colorectal cancer. A link with stomach cancer was seen but isn't conclusive."
+    },
+    {
+      "id": "health-chronic-disease-001-q3",
+      "card": "health-chronic-disease-001",
+      "ask": "By about how much does eating 50 g of processed meat a day raise the risk of bowel cancer?",
+      "answer": "About 18%",
+      "distractors": [
+        "About 1%",
+        "About 80%",
+        "It doubles the risk"
+      ],
+      "level": "core",
+      "source": "International Agency for Research on Cancer (IARC), 2015",
+      "sourceDistractors": [
+        "World Cancer Research Fund (WCRF), 2018",
+        "Academy of Nutrition and Dietetics, 2025",
+        "Tong et al., 2019"
+      ],
+      "explain": "Each 50 g daily portion raises colorectal cancer risk by about 18%, relative to your existing risk."
+    },
+    {
+      "id": "health-chronic-disease-001-q4",
+      "card": "health-chronic-disease-001",
+      "ask": "How is red meat (beef, pork, lamb) classified?",
+      "answer": "Group 2A: probably carcinogenic to humans",
+      "distractors": [
+        "Group 1: carcinogenic to humans",
+        "Group 3: not classifiable",
+        "Not carcinogenic"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "The evidence for red meat is limited but supported by strong mechanistic evidence, so it's 'probably carcinogenic'."
+    },
+    {
+      "id": "health-chronic-disease-001-q5",
+      "card": "health-chronic-disease-001",
+      "ask": "Processed meat is in the same group as tobacco. Does that mean it is as dangerous?",
+      "answer": "No: the group reflects how strong the evidence is, not how big the risk is",
+      "distractors": [
+        "Yes: all Group 1 agents are equally dangerous",
+        "Yes: it causes as many deaths as smoking",
+        "No: the classification was withdrawn"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Tobacco causes about 1 million cancer deaths a year. About 34,000 are attributed to diets high in processed meat."
+    },
+    {
+      "id": "health-chronic-disease-001-q6",
+      "card": "health-chronic-disease-001",
+      "ask": "What does the World Cancer Research Fund recommend for processed meat?",
+      "answer": "Consume very little, if any",
+      "distractors": [
+        "Up to 70 g a day is safe",
+        "One portion a day",
+        "No limit if it is organic"
+      ],
+      "level": "detail",
+      "source": "World Cancer Research Fund (WCRF), 2018",
+      "sourceDistractors": [
+        "International Agency for Research on Cancer (IARC), 2015",
+        "British Dietetic Association (BDA), 2021",
+        "UN Environment Programme (UNEP), 2020"
+      ],
+      "explain": "It also advises no more than about three portions of red meat a week (350–500 g cooked weight)."
+    },
+    {
+      "id": "health-nutrition-001-q1",
+      "card": "health-nutrition-001",
+      "ask": "What does the British Dietetic Association say about plant-based diets?",
+      "answer": "They can support healthy living at every age and life stage",
+      "distractors": [
+        "They are suitable for adults only",
+        "They are safe only under medical supervision",
+        "They cannot provide enough protein"
+      ],
+      "level": "core",
+      "source": "British Dietetic Association (BDA), 2021",
+      "sourceDistractors": [
+        "International Agency for Research on Cancer (IARC), 2015",
+        "UN Food and Agriculture Organization (FAO), 2023",
+        "Our World in Data, 2023"
+      ],
+      "explain": "The British Dietetic Association's food fact sheet says: 'Plant-based diets can support healthy living at every age and life stage', when well planned."
+    },
+    {
+      "id": "health-nutrition-001-q2",
+      "card": "health-nutrition-001",
+      "ask": "Which life stages does the British Dietetic Association say a well-planned vegan diet can support?",
+      "answer": "All ages, including childhood, pregnancy and breastfeeding",
+      "distractors": [
+        "Adults aged 18 to 65 only",
+        "All ages except pregnancy",
+        "All ages except childhood"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Its statement with The Vegan Society says a balanced vegan diet can be enjoyed by 'children and adults, including during pregnancy and breastfeeding'."
+    },
+    {
+      "id": "health-nutrition-001-q3",
+      "card": "health-nutrition-001",
+      "ask": "What does the US Academy of Nutrition and Dietetics' 2025 position say about vegetarian and vegan diets for adults?",
+      "answer": "They can be nutritionally adequate and offer long-term health benefits",
+      "distractors": [
+        "They are adequate only with meat substitutes",
+        "They raise the risk of heart disease",
+        "They should be limited to a few months"
+      ],
+      "level": "detail",
+      "source": "Academy of Nutrition and Dietetics, 2025",
+      "sourceDistractors": [
+        "British Dietetic Association (BDA), 2021",
+        "World Health Organization (WHO), 2026",
+        "Dinu et al., 2017"
+      ],
+      "explain": "The 2025 position covers adults: appropriately planned vegetarian and vegan diets 'can be nutritionally adequate and can offer long-term health benefits'."
+    },
+    {
+      "id": "health-nutrition-001-q4",
+      "card": "health-nutrition-001",
+      "ask": "How does the Academy of Nutrition and Dietetics' 2025 position differ from its 2016 one?",
+      "answer": "The 2025 position covers adults only; 2016 covered all stages of life",
+      "distractors": [
+        "The 2025 position advises against vegan diets",
+        "The 2025 position covers children only",
+        "There is no difference"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "The 2025 paper doesn't address pregnancy or childhood. For 'every age and life stage', quote the British Dietetic Association instead."
+    },
+    {
+      "id": "health-nutrition-002-q1",
+      "card": "health-nutrition-002",
+      "ask": "Which nutrient can't be obtained from plants, so must come from fortified foods or a supplement on a vegan diet?",
+      "answer": "Vitamin B12",
+      "distractors": [
+        "Protein",
+        "Iron",
+        "Calcium"
+      ],
+      "level": "core",
+      "source": "British Dietetic Association (BDA), 2021",
+      "sourceDistractors": [
+        "International Agency for Research on Cancer (IARC), 2015",
+        "UN Environment Programme (UNEP), 2020",
+        "Tong et al., 2019"
+      ],
+      "explain": "B12 is made by bacteria, not plants or animals. The British Dietetic Association says vegans' only reliable sources are fortified foods and supplements."
+    },
+    {
+      "id": "health-nutrition-002-q2",
+      "card": "health-nutrition-002",
+      "ask": "Where does vitamin B12 originally come from?",
+      "answer": "Bacteria",
+      "distractors": [
+        "Animal muscle",
+        "Sunlight on skin",
+        "Green leafy plants"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Neither plants nor animals make B12. Bacteria do."
+    },
+    {
+      "id": "health-nutrition-002-q3",
+      "card": "health-nutrition-002",
+      "ask": "What does the British Dietetic Association say about meeting protein needs on a plant-based diet?",
+      "answer": "They are easily met from beans, lentils, chickpeas, tofu, nuts and seeds",
+      "distractors": [
+        "They require protein supplements",
+        "They can only be met by combining foods at every meal",
+        "They can't be met without eggs or dairy"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "The fact sheet lists lentils, beans, chickpeas, seeds, nuts, nut butters, tofu and tempeh as good sources."
+    },
+    {
+      "id": "health-nutrition-002-q4",
+      "card": "health-nutrition-002",
+      "ask": "What improves the absorption of iron from plant foods?",
+      "answer": "Eating them with vitamin C, e.g. citrus fruit, berries or peppers",
+      "distractors": [
+        "Drinking tea with meals",
+        "Taking calcium at the same time",
+        "Eating them raw"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Plant (non-haem) iron is absorbed less efficiently than the haem iron in meat. Vitamin C improves absorption."
+    },
+    {
+      "id": "health-nutrition-002-q5",
+      "card": "health-nutrition-002",
+      "ask": "What is a vegan source of the long-chain omega-3 fats found in oily fish?",
+      "answer": "Algae-based supplements",
+      "distractors": [
+        "Olive oil",
+        "Coconut oil",
+        "There is none"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Fish get long-chain omega-3 from algae. Walnuts, flaxseeds, chia and hemp seeds supply the shorter form, which the body converts."
+    },
+    {
+      "id": "health-nutrition-002-q6",
+      "card": "health-nutrition-002",
+      "ask": "Besides B12, which nutrient does the British Dietetic Association flag as a deficiency risk on exclusively plant-based diets, because its main sources are dairy and seafood?",
+      "answer": "Iodine",
+      "distractors": [
+        "Vitamin C",
+        "Fibre",
+        "Potassium"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Options are iodine-fortified plant milks or seaweed no more than once a week. Too much iodine is also harmful."
+    },
+    {
+      "id": "health-nutrition-002-q7",
+      "card": "health-nutrition-002",
+      "ask": "What is the difference between haem and non-haem iron?",
+      "answer": "Haem iron is only in animal flesh and is absorbed more readily; non-haem iron is the form in plants",
+      "distractors": [
+        "Haem iron is the form in plants; non-haem is in meat",
+        "Non-haem iron can't be absorbed at all",
+        "They are two names for the same thing"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Plants contain only non-haem iron, which is absorbed less efficiently. Vitamin C helps."
+    },
+    {
+      "id": "health-pandemics-antibiotics-001-q1",
+      "card": "health-pandemics-antibiotics-001",
+      "ask": "Roughly what share of emerging infectious diseases in humans come from animals (are zoonotic)?",
+      "answer": "About 75%",
+      "distractors": [
+        "About 5%",
+        "About 25%",
+        "About 99%"
+      ],
+      "level": "core",
+      "source": "UN Environment Programme (UNEP), 2020",
+      "sourceDistractors": [
+        "International Agency for Research on Cancer (IARC), 2015",
+        "British Dietetic Association (BDA), 2021",
+        "UN Food and Agriculture Organization (FAO), 2023"
+      ],
+      "explain": "The UN Environment Programme's 2020 report: about 60% of known infectious diseases and 75% of emerging ones are zoonotic."
+    },
+    {
+      "id": "health-pandemics-antibiotics-001-q2",
+      "card": "health-pandemics-antibiotics-001",
+      "ask": "Which of these does the UN Environment Programme list among the main drivers of new zoonotic diseases?",
+      "answer": "Increased demand for animal protein and intensive, unsustainable farming",
+      "distractors": [
+        "Increased consumption of pulses and grains",
+        "Declining livestock numbers",
+        "Wider use of plant-based milks"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "They are two of seven human-caused drivers. Others include wildlife exploitation, travel, changing food supply chains and climate change."
+    },
+    {
+      "id": "health-pandemics-antibiotics-001-q3",
+      "card": "health-pandemics-antibiotics-001",
+      "ask": "Roughly how many people did the 2009 swine flu (H1N1) pandemic kill worldwide in its first year?",
+      "answer": "About 150,000 to 575,000",
+      "distractors": [
+        "About 1,500 to 5,750",
+        "About 15,000 to 57,500",
+        "About 15 million to 57 million"
+      ],
+      "level": "core",
+      "source": "Dawood et al., 2012",
+      "sourceDistractors": [
+        "Mena et al., 2016",
+        "World Health Organization (WHO), 2026",
+        "Van Boeckel et al., 2019"
+      ],
+      "explain": "A modelling study led by the US Centers for Disease Control and Prevention estimated 151,700–575,400 deaths. 80% were people under 65."
+    },
+    {
+      "id": "health-pandemics-antibiotics-001-q4",
+      "card": "health-pandemics-antibiotics-001",
+      "ask": "In which animals did the 2009 H1N1 pandemic virus originate?",
+      "answer": "Pigs (in Mexico)",
+      "distractors": [
+        "Bats",
+        "Wild ducks",
+        "Cattle"
+      ],
+      "level": "core",
+      "source": "Mena et al., 2016",
+      "sourceDistractors": [
+        "Dawood et al., 2012",
+        "UN Environment Programme (UNEP), 2020",
+        "GRAM Project, 2024"
+      ],
+      "explain": "Genetic analysis traced the virus to swine in Mexico (Mena et al., eLife, 2016)."
+    },
+    {
+      "id": "health-pandemics-antibiotics-001-q5",
+      "card": "health-pandemics-antibiotics-001",
+      "ask": "Of the human H5N1 bird flu cases reported to the World Health Organization since 2003, roughly what share were fatal?",
+      "answer": "About half (48%)",
+      "distractors": [
+        "About 1%",
+        "About 10%",
+        "About 90%"
+      ],
+      "level": "detail",
+      "source": "World Health Organization (WHO), 2026",
+      "sourceDistractors": [
+        "UN Environment Programme (UNEP), 2020",
+        "Tong et al., 2019",
+        "World Organisation for Animal Health (WOAH), 2023"
+      ],
+      "explain": "1,005 cases and 479 deaths in 25 countries from 2003 to October 2026. Mild cases often go unreported, so say 'about half of reported cases'."
+    },
+    {
+      "id": "health-pandemics-antibiotics-002-q1",
+      "card": "health-pandemics-antibiotics-002",
+      "ask": "Roughly what share of all antimicrobials sold worldwide are used in animals raised for food?",
+      "answer": "About 73%",
+      "distractors": [
+        "About 3%",
+        "About 20%",
+        "About 40%"
+      ],
+      "level": "core",
+      "source": "Van Boeckel et al., 2019",
+      "sourceDistractors": [
+        "GRAM Project, 2024",
+        "International Agency for Research on Cancer (IARC), 2015",
+        "UN Environment Programme (UNEP), 2020"
+      ],
+      "explain": "Van Boeckel et al. (Science, 2019): 73% of antimicrobials sold globally are used in food animals."
+    },
+    {
+      "id": "health-pandemics-antibiotics-002-q2",
+      "card": "health-pandemics-antibiotics-002",
+      "ask": "Roughly how many deaths were directly caused by antibiotic-resistant infections worldwide in 2021?",
+      "answer": "About 1.14 million",
+      "distractors": [
+        "About 11,000",
+        "About 114,000",
+        "About 114 million"
+      ],
+      "level": "core",
+      "source": "GRAM Project, 2024",
+      "sourceDistractors": [
+        "World Organisation for Animal Health (WOAH), 2023",
+        "Dawood et al., 2012",
+        "British Dietetic Association (BDA), 2021"
+      ],
+      "explain": "The Global Research on Antimicrobial Resistance Project (The Lancet, 2024): 1.14 million direct deaths in 2021, and 4.71 million in which resistance played a part. This covers all resistance, not just farming's share."
+    },
+    {
+      "id": "health-pandemics-antibiotics-002-q3",
+      "card": "health-pandemics-antibiotics-002",
+      "ask": "How many deaths are antibiotic-resistant infections forecast to cause directly between 2025 and 2050?",
+      "answer": "About 39 million",
+      "distractors": [
+        "About 390,000",
+        "About 3.9 million",
+        "About 3.9 billion"
+      ],
+      "level": "detail",
+      "source": "GRAM Project, 2024",
+      "sourceDistractors": [
+        "Van Boeckel et al., 2019",
+        "World Health Organization (WHO), 2026",
+        "Dinu et al., 2017"
+      ],
+      "explain": "Without further action, direct deaths are forecast to total 39 million from 2025 to 2050, reaching 1.91 million a year."
+    },
+    {
+      "id": "health-pandemics-antibiotics-002-q4",
+      "card": "health-pandemics-antibiotics-002",
+      "ask": "Between 2000 and 2018 in low- and middle-income countries, what happened to the share of antibiotics that fail more than half the time in chickens and pigs?",
+      "answer": "It nearly tripled",
+      "distractors": [
+        "It fell by half",
+        "It stayed the same",
+        "It rose by about 10%"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "From 0.15 to 0.41 in chickens and 0.13 to 0.34 in pigs (Van Boeckel et al., 2019)."
+    },
+    {
+      "id": "health-pandemics-antibiotics-002-q5",
+      "card": "health-pandemics-antibiotics-002",
+      "ask": "What share of reporting countries still use antimicrobials to make farm animals grow faster?",
+      "answer": "About a quarter (26%)",
+      "distractors": [
+        "None: it is banned worldwide",
+        "About 2%",
+        "About 90%"
+      ],
+      "level": "detail",
+      "source": "World Organisation for Animal Health (WOAH), 2023",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2025",
+        "UN Environment Programme (UNEP), 2020",
+        "Mena et al., 2016"
+      ],
+      "explain": "The World Organisation for Animal Health's 2023 report: 41 of 157 countries. Global use in animals fell 13% between 2017 and 2019."
+    },
+    {
+      "id": "health-pandemics-antibiotics-002-q6",
+      "card": "health-pandemics-antibiotics-002",
+      "ask": "Is it accurate to say 'antibiotics on farms kill over a million people a year'?",
+      "answer": "No: the 1.14 million deaths are from all antibiotic resistance, of which farm use is one driver",
+      "distractors": [
+        "Yes: all resistance comes from farms",
+        "Yes: the figure counts farm-linked deaths only",
+        "No: resistance has not caused any deaths"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Overuse in human medicine is a major cause too. Say farm overuse is 'one of the drivers' of resistance."
     },
     {
       "id": "planet-emissions-001-q1",
