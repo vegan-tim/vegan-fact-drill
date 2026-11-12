@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-12 22:24 UTC",
+  "builtAt": "2026-11-12 22:45 UTC",
   "cards": [
     {
       "id": "ethics-animal-suffering-001",
@@ -215,6 +215,21 @@
       "lastChecked": "2026-10-31",
       "takeaway": "Raising animals for meat, milk and eggs causes about 12% of all human greenhouse gas emissions (FAO, 2023). Animal-based foods produce more than half (57%) of food-production emissions (Xu et al., 2021) while supplying under a fifth (18%) of the world's calories and just over a third (37%) of its protein (Poore & Nemecek, 2018).",
       "sayIt": "\"Livestock alone cause about 12% of global emissions. That's the latest estimate from the UN Food and Agriculture Organization (FAO, 2023). Animal foods are over half of food's climate footprint but give us less than a fifth of our calories and just over a third of our protein.\""
+    },
+    {
+      "id": "planet-emissions-004",
+      "title": "Plant-based diet vs other personal climate actions",
+      "category": "Planet",
+      "categoryIcon": "🌍",
+      "subcategory": "Emissions",
+      "subcategoryIcon": "💨",
+      "tags": [
+        "planet/emissions"
+      ],
+      "dataYear": 2020,
+      "lastChecked": "2026-11-12",
+      "takeaway": "Going vegan saves roughly 0.8–0.9 tonnes of CO₂eq per person per year, which puts it among the highest-impact changes an individual can make (Ivanova et al., 2020; Wynes & Nicholas, 2017). It saves about four times more than recycling. For emissions alone, living car-free (about 2 tonnes) and skipping one long-haul return flight (about 1.7 tonnes) save more. In the UK, vegans' diets cause just 25% of the emissions of high meat-eaters' diets (Scarborough et al., 2023).",
+      "sayIt": "\"Going plant-based is one of the biggest things one person can do for the climate: it saves nearly a tonne of CO₂ a year, about four times more than recycling. And unlike giving up a car or a flight, it's something you can start at your next meal, and it also saves land and water.\""
     },
     {
       "id": "planet-freshwater-001",
@@ -1539,6 +1554,112 @@
       "source": null,
       "sourceDistractors": [],
       "explain": "Goodland & Anhang (2009) published it in World Watch magazine, and the film Cowspiracy popularised it. It's widely criticised, so use FAO's 12% instead."
+    },
+    {
+      "id": "planet-emissions-004-q1",
+      "card": "planet-emissions-004",
+      "ask": "Roughly how much CO₂eq does one person save per year by switching to a vegan diet?",
+      "answer": "Nearly a tonne (0.8–0.9 tonnes)",
+      "distractors": [
+        "About 10 kg",
+        "About 100 kg",
+        "About 10 tonnes"
+      ],
+      "level": "core",
+      "source": "Ivanova et al., 2020",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2023",
+        "International Energy Agency (IEA), 2025",
+        "Xu et al., 2021"
+      ],
+      "explain": "Ivanova et al.'s systematic review gives a median of 0.8–0.9 tonnes per person per year (range 0.4–2.1). Wynes & Nicholas (2017) give 0.8."
+    },
+    {
+      "id": "planet-emissions-004-q2",
+      "card": "planet-emissions-004",
+      "ask": "How does the emissions saving from a plant-based diet compare with recycling?",
+      "answer": "About 4 times more",
+      "distractors": [
+        "About the same",
+        "About half as much",
+        "About 100 times more"
+      ],
+      "level": "core",
+      "source": "Wynes & Nicholas, 2017",
+      "sourceDistractors": [
+        "Poore & Nemecek, 2018",
+        "Intergovernmental Panel on Climate Change (IPCC), 2022",
+        "Our World in Data, 2019"
+      ],
+      "explain": "Wynes & Nicholas (2017): a plant-based diet saves about 0.8 tonnes a year, around four times more than recycling."
+    },
+    {
+      "id": "planet-emissions-004-q3",
+      "card": "planet-emissions-004",
+      "ask": "For emissions alone, which of these saves MORE per year than going vegan?",
+      "answer": "Living car-free (about 2 tonnes)",
+      "distractors": [
+        "Recycling",
+        "Switching to canvas shopping bags",
+        "Going vegetarian"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Ivanova et al. (2020) medians: car-free 2.0, one less long-haul return flight 1.7, vegan diet 0.8–0.9, vegetarian 0.5. So say diet is 'one of the biggest' actions, not the biggest."
+    },
+    {
+      "id": "planet-emissions-004-q4",
+      "card": "planet-emissions-004",
+      "ask": "In the UK, how do the greenhouse gas emissions of vegans' diets compare with those of high meat-eaters?",
+      "answer": "About 25% (75% lower)",
+      "distractors": [
+        "About 90% (10% lower)",
+        "About 60% (40% lower)",
+        "About the same"
+      ],
+      "level": "core",
+      "source": "Scarborough et al., 2023",
+      "sourceDistractors": [
+        "Wynes & Nicholas, 2017",
+        "UN Food and Agriculture Organization (FAO), 2025",
+        "Crippa et al., 2021"
+      ],
+      "explain": "Scarborough et al. (Nature Food, 2023) studied 55,000 people: vegans' diets had 25% of the emissions and land use, and 46% of the water use, of high meat-eaters' diets."
+    },
+    {
+      "id": "planet-emissions-004-q5",
+      "card": "planet-emissions-004",
+      "ask": "Roughly how much CO₂eq does skipping one long-haul return flight save?",
+      "answer": "About 1.7 tonnes, around two years of going vegan",
+      "distractors": [
+        "About 50 kg",
+        "About 200 kg",
+        "About 20 tonnes"
+      ],
+      "level": "detail",
+      "source": "Ivanova et al., 2020",
+      "sourceDistractors": [
+        "Scarborough et al., 2023",
+        "International Energy Agency (IEA), 2025",
+        "UN Food and Agriculture Organization (FAO), 2023"
+      ],
+      "explain": "Median 1.7 tonnes (range 0.7–4.5). Wynes & Nicholas give 1.6 tonnes for a return transatlantic flight."
+    },
+    {
+      "id": "planet-emissions-004-q6",
+      "card": "planet-emissions-004",
+      "ask": "What does diet change offer that transport changes don't?",
+      "answer": "It also frees land, saves water and reduces animal suffering",
+      "distractors": [
+        "It is the only action that cuts CO₂",
+        "It saves more CO₂ than any other action",
+        "It has no effect on land use"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "The comparison studies count emissions only. Vegans' diets also use 25% of the land and 46% of the water of high meat-eaters' diets (Scarborough et al., 2023)."
     },
     {
       "id": "planet-freshwater-001-q1",
