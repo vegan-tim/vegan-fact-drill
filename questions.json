@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-10 16:02 UTC",
+  "builtAt": "2026-11-12 21:42 UTC",
   "cards": [
     {
       "id": "ethics-animal-suffering-001",
@@ -93,7 +93,7 @@
       "dataYear": 2023,
       "lastChecked": "2026-10-31",
       "takeaway": "Producing our food causes roughly a fifth to a third of all human greenhouse gas emissions, depending on what you count. Counting the whole food system, from farm and land clearing to processing, transport, retail and waste, it is about a third (32% in 2023).",
-      "sayIt": "\"About a third of global emissions come from the food system. That's the UN Food and Agriculture Organization's own figure (FAO, 2025). Even if you only count farms and land clearing, it's over a fifth.\""
+      "sayIt": "\"About a third of global emissions come from the food system, according to the UN Food and Agriculture Organization.\""
     },
     {
       "id": "planet-emissions-003",
@@ -123,8 +123,8 @@
       ],
       "dataYear": 2015,
       "lastChecked": "2026-10-31",
-      "takeaway": "Raising animals for meat, milk and eggs causes about 12% of all human greenhouse gas emissions (FAO, 2023). Animal-based foods produce more than half (57%) of food-production emissions (Xu et al., 2021) while supplying under a fifth (18%) of the world's calories (Poore & Nemecek, 2018).",
-      "sayIt": "\"Livestock alone cause about 12% of global emissions. That's the latest estimate from the UN Food and Agriculture Organization (FAO, 2023). Animal foods are over half of food's climate footprint but give us less than a fifth of our calories.\""
+      "takeaway": "Raising animals for meat, milk and eggs causes about 12% of all human greenhouse gas emissions (FAO, 2023). Animal-based foods produce more than half (57%) of food-production emissions (Xu et al., 2021) while supplying under a fifth (18%) of the world's calories and just over a third (37%) of its protein (Poore & Nemecek, 2018).",
+      "sayIt": "\"Livestock alone cause about 12% of global emissions. That's the latest estimate from the UN Food and Agriculture Organization (FAO, 2023). Animal foods are over half of food's climate footprint but give us less than a fifth of our calories and just over a third of our protein.\""
     },
     {
       "id": "planet-freshwater-001",
