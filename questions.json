@@ -1,6 +1,49 @@
 {
-  "builtAt": "2026-11-15 22:14 UTC",
+  "builtAt": "2026-11-15 22:54 UTC",
   "cards": [
+    {
+      "id": "culture-religion-001",
+      "title": "Christianity and plant-based eating",
+      "category": "Culture",
+      "categoryIcon": "🎭",
+      "subcategory": "Religion",
+      "subcategoryIcon": "🙏",
+      "tags": [
+        "culture/religion"
+      ],
+      "dataYear": 2022,
+      "lastChecked": "2026-11-15",
+      "sources": [
+        "Bevere (Sarx)",
+        "Pope Francis, 2015",
+        "Ryken, 2005",
+        "The Conversation, 2022"
+      ],
+      "takeaway": "The Bible does not forbid eating animals, but it begins and ends with a world without killing. In Genesis 1:29–30 God gives humans and animals only plants to eat. Permission to eat animals comes later, after the Flood (Genesis 9:3), and Christian advocates of veganism read it as a concession, not God's original intention. Isaiah 11 pictures a restored creation where no animal harms another. The Catholic Catechism says it is \"contrary to human dignity to cause animals to suffer or die needlessly\" (Pope Francis, 2015).",
+      "sayIt": "\"In Genesis, the diet God first gives people is plants. Eating animals is only allowed after the Flood, in a fallen world. The Bible doesn't forbid meat, but it does reject cruelty, and it's hard to square factory farming with that.\""
+    },
+    {
+      "id": "culture-traditions-001",
+      "title": "Plant-based traditions around the world",
+      "category": "Culture",
+      "categoryIcon": "🎭",
+      "subcategory": "Traditions",
+      "subcategoryIcon": "🍛",
+      "tags": [
+        "culture/traditions",
+        "culture/religion"
+      ],
+      "dataYear": 2021,
+      "lastChecked": "2026-11-15",
+      "sources": [
+        "Pew Research Center, 2021",
+        "Denaud, 2023",
+        "Suddath, 2008",
+        "Gallup, 2018"
+      ],
+      "takeaway": "The word \"vegan\" was coined in Britain in 1944, but avoiding animal foods is ancient and global. It has deep roots in India (Jainism, Hinduism, Buddhism), China (Buddhist monasteries have been vegetarian since AD 520), Jamaica (the Rastafari Ital diet, from around 1930), Ethiopia (Orthodox Christians fast from all animal products at least 180 days a year) and ancient Greece (Pythagoras, around 500 BCE). Today 39% of adults in India describe themselves as vegetarian (Pew Research Center, 2021).",
+      "sayIt": "\"The word 'vegan' is British, but the practice isn't. People in India, China, Ethiopia and Jamaica were eating without animals for religious and ethical reasons long before it had an English name. Four in ten adults in India call themselves vegetarian today.\""
+    },
     {
       "id": "ethics-animal-suffering-001",
       "title": "Animals killed for food each year",
@@ -318,7 +361,7 @@
         "Poore & Nemecek, 2018"
       ],
       "takeaway": "Transport causes only about 5–6% of food's greenhouse gas emissions. What you eat matters far more than where it comes from. For beef, transport is just 0.5% of its footprint. Most imported food travels by ship, which is very low-carbon: only 0.16% of food miles are by air (Our World in Data, 2020). Swapping imported plant foods for local beef would raise your footprint (Ritchie, 2022).",
-      "sayIt": "\"Transport is only about 5% of food's emissions. Shipping an avocado from Mexico adds less than a tenth to its footprint, while local beef has a footprint many times bigger before it leaves the farm. What you eat matters far more than where it's from.\""
+      "sayIt": "\"Transport is only about 5% of food's emissions. For beef it's half a percent, so buying it locally changes almost nothing. What you eat matters far more than where it's from.\""
     },
     {
       "id": "planet-emissions-002",
@@ -538,6 +581,251 @@
     }
   ],
   "questions": [
+    {
+      "id": "culture-religion-001-q1",
+      "card": "culture-religion-001",
+      "ask": "In Genesis 1:29–30, what does God give humans to eat?",
+      "answer": "Plants only",
+      "distractors": [
+        "Plants and fish",
+        "Every living thing",
+        "Clean animals only"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Humans are given seed-bearing plants and fruit, and animals are given green plants. Permission to eat animals comes later, in Genesis 9."
+    },
+    {
+      "id": "culture-religion-001-q2",
+      "card": "culture-religion-001",
+      "ask": "At what point in the Bible are humans first given permission to eat animals?",
+      "answer": "After the Flood",
+      "distractors": [
+        "At the creation",
+        "After the Exodus",
+        "At the Last Supper"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Genesis 9:3, when God speaks to Noah after the Flood. In Genesis 1 the diet given is plants only."
+    },
+    {
+      "id": "culture-religion-001-q3",
+      "card": "culture-religion-001",
+      "ask": "How do Christian advocates of veganism read the permission to eat animals in Genesis 9?",
+      "answer": "As a concession",
+      "distractors": [
+        "As a command",
+        "As a reward",
+        "As a mistranslation"
+      ],
+      "level": "core",
+      "source": "Bevere (Sarx)",
+      "sourceDistractors": [
+        "Ryken, 2005",
+        "Suddath, 2008",
+        "Pew Research Center, 2021"
+      ],
+      "explain": "They read it as a concession to a fallen world, not God's original intention, which is shown in Genesis 1. Other Christians read it as a straightforward gift."
+    },
+    {
+      "id": "culture-religion-001-q4",
+      "card": "culture-religion-001",
+      "ask": "Does the Bible forbid eating animals?",
+      "answer": "No, but it rejects cruelty to animals",
+      "distractors": [
+        "Yes, in the Ten Commandments",
+        "Yes, throughout the Gospels",
+        "No, and it never mentions their welfare"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Bevere, writing for Sarx: 'While the Bible does not reject the consumption of animals, it clearly rejects animal cruelty.' Avoid claiming the Bible requires veganism."
+    },
+    {
+      "id": "culture-religion-001-q5",
+      "card": "culture-religion-001",
+      "ask": "Which book of the Bible pictures a restored creation where the wolf lives with the lamb and none hurt or destroy?",
+      "answer": "Isaiah",
+      "distractors": [
+        "Exodus",
+        "Romans",
+        "Leviticus"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Isaiah 11:1–9, often called the peaceable kingdom. Advocates argue Christians should live towards that future now."
+    },
+    {
+      "id": "culture-religion-001-q6",
+      "card": "culture-religion-001",
+      "ask": "According to the Catholic Catechism, quoted by Pope Francis in 2015, what is 'contrary to human dignity'?",
+      "answer": "Causing animals to suffer or die needlessly",
+      "distractors": [
+        "Eating any food that comes from animals",
+        "Keeping animals for farming or for work",
+        "Treating animals as fellow creatures"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "The line is repeated in the encyclical Laudato Si'. It doesn't forbid eating animals, but 'needlessly' is a demanding test for modern farming."
+    },
+    {
+      "id": "culture-religion-001-q7",
+      "card": "culture-religion-001",
+      "ask": "Which Christian church, with more than 20 million members, encourages a vegetarian diet based partly on Genesis 1:29?",
+      "answer": "Seventh-day Adventist Church",
+      "distractors": [
+        "Southern Baptist Convention",
+        "Church of England",
+        "Presbyterian Church"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Many Adventists are vegetarian or vegan, though it is not mandatory. Co-founder Ellen White urged members to give up meat."
+    },
+    {
+      "id": "culture-religion-001-q8",
+      "card": "culture-religion-001",
+      "ask": "Which passage is most often cited to show that Jesus ate animal flesh?",
+      "answer": "Luke 24:42–43",
+      "distractors": [
+        "Genesis 1:29–30",
+        "Isaiah 11:6–9",
+        "Proverbs 12:10"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "The risen Jesus eats a piece of fish. Don't claim Jesus was vegetarian; the case rests on creation, the coming kingdom and the rejection of cruelty."
+    },
+    {
+      "id": "culture-traditions-001-q1",
+      "card": "culture-traditions-001",
+      "ask": "What share of adults in India describe themselves as vegetarian?",
+      "answer": "About 39%",
+      "distractors": [
+        "About 3%",
+        "About 12%",
+        "About 90%"
+      ],
+      "level": "core",
+      "source": "Pew Research Center, 2021",
+      "sourceDistractors": [
+        "Gallup, 2018",
+        "UN Food and Agriculture Organization (FAO), 2023",
+        "Our World in Data, 2023"
+      ],
+      "explain": "Pew Research Center's survey of nearly 30,000 adults found 39% say they are vegetarian, and 81% limit meat in some way. Among Jains it is 92%."
+    },
+    {
+      "id": "culture-traditions-001-q2",
+      "card": "culture-traditions-001",
+      "ask": "When and where was the word 'vegan' coined?",
+      "answer": "Britain, in 1944",
+      "distractors": [
+        "India, around 500 BCE",
+        "The United States, in 1971",
+        "Germany, in 1890"
+      ],
+      "level": "core",
+      "source": "Suddath, 2008",
+      "sourceDistractors": [
+        "Denaud, 2023",
+        "Pew Research Center, 2021",
+        "Fischer & Lamey, 2018"
+      ],
+      "explain": "Donald Watson coined 'vegan' in November 1944. The word is recent and British, but the practice is ancient and global."
+    },
+    {
+      "id": "culture-traditions-001-q3",
+      "card": "culture-traditions-001",
+      "ask": "What is the plant-based diet followed by many Rastafari called?",
+      "answer": "Ital",
+      "distractors": [
+        "Ahimsa",
+        "Shojin",
+        "Tsom"
+      ],
+      "level": "core",
+      "source": "Denaud, 2023",
+      "sourceDistractors": [
+        "Suddath, 2008",
+        "Gallup, 2018",
+        "British Dietetic Association (BDA), 2021"
+      ],
+      "explain": "Ital, from 'vital', arose in Rastafari communities in Jamaica around 1930. It is part of 'livity', the Rastafari way of life."
+    },
+    {
+      "id": "culture-traditions-001-q4",
+      "card": "culture-traditions-001",
+      "ask": "Since when have Chinese Buddhist monks and nuns been required to be vegetarian?",
+      "answer": "AD 520",
+      "distractors": [
+        "AD 1520",
+        "AD 1850",
+        "AD 1949"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Emperor Wu of Liang banned all meat for Buddhist monastics by decree in AD 520. Many Tibetan and Theravada clergy do still eat some meat."
+    },
+    {
+      "id": "culture-traditions-001-q5",
+      "card": "culture-traditions-001",
+      "ask": "On how many days a year do ordinary Ethiopian Orthodox Christians fast from all meat, dairy and eggs?",
+      "answer": "180",
+      "distractors": [
+        "7",
+        "40",
+        "365"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "180 days are obligatory for ordinary believers, and up to 252 for clergy. On fast days the diet is fully plant-based."
+    },
+    {
+      "id": "culture-traditions-001-q6",
+      "card": "culture-traditions-001",
+      "ask": "In the United States, which income group is most likely to be vegetarian?",
+      "answer": "Households under $30,000",
+      "distractors": [
+        "Households over $75,000",
+        "Households over $150,000",
+        "All groups are equal"
+      ],
+      "level": "detail",
+      "source": "Gallup, 2018",
+      "sourceDistractors": [
+        "Pew Research Center, 2021",
+        "Scarborough et al., 2023",
+        "Wynes & Nicholas, 2017"
+      ],
+      "explain": "Gallup (2018): 9% of people in households under $30,000 are vegetarian, against 4% in households on $75,000 or more."
+    },
+    {
+      "id": "culture-traditions-001-q7",
+      "card": "culture-traditions-001",
+      "ask": "What share of Jains in India are vegetarian?",
+      "answer": "92%",
+      "distractors": [
+        "22%",
+        "44%",
+        "62%"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "92% of Jains are vegetarian, and 67% also avoid root vegetables. Among Hindus the figure is 44%."
+    },
     {
       "id": "ethics-animal-suffering-001-q1",
       "card": "ethics-animal-suffering-001",
