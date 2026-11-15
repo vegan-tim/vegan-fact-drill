@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-15 14:40 UTC",
+  "builtAt": "2026-11-15 22:14 UTC",
   "cards": [
     {
       "id": "ethics-animal-suffering-001",
@@ -301,6 +301,26 @@
       "sayIt": "\"If you're worried about AI's footprint, that's fair, but it's small next to what's on our plates. Livestock emit around 30 times more than all the world's data centres, and use hundreds of times more water.\""
     },
     {
+      "id": "planet-emissions-005",
+      "title": "Food miles and local food",
+      "category": "Planet",
+      "categoryIcon": "🌍",
+      "subcategory": "Emissions",
+      "subcategoryIcon": "💨",
+      "tags": [
+        "planet/emissions"
+      ],
+      "dataYear": 2018,
+      "lastChecked": "2026-11-15",
+      "sources": [
+        "Our World in Data, 2020",
+        "Ritchie, 2022",
+        "Poore & Nemecek, 2018"
+      ],
+      "takeaway": "Transport causes only about 5–6% of food's greenhouse gas emissions. What you eat matters far more than where it comes from. For beef, transport is just 0.5% of its footprint. Most imported food travels by ship, which is very low-carbon: only 0.16% of food miles are by air (Our World in Data, 2020). Swapping imported plant foods for local beef would raise your footprint (Ritchie, 2022).",
+      "sayIt": "\"Transport is only about 5% of food's emissions. Shipping an avocado from Mexico adds less than a tenth to its footprint, while local beef has a footprint many times bigger before it leaves the farm. What you eat matters far more than where it's from.\""
+    },
+    {
       "id": "planet-emissions-002",
       "title": "Livestock's share of global emissions",
       "category": "Planet",
@@ -383,6 +403,26 @@
       ],
       "takeaway": "Producing meat, dairy and eggs accounts for nearly a third of agriculture's total water footprint (Mekonnen & Hoekstra, 2012), and over half if all water on grazing land is counted (Weindl et al., 2017). Most of this is rainwater, mainly for feed and pasture. Counting only irrigation water, animal products' share is much smaller (roughly a sixth).",
       "sayIt": "\"Nearly a third of farming's water footprint goes to animal products (Mekonnen & Hoekstra, 2012). That's mostly rainwater on feed crops and pasture, so the bigger issue is how inefficiently animals turn that water into food.\""
+    },
+    {
+      "id": "planet-freshwater-004",
+      "title": "Plant milks vs dairy milk",
+      "category": "Planet",
+      "categoryIcon": "🌍",
+      "subcategory": "Freshwater use",
+      "subcategoryIcon": "💧",
+      "tags": [
+        "planet/freshwater",
+        "planet/emissions",
+        "planet/land-use"
+      ],
+      "dataYear": 2018,
+      "lastChecked": "2026-11-15",
+      "sources": [
+        "Poore & Nemecek, 2018"
+      ],
+      "takeaway": "Almond milk does use a lot of water: about 371 litres per litre of milk. Dairy milk uses about 628 litres, roughly 70% more. Oat milk (48 litres) and soy milk (28 litres) use 13 to 22 times less water than dairy. On every measure, dairy is worst: about 3 to 4.5 times the greenhouse gas emissions and 11 to 30 times the land of any plant milk (Poore & Nemecek, 2018).",
+      "sayIt": "\"Almond milk is the thirstiest plant milk, but dairy milk still uses about 70% more water, three to four times the emissions and over ten times the land. If water is your worry, oat or soy milk uses a tiny fraction of either.\""
     },
     {
       "id": "planet-freshwater-003",
@@ -476,6 +516,25 @@
       ],
       "takeaway": "Farming covers almost half (44%) of the world's habitable land. About 80% of that farmland is used for livestock, as grazing land and cropland for animal feed. Yet meat, dairy and farmed fish supply only 17% of the world's calories and 38% of its protein (Ritchie & Roser, 2019, from FAO data).",
       "sayIt": "\"Around 80% of the world's farmland goes to raising animals, but they give us less than a fifth of our calories (Our World in Data, using UN Food and Agriculture Organization data).\""
+    },
+    {
+      "id": "planet-land-005",
+      "title": "Soy, animal feed and deforestation",
+      "category": "Planet",
+      "categoryIcon": "🌍",
+      "subcategory": "Land use & deforestation",
+      "subcategoryIcon": "🌳",
+      "tags": [
+        "planet/land-use",
+        "planet/emissions"
+      ],
+      "dataYear": 2018,
+      "lastChecked": "2026-11-15",
+      "sources": [
+        "Our World in Data, 2021"
+      ],
+      "takeaway": "77% of the world's soy is fed to farmed animals, mostly chickens and pigs. Only 7% becomes tofu, soy milk, tempeh and other soy foods (Our World in Data, 2021). So the soy linked to deforestation is overwhelmingly feed for meat, dairy, eggs and farmed fish. And in the Amazon, the main direct driver of forest loss is cattle pasture, not soy: cattle ranching accounts for 72% of Brazil's deforestation.",
+      "sayIt": "\"More than three-quarters of the world's soy is fed to farmed animals. Only about 7% is eaten as tofu, soy milk and so on. If you're worried about soy and the rainforest, the most effective thing you can do is eat fewer animal products.\""
     }
   ],
   "questions": [
@@ -1814,6 +1873,112 @@
       "explain": "Of ~560 billion litres in 2023, ~140 billion was direct (cooling) and ~373 billion indirect (electricity generation). The rest was chip and hardware manufacturing."
     },
     {
+      "id": "planet-emissions-005-q1",
+      "card": "planet-emissions-005",
+      "ask": "Roughly what share of food's greenhouse gas emissions comes from transport?",
+      "answer": "About 5–6%",
+      "distractors": [
+        "About 25%",
+        "About 50%",
+        "About 80%"
+      ],
+      "level": "core",
+      "source": "Our World in Data, 2020",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2025",
+        "Ivanova et al., 2020",
+        "International Energy Agency (IEA), 2025"
+      ],
+      "explain": "Poore & Nemecek's data put transport at about 6% of food emissions (Our World in Data, 2020). Most emissions come from the farm and land-use change."
+    },
+    {
+      "id": "planet-emissions-005-q2",
+      "card": "planet-emissions-005",
+      "ask": "What share of beef's carbon footprint comes from transporting it?",
+      "answer": "About 0.5%",
+      "distractors": [
+        "About 15%",
+        "About 35%",
+        "About 60%"
+      ],
+      "level": "core",
+      "source": "Our World in Data, 2020",
+      "sourceDistractors": [
+        "Xu et al., 2021",
+        "Scarborough et al., 2023",
+        "UN Food and Agriculture Organization (FAO), 2023"
+      ],
+      "explain": "Transport is 0.5% of the footprint of beef from beef herds, so buying beef locally changes almost nothing."
+    },
+    {
+      "id": "planet-emissions-005-q3",
+      "card": "planet-emissions-005",
+      "ask": "Which matters more for the carbon footprint of your food?",
+      "answer": "What you eat",
+      "distractors": [
+        "How far it travelled",
+        "Whether it was imported",
+        "Which country it came from"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Transport is about 5–6% of food emissions. In the US, going plant-based one day a week saves more than buying everything locally."
+    },
+    {
+      "id": "planet-emissions-005-q4",
+      "card": "planet-emissions-005",
+      "ask": "What share of food miles is travelled by air?",
+      "answer": "0.16%",
+      "distractors": [
+        "16%",
+        "36%",
+        "60%"
+      ],
+      "level": "detail",
+      "source": "Our World in Data, 2020",
+      "sourceDistractors": [
+        "Gössling & Humpe, 2020",
+        "Wynes & Nicholas, 2017",
+        "Crippa et al., 2021"
+      ],
+      "explain": "Most food travels by ship. Only very perishable foods such as asparagus, green beans and berries are usually flown."
+    },
+    {
+      "id": "planet-emissions-005-q5",
+      "card": "planet-emissions-005",
+      "ask": "How much of an avocado's carbon footprint comes from shipping it from Mexico to the UK?",
+      "answer": "About 8%",
+      "distractors": [
+        "About 40%",
+        "About 65%",
+        "About 90%"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "About 0.21 kg CO₂eq per kg, out of a total footprint of about 2.5 kg. Avocados travel by boat, not plane."
+    },
+    {
+      "id": "planet-emissions-005-q6",
+      "card": "planet-emissions-005",
+      "ask": "A 2022 study said food miles cause nearly 20% of food emissions. Why is that figure higher than others?",
+      "answer": "It also counted transport of fertiliser, machinery and fuel",
+      "distractors": [
+        "It counted only air freight",
+        "It left out shipping by sea",
+        "It measured only vegan foods"
+      ],
+      "level": "detail",
+      "source": "Ritchie, 2022",
+      "sourceDistractors": [
+        "Poore & Nemecek, 2018",
+        "UN Food and Agriculture Organization (FAO), 2025",
+        "Cassidy et al., 2013"
+      ],
+      "explain": "Counting only the transport of food, the study's own figure is 9%, which Ritchie argues is still an overestimate."
+    },
+    {
       "id": "planet-emissions-002-q1",
       "card": "planet-emissions-002",
       "ask": "According to the UN Food and Agriculture Organization's (FAO) latest life-cycle estimate, what share of all human greenhouse gas emissions comes from livestock?",
@@ -2253,6 +2418,85 @@
       "explain": "Drinking water is tiny (~0.6%, cited in Weindl et al., 2017). Livestock's water is almost all embedded in feed."
     },
     {
+      "id": "planet-freshwater-004-q1",
+      "card": "planet-freshwater-004",
+      "ask": "Which uses more water per litre: almond milk or dairy milk?",
+      "answer": "Dairy milk, by about 70%",
+      "distractors": [
+        "Almond milk, by about 70%",
+        "Almond milk, by about 10 times",
+        "They use about the same"
+      ],
+      "level": "core",
+      "source": "Poore & Nemecek, 2018",
+      "sourceDistractors": [
+        "Mekonnen & Hoekstra, 2012",
+        "UN Food and Agriculture Organization (FAO), 2025",
+        "Our World in Data, 2021"
+      ],
+      "explain": "Dairy milk uses about 628 litres of water per litre, almond milk about 371. Almond is the thirstiest plant milk but still below dairy."
+    },
+    {
+      "id": "planet-freshwater-004-q2",
+      "card": "planet-freshwater-004",
+      "ask": "Roughly how much water is needed to produce one litre of dairy milk?",
+      "answer": "About 628 litres",
+      "distractors": [
+        "About 6 litres",
+        "About 63 litres",
+        "About 6,280 litres"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Global average: 628 litres for dairy, against 371 for almond, 270 for rice, 48 for oat and 28 for soy."
+    },
+    {
+      "id": "planet-freshwater-004-q3",
+      "card": "planet-freshwater-004",
+      "ask": "Which of these milks uses the least water per litre?",
+      "answer": "Soy milk",
+      "distractors": [
+        "Dairy milk",
+        "Almond milk",
+        "Rice milk"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Soy milk needs about 28 litres of water per litre and oat milk about 48. Dairy needs about 628, which is 22 times soy's."
+    },
+    {
+      "id": "planet-freshwater-004-q4",
+      "card": "planet-freshwater-004",
+      "ask": "How do dairy milk's greenhouse gas emissions compare with those of plant milks?",
+      "answer": "About 3 to 4.5 times higher",
+      "distractors": [
+        "About the same",
+        "About 10% higher",
+        "Lower than most plant milks"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Dairy: 3.15 kg CO₂eq per litre. Plant milks: 0.7 (almond) to 1.18 (rice)."
+    },
+    {
+      "id": "planet-freshwater-004-q5",
+      "card": "planet-freshwater-004",
+      "ask": "How does the land needed for dairy milk compare with oat milk?",
+      "answer": "About 12 times more",
+      "distractors": [
+        "About the same",
+        "About twice as much",
+        "About half as much"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Dairy needs about 8.95 m² per litre and oat milk about 0.76 m²."
+    },
+    {
       "id": "planet-freshwater-003-q1",
       "card": "planet-freshwater-003",
       "ask": "Per calorie, roughly how much larger is beef's water footprint than that of cereals and starchy roots?",
@@ -2607,6 +2851,85 @@
       "source": null,
       "sourceDistractors": [],
       "explain": "About two-thirds of agricultural land is grazing land. Of the remaining third (cropland), a large part grows animal feed."
+    },
+    {
+      "id": "planet-land-005-q1",
+      "card": "planet-land-005",
+      "ask": "What share of the world's soy is fed to farmed animals?",
+      "answer": "About 77%",
+      "distractors": [
+        "About 7%",
+        "About 25%",
+        "About 45%"
+      ],
+      "level": "core",
+      "source": "Our World in Data, 2021",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2022",
+        "Poore & Nemecek, 2018",
+        "Pendrill et al., 2022"
+      ],
+      "explain": "77% of global soy is animal feed: 37% for chickens, about 20% for pigs, 6% for farmed fish and 2% for cattle. Only 7% becomes tofu, soy milk and similar foods."
+    },
+    {
+      "id": "planet-land-005-q2",
+      "card": "planet-land-005",
+      "ask": "Which farmed animals eat the largest share of the world's soy?",
+      "answer": "Chickens",
+      "distractors": [
+        "Beef cattle",
+        "Dairy cows",
+        "Sheep"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Chickens get 37% of the world's soy and pigs about 20%. Beef and dairy cattle get only 2%: beef's damage is through pasture."
+    },
+    {
+      "id": "planet-land-005-q3",
+      "card": "planet-land-005",
+      "ask": "What is the main direct driver of forest loss in the Brazilian Amazon?",
+      "answer": "Pasture for beef cattle",
+      "distractors": [
+        "Soy for tofu and soy milk",
+        "Palm oil plantations",
+        "Coffee plantations"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Cattle ranching accounts for 72% of Brazil's deforestation. Soy's direct role in the Amazon fell sharply after the 2006 Soy Moratorium."
+    },
+    {
+      "id": "planet-land-005-q4",
+      "card": "planet-land-005",
+      "ask": "After the 2006 Amazon Soy Moratorium, what share of new soy land in the Amazon came from clearing forest by 2014?",
+      "answer": "About 1%",
+      "distractors": [
+        "About 30%",
+        "About 50%",
+        "About 75%"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "It fell from 30% before the moratorium to about 1% by 2014 (Gibbs et al., 2015). But soy expansion shifted to the Cerrado savannah."
+    },
+    {
+      "id": "planet-land-005-q5",
+      "card": "planet-land-005",
+      "ask": "Is it accurate to say soy plays no part in deforestation?",
+      "answer": "No: it does, but almost all of that soy is animal feed",
+      "distractors": [
+        "Yes: soy is grown only on old farmland",
+        "Yes: soy is grown only in the United States",
+        "No: and most of it is eaten as tofu"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Soy has driven clearing, especially in Brazil's Cerrado. But 77% of soy is animal feed and only 7% is eaten as soy foods."
     }
   ]
 }
