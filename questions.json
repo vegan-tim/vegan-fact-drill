@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-15 14:33 UTC",
+  "builtAt": "2026-11-15 14:40 UTC",
   "cards": [
     {
       "id": "ethics-animal-suffering-001",
@@ -20,6 +20,28 @@
       ],
       "takeaway": "Around 88 billion land animals were slaughtered for food in 2024, about 2,800 every second (FAOSTAT via Faunalytics, 2026). On top of that, around 124 billion farmed fish are killed each year (Mood et al., 2023), and an estimated 1.1–2.2 trillion wild fish are caught (Mood & Brooke, 2024).",
       "sayIt": "\"Every second, about 2,800 land animals are killed for food. That's 88 billion a year, over ten for every person on Earth. And that's before counting fish, which run to over a trillion.\""
+    },
+    {
+      "id": "ethics-animal-suffering-002",
+      "title": "Crop deaths and plant-based diets",
+      "category": "Ethics",
+      "categoryIcon": "🐾",
+      "subcategory": "Animal suffering",
+      "subcategoryIcon": "😢",
+      "tags": [
+        "ethics/animal-suffering"
+      ],
+      "dataYear": 2018,
+      "lastChecked": "2026-11-15",
+      "sources": [
+        "Fischer & Lamey, 2018",
+        "Matheny, 2003",
+        "Davis, 2003",
+        "Lamey, 2007",
+        "Cassidy et al., 2013"
+      ],
+      "takeaway": "Some wild animals, such as field mice, do die when crops are grown and harvested. But the claim that this makes plant-based diets as harmful as eating meat doesn't hold up. The best-known estimate, 7.3 billion deaths a year, is described by the researchers who examined it as \"clearly too high\": the underlying studies recorded animals disappearing from fields, and much of that was animals moving away or being taken by predators, not being killed by machinery (Fischer & Lamey, 2018). And because 36% of the world's crop calories are fed to farmed animals (Cassidy et al., 2013), eating plants directly needs less cropland, so it causes fewer crop deaths, not more.",
+      "sayIt": "\"Some animals do die in crop farming, and that matters. But farmed animals eat crops too: over a third of the world's crop calories go to animal feed. Eating plants directly uses less cropland, so going plant-based reduces crop deaths as well as ending the deliberate killing.\""
     },
     {
       "id": "ethics-farming-practices-003",
@@ -558,6 +580,127 @@
         "Crippa et al., 2021"
       ],
       "explain": "Mood et al. (Animal Welfare, 2023): ~124 billion farmed fish killed in 2019, a nine-fold increase since 1990."
+    },
+    {
+      "id": "ethics-animal-suffering-002-q1",
+      "card": "ethics-animal-suffering-002",
+      "ask": "Does switching to a plant-based diet increase or reduce the number of wild animals killed in crop farming?",
+      "answer": "It reduces them, because less cropland is needed",
+      "distractors": [
+        "It increases them, because more crops are eaten",
+        "It makes no difference to cropland",
+        "It doubles them, because pasture becomes cropland"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Farmed animals eat crops: 36% of crop calories go to feed. Eating plants directly needs less cropland in total, so fewer crop deaths."
+    },
+    {
+      "id": "ethics-animal-suffering-002-q2",
+      "card": "ethics-animal-suffering-002",
+      "ask": "Roughly what share of the world's crop calories is fed to farmed animals?",
+      "answer": "About 36%",
+      "distractors": [
+        "About 3%",
+        "About 10%",
+        "About 80%"
+      ],
+      "level": "core",
+      "source": "Cassidy et al., 2013",
+      "sourceDistractors": [
+        "Fischer & Lamey, 2018",
+        "UN Food and Agriculture Organization (FAO), 2023",
+        "Our World in Data, 2019"
+      ],
+      "explain": "Cassidy et al. (2013): 36% of crop calories go to animal feed, and only 12% of those come back as human food."
+    },
+    {
+      "id": "ethics-animal-suffering-002-q3",
+      "card": "ethics-animal-suffering-002",
+      "ask": "What was wrong with the original calculation claiming a vegan diet kills more animals than one including grass-fed beef?",
+      "answer": "It counted deaths per hectare, not per person fed",
+      "distractors": [
+        "It counted insects as well as mammals",
+        "It only looked at organic farms",
+        "It ignored deaths of fish"
+      ],
+      "level": "core",
+      "source": "Matheny, 2003",
+      "sourceDistractors": [
+        "Davis, 2003",
+        "Poore & Nemecek, 2018",
+        "Faunalytics, 2026"
+      ],
+      "explain": "Davis (2003) compared deaths per hectare. Matheny (2003) showed that far less land is needed to feed a person on plants, so per person a vegan diet causes the fewest deaths."
+    },
+    {
+      "id": "ethics-animal-suffering-002-q4",
+      "card": "ethics-animal-suffering-002",
+      "ask": "Field studies behind crop-death estimates recorded animals disappearing from fields after harvest. What mostly explains this?",
+      "answer": "Animals moving away or being taken by predators",
+      "distractors": [
+        "Animals being crushed by harvesters",
+        "Animals being poisoned by fertiliser",
+        "Animals dying of starvation in the field"
+      ],
+      "level": "core",
+      "source": "Fischer & Lamey, 2018",
+      "sourceDistractors": [
+        "Cassidy et al., 2013",
+        "Mood & Brooke, 2024",
+        "UK Food Standards Agency (FSA), 2024"
+      ],
+      "explain": "Changes in animal numbers reflect movement in and out of fields, and most mouse deaths were from predation after harvest, not machinery (Lamey, 2007; Fischer & Lamey, 2018)."
+    },
+    {
+      "id": "ethics-animal-suffering-002-q5",
+      "card": "ethics-animal-suffering-002",
+      "ask": "What do the researchers who examined the estimate of 7.3 billion crop deaths a year say about it?",
+      "answer": "It is clearly too high",
+      "distractors": [
+        "It is about right",
+        "It is far too low",
+        "It applies only to Europe"
+      ],
+      "level": "detail",
+      "source": "Fischer & Lamey, 2018",
+      "sourceDistractors": [
+        "Davis, 2003",
+        "Matheny, 2003",
+        "Ivanova et al., 2020"
+      ],
+      "explain": "Fischer & Lamey (2018) say the figure 'is clearly too high' and that the true number of field deaths is currently unknown."
+    },
+    {
+      "id": "ethics-animal-suffering-002-q6",
+      "card": "ethics-animal-suffering-002",
+      "ask": "Why is killing in animal farming different in kind from deaths in crop farming?",
+      "answer": "Slaughter is the deliberate purpose; crop deaths are a side effect that can be reduced",
+      "distractors": [
+        "Crop deaths are deliberate; slaughter is accidental",
+        "Both are unavoidable side effects",
+        "Neither involves any killing"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Fischer & Lamey (2018) note that current trends could reduce or eliminate field deaths. In animal farming, killing the animal is the point of the process."
+    },
+    {
+      "id": "ethics-animal-suffering-002-q7",
+      "card": "ethics-animal-suffering-002",
+      "ask": "Is it accurate to say that no animals die in crop farming?",
+      "answer": "No: some do, which is why reducing it matters",
+      "distractors": [
+        "Yes: harvesters never harm wildlife",
+        "Yes: all field animals escape in time",
+        "Yes: studies have found zero deaths"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Some animals do die. The honest claim is that the numbers are uncertain and often overstated, and that plant-based diets reduce them."
     },
     {
       "id": "ethics-farming-practices-003-q1",
