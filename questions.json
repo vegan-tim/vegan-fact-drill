@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-12 22:45 UTC",
+  "builtAt": "2026-11-15 13:28 UTC",
   "cards": [
     {
       "id": "ethics-animal-suffering-001",
@@ -228,8 +228,8 @@
       ],
       "dataYear": 2020,
       "lastChecked": "2026-11-12",
-      "takeaway": "Going vegan saves roughly 0.8–0.9 tonnes of CO₂eq per person per year, which puts it among the highest-impact changes an individual can make (Ivanova et al., 2020; Wynes & Nicholas, 2017). It saves about four times more than recycling. For emissions alone, living car-free (about 2 tonnes) and skipping one long-haul return flight (about 1.7 tonnes) save more. In the UK, vegans' diets cause just 25% of the emissions of high meat-eaters' diets (Scarborough et al., 2023).",
-      "sayIt": "\"Going plant-based is one of the biggest things one person can do for the climate: it saves nearly a tonne of CO₂ a year, about four times more than recycling. And unlike giving up a car or a flight, it's something you can start at your next meal, and it also saves land and water.\""
+      "takeaway": "For one person, going vegan saves roughly 0.8–0.9 tonnes of CO₂eq a year: one of the highest-impact changes an individual can make, about four times more than recycling. Giving up a car (about 2 tonnes) or one long-haul return flight (about 1.7 tonnes) saves more (Ivanova et al., 2020).  For the world, the picture reverses. Only about 11% of people fly in a year, and aviation causes about 2.5% of global CO₂ emissions. Everyone eats, and the food system causes about a third of all emissions. If everyone went plant-based, the saving would be around 6 to 7 times what we'd save if all flying stopped. 🧮",
+      "sayIt": "\"For one person who flies, skipping a long-haul flight saves more carbon than going vegan. But few people fly and everyone eats. Aviation is about 2.5% of global CO₂. Food is about a third of all emissions. A world eating plant-based would save several times more than a world that stopped flying.\""
     },
     {
       "id": "planet-freshwater-001",
@@ -1554,6 +1554,74 @@
       "source": null,
       "sourceDistractors": [],
       "explain": "Goodland & Anhang (2009) published it in World Watch magazine, and the film Cowspiracy popularised it. It's widely criticised, so use FAO's 12% instead."
+    },
+    {
+      "id": "planet-emissions-004-q7",
+      "card": "planet-emissions-004",
+      "ask": "For the world as a whole, how does the saving from everyone eating plant-based compare with the saving from all flying stopping?",
+      "answer": "Plant-based diets would save around 6 to 7 times more",
+      "distractors": [
+        "Stopping flying would save about twice as much",
+        "They would save about the same",
+        "Stopping flying would save about 10 times more"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "About 6.6 billion tonnes CO₂eq from plant-based diets (Poore & Nemecek, 2018) against about 1 billion tonnes of CO₂ from all aviation (Our World in Data, 2024). Few people fly, but everyone eats."
+    },
+    {
+      "id": "planet-emissions-004-q8",
+      "card": "planet-emissions-004",
+      "ask": "Roughly what share of global CO₂ emissions comes from aviation?",
+      "answer": "About 2.5%",
+      "distractors": [
+        "About 12%",
+        "About 25%",
+        "About 33%"
+      ],
+      "level": "core",
+      "source": "Our World in Data, 2024",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2025",
+        "Ivanova et al., 2020",
+        "International Energy Agency (IEA), 2025"
+      ],
+      "explain": "Aviation emitted about 1 billion tonnes of CO₂ in 2019, 2.5% of the total. Counting non-CO₂ effects such as contrails, it's about 4% of warming to date. The food system is about a third of all emissions."
+    },
+    {
+      "id": "planet-emissions-004-q9",
+      "card": "planet-emissions-004",
+      "ask": "Roughly what share of the world's population takes a flight in a given year?",
+      "answer": "About 11%",
+      "distractors": [
+        "About 40%",
+        "About 60%",
+        "About 85%"
+      ],
+      "level": "core",
+      "source": "Gössling & Humpe, 2020",
+      "sourceDistractors": [
+        "Wynes & Nicholas, 2017",
+        "UN Food and Agriculture Organization (FAO), 2023",
+        "Scarborough et al., 2023"
+      ],
+      "explain": "Gössling & Humpe (2020): 11% of people flew in 2018, and 1% of people cause more than half of aviation's emissions. That's why flying is huge for some individuals but small globally."
+    },
+    {
+      "id": "planet-emissions-004-q10",
+      "card": "planet-emissions-004",
+      "ask": "Why does skipping a flight beat going vegan for one person, yet diet change matters more globally?",
+      "answer": "Few people fly, but everyone eats, so food's total emissions are far larger",
+      "distractors": [
+        "Planes are becoming carbon-neutral",
+        "Vegan diets save more per person than any flight",
+        "Aviation emissions aren't counted in global totals"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Per person who flies, a long-haul return flight (1.7 tonnes) beats a vegan diet (0.8–0.9 tonnes a year). But aviation is about 2.5% of CO₂ and food about a third of all emissions."
     },
     {
       "id": "planet-emissions-004-q1",
