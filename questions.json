@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-15 22:54 UTC",
+  "builtAt": "2026-11-23 18:23 UTC",
   "cards": [
     {
       "id": "culture-religion-001",
@@ -409,6 +409,26 @@
       "sayIt": "\"For one person who flies, skipping a long-haul flight saves more carbon than going vegan. But few people fly and everyone eats. Aviation is about 2.5% of global CO₂. Food is about a third of all emissions. A world eating plant-based would save several times more than a world that stopped flying.\""
     },
     {
+      "id": "planet-emissions-006",
+      "title": "Savings from a global plant-based food system",
+      "category": "Planet",
+      "categoryIcon": "🌍",
+      "subcategory": "Emissions",
+      "subcategoryIcon": "💨",
+      "tags": [
+        "planet/emissions",
+        "planet/land-use",
+        "planet/freshwater"
+      ],
+      "dataYear": 2010,
+      "lastChecked": "2026-11-23",
+      "sources": [
+        "Poore & Nemecek, 2018"
+      ],
+      "takeaway": "If the whole world moved from current diets to one without animal products, the food system would use 76% less farmland, emit 49% less greenhouse gas and use 19% less freshwater (weighted by local water scarcity). The water saving is the smallest and least certain of the three (Poore & Nemecek, 2018).",
+      "sayIt": "\"The biggest study of farms ever done found that if the world stopped eating animal products, food would need three-quarters less farmland and produce half the greenhouse gas emissions (Poore & Nemecek, 2018).\""
+    },
+    {
       "id": "planet-freshwater-001",
       "title": "Agriculture's share of freshwater use",
       "category": "Planet",
@@ -516,7 +536,7 @@
         "planet/land-use"
       ],
       "dataYear": 2010,
-      "lastChecked": "2026-10-31",
+      "lastChecked": "2026-11-23",
       "sources": [
         "Poore & Nemecek, 2018"
       ],
@@ -2545,6 +2565,123 @@
       "source": null,
       "sourceDistractors": [],
       "explain": "The comparison studies count emissions only. Vegans' diets also use 25% of the land and 46% of the water of high meat-eaters' diets (Scarborough et al., 2023)."
+    },
+    {
+      "id": "planet-emissions-006-q1",
+      "card": "planet-emissions-006",
+      "ask": "If the whole world moved to a diet without animal products, by how much would the food system's greenhouse gas emissions fall?",
+      "answer": "By about 49%",
+      "distractors": [
+        "By about 9%",
+        "By about 19%",
+        "By about 89%"
+      ],
+      "level": "core",
+      "source": "Poore & Nemecek, 2018",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2023",
+        "Intergovernmental Panel on Climate Change (IPCC), 2022",
+        "Crippa et al., 2021"
+      ],
+      "explain": "About 6.6 billion tonnes of CO₂eq a year, for a 2010 reference year. Freed land regrowing could also absorb about 8.1 billion tonnes a year."
+    },
+    {
+      "id": "planet-emissions-006-q2",
+      "card": "planet-emissions-006",
+      "ask": "If the whole world moved to a diet without animal products, by how much would the food system's farmland fall?",
+      "answer": "By about 76%",
+      "distractors": [
+        "By about 16%",
+        "By about 36%",
+        "It would rise by about 20%"
+      ],
+      "level": "core",
+      "source": "Poore & Nemecek, 2018",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2023",
+        "Intergovernmental Panel on Climate Change (IPCC), 2019",
+        "Our World in Data, 2021"
+      ],
+      "explain": "About 3.1 billion hectares less farmland, because so much land and so many crops currently go to feeding animals."
+    },
+    {
+      "id": "planet-emissions-006-q3",
+      "card": "planet-emissions-006",
+      "ask": "If the whole world moved to a diet without animal products, by how much would the food system's scarcity-weighted freshwater withdrawals fall?",
+      "answer": "By about 19%",
+      "distractors": [
+        "By about 4%",
+        "By about 49%",
+        "By about 76%"
+      ],
+      "level": "core",
+      "source": "Poore & Nemecek, 2018",
+      "sourceDistractors": [
+        "UN Food and Agriculture Organization (FAO), 2025",
+        "Mekonnen & Hoekstra, 2012",
+        "Weindl et al., 2017"
+      ],
+      "explain": "The smallest of the three savings, and uncertain: the range runs from a 5% increase to a 32% cut. Most water used for animals is rain, which this measure doesn't count."
+    },
+    {
+      "id": "planet-emissions-006-q4",
+      "card": "planet-emissions-006",
+      "ask": "A global switch to plant-based diets would cut food's emissions by about half. Roughly what share of ALL human greenhouse gas emissions is that?",
+      "answer": "About an eighth",
+      "distractors": [
+        "About a half",
+        "About a third",
+        "About a fiftieth"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "6.6 billion tonnes saved, out of a world total of about 53 billion (food's 13.7 billion is 26% of it). Don't say veganism would halve the world's emissions."
+    },
+    {
+      "id": "planet-emissions-006-q5",
+      "card": "planet-emissions-006",
+      "ask": "Roughly how much of the world's ice- and desert-free land would be freed if everyone stopped eating animal products?",
+      "answer": "About a third",
+      "distractors": [
+        "About a twentieth",
+        "About a tenth",
+        "About two-thirds"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Food uses about 43% of ice- and desert-free land, and the switch cuts that by 76%."
+    },
+    {
+      "id": "planet-emissions-006-q6",
+      "card": "planet-emissions-006",
+      "ask": "If the world halved its consumption of animal products, starting with the highest-emitting producers, what share of the full plant-based emissions saving would it get?",
+      "answer": "About 71%",
+      "distractors": [
+        "About 11%",
+        "About 31%",
+        "About 50%"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Halving each animal product, replacing the highest-emitting producers first, gives 71% of the emissions saving and 67% of the land saving."
+    },
+    {
+      "id": "planet-emissions-006-q7",
+      "card": "planet-emissions-006",
+      "ask": "Why is the freshwater saving from a global plant-based diet much smaller than the land and emissions savings?",
+      "answer": "Most water for animals is rain",
+      "distractors": [
+        "Plant foods are rarely irrigated",
+        "Animals drink most farm water",
+        "Water use was left out of the study"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Pasture and feed crops are mostly rain-fed, which scarcity-weighted withdrawals don't count. Much irrigation goes to crops eaten directly, like rice and fruit."
     },
     {
       "id": "planet-freshwater-001-q1",
