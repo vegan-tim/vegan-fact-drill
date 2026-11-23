@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-23 18:23 UTC",
+  "builtAt": "2026-11-23 18:29 UTC",
   "cards": [
     {
       "id": "culture-religion-001",
@@ -423,10 +423,12 @@
       "dataYear": 2010,
       "lastChecked": "2026-11-23",
       "sources": [
-        "Poore & Nemecek, 2018"
+        "Poore & Nemecek, 2018",
+        "Our World in Data, 2024",
+        "Intergovernmental Panel on Climate Change (IPCC), 2022"
       ],
-      "takeaway": "If the whole world moved from current diets to one without animal products, the food system would use 76% less farmland, emit 49% less greenhouse gas and use 19% less freshwater (weighted by local water scarcity). The water saving is the smallest and least certain of the three (Poore & Nemecek, 2018).",
-      "sayIt": "\"The biggest study of farms ever done found that if the world stopped eating animal products, food would need three-quarters less farmland and produce half the greenhouse gas emissions (Poore & Nemecek, 2018).\""
+      "takeaway": "If the whole world moved from current diets to one without animal products, the food system would use 76% less farmland, emit 49% less greenhouse gas and use 19% less freshwater (weighted by local water scarcity). The water saving is the smallest and least certain of the three (Poore & Nemecek, 2018). As a share of the world's total, that's about 13% of all greenhouse gas emissions, a third of the world's ice- and desert-free land and about 17% of scarcity-weighted water use. 🧮 For comparison, stopping all flying would cut greenhouse gas emissions by about 2%.",
+      "sayIt": "\"The biggest study of farms ever done found that if the world stopped eating animal products, food would need three-quarters less farmland and produce half the greenhouse gas emissions (Poore & Nemecek, 2018). That's about an eighth of all the world's emissions, around six times what we'd save if every plane stopped flying.\""
     },
     {
       "id": "planet-freshwater-001",
@@ -2636,7 +2638,7 @@
       "level": "detail",
       "source": null,
       "sourceDistractors": [],
-      "explain": "6.6 billion tonnes saved, out of a world total of about 53 billion (food's 13.7 billion is 26% of it). Don't say veganism would halve the world's emissions."
+      "explain": "6.6 billion tonnes saved, out of a world total of about 53 billion (food's 13.7 billion is 26% of it), so about 13%. Don't say veganism would halve the world's emissions."
     },
     {
       "id": "planet-emissions-006-q5",
@@ -2682,6 +2684,36 @@
       "source": null,
       "sourceDistractors": [],
       "explain": "Pasture and feed crops are mostly rain-fed, which scarcity-weighted withdrawals don't count. Much irrigation goes to crops eaten directly, like rice and fruit."
+    },
+    {
+      "id": "planet-emissions-006-q8",
+      "card": "planet-emissions-006",
+      "ask": "Everyone eating plant-based would cut the world's greenhouse gas emissions by about an eighth. Roughly how much would stopping all flying cut them by?",
+      "answer": "About 2%",
+      "distractors": [
+        "About 12%",
+        "About 25%",
+        "About 50%"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Aviation emitted about 1 billion tonnes of CO₂ in 2019, out of about 59 billion tonnes of greenhouse gases. Counting contrails and other non-CO₂ effects, it's about 4% of warming to date."
+    },
+    {
+      "id": "planet-emissions-006-q9",
+      "card": "planet-emissions-006",
+      "ask": "As a share of the world's TOTAL scarcity-weighted freshwater use, roughly how much would a global plant-based diet save?",
+      "answer": "About 17%",
+      "distractors": [
+        "About 2%",
+        "About 50%",
+        "About 76%"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "19% of food's scarcity-weighted withdrawals, and irrigation is 90–95% of the world's scarcity-weighted water use. The range runs from a small rise to about a 30% fall."
     },
     {
       "id": "planet-freshwater-001-q1",
