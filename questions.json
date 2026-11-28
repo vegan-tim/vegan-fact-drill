@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28 12:37 UTC",
+  "builtAt": "2026-11-28 12:49 UTC",
   "cards": [
     {
       "id": "culture-religion-001",
@@ -431,6 +431,28 @@
       "sayIt": "\"The biggest study of farms ever done found that if the world stopped eating animal products, food would need three-quarters less farmland and produce half the greenhouse gas emissions (Poore & Nemecek, 2018). That's about an eighth of all the world's emissions, around six times what we'd save if every plane stopped flying.\""
     },
     {
+      "id": "planet-freshwater-004",
+      "title": "Dairy milk vs plant milks",
+      "category": "Planet",
+      "categoryIcon": "🌍",
+      "subcategory": "Food comparisons",
+      "subcategoryIcon": "⚖️",
+      "tags": [
+        "planet/food-comparisons",
+        "planet/emissions",
+        "planet/freshwater",
+        "planet/land-use"
+      ],
+      "dataYear": 2010,
+      "lastChecked": "2026-11-28",
+      "sources": [
+        "Poore & Nemecek, 2018",
+        "Our World in Data, 2022"
+      ],
+      "takeaway": "Per litre, dairy milk has the biggest footprint on every measure. Compared with plant milks (soy, oat, almond, rice), it causes about 3 to 4.5 times the greenhouse gas emissions, uses about 12 to 26 times the land, and uses more freshwater than any of them: about 13 to 22 times as much as oat or soy milk. Almond milk is the thirstiest plant milk, but dairy still uses about 70% more water (Our World in Data, 2022, from Poore & Nemecek, 2018).",
+      "sayIt": "\"A litre of dairy milk causes about three times the emissions of a plant milk and uses over ten times the land. Even almond milk, the thirstiest plant milk, uses less water than dairy. Oat and soy milk use more than ten times less.\""
+    },
+    {
       "id": "planet-freshwater-001",
       "title": "Agriculture's share of freshwater use",
       "category": "Planet",
@@ -468,26 +490,6 @@
       ],
       "takeaway": "Producing meat, dairy and eggs accounts for nearly a third of agriculture's total water footprint (Mekonnen & Hoekstra, 2012), and over half if all water on grazing land is counted (Weindl et al., 2017). Most of this is rainwater, mainly for feed and pasture. Counting only irrigation water, animal products' share is much smaller (roughly a sixth).",
       "sayIt": "\"Nearly a third of farming's water footprint goes to animal products (Mekonnen & Hoekstra, 2012). That's mostly rainwater on feed crops and pasture, so the bigger issue is how inefficiently animals turn that water into food.\""
-    },
-    {
-      "id": "planet-freshwater-004",
-      "title": "Plant milks vs dairy milk",
-      "category": "Planet",
-      "categoryIcon": "🌍",
-      "subcategory": "Freshwater use",
-      "subcategoryIcon": "💧",
-      "tags": [
-        "planet/freshwater",
-        "planet/emissions",
-        "planet/land-use"
-      ],
-      "dataYear": 2018,
-      "lastChecked": "2026-11-15",
-      "sources": [
-        "Poore & Nemecek, 2018"
-      ],
-      "takeaway": "Almond milk does use a lot of water: about 371 litres per litre of milk. Dairy milk uses about 628 litres, roughly 70% more. Oat milk (48 litres) and soy milk (28 litres) use 13 to 22 times less water than dairy. On every measure, dairy is worst: about 3 to 4.5 times the greenhouse gas emissions and 11 to 30 times the land of any plant milk (Poore & Nemecek, 2018).",
-      "sayIt": "\"Almond milk is the thirstiest plant milk, but dairy milk still uses about 70% more water, three to four times the emissions and over ten times the land. If water is your worry, oat or soy milk uses a tiny fraction of either.\""
     },
     {
       "id": "planet-freshwater-003",
@@ -2716,6 +2718,115 @@
       "explain": "19% of food's scarcity-weighted withdrawals, and irrigation is 90–95% of the world's scarcity-weighted water use. The range runs from a small rise to about a 30% fall."
     },
     {
+      "id": "planet-freshwater-004-q1",
+      "card": "planet-freshwater-004",
+      "ask": "Which uses more water per litre: almond milk or dairy milk?",
+      "answer": "Dairy milk, by about 70%",
+      "distractors": [
+        "Almond milk, by about 70%",
+        "Almond milk, by about 10 times",
+        "They use about the same"
+      ],
+      "level": "core",
+      "source": "Poore & Nemecek, 2018",
+      "sourceDistractors": [
+        "Mekonnen & Hoekstra, 2012",
+        "UN Food and Agriculture Organization (FAO), 2025",
+        "Weindl et al., 2017"
+      ],
+      "explain": "Dairy milk uses about 628 litres of water per litre, almond milk about 371. Almond is the thirstiest plant milk but still below dairy."
+    },
+    {
+      "id": "planet-freshwater-004-q2",
+      "card": "planet-freshwater-004",
+      "ask": "Roughly how much fresh water is needed to produce one litre of dairy milk?",
+      "answer": "About 628 litres",
+      "distractors": [
+        "About 6 litres",
+        "About 63 litres",
+        "About 6,280 litres"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Global average: 628 litres for dairy, against 371 for almond, 270 for rice, 48 for oat and 28 for soy."
+    },
+    {
+      "id": "planet-freshwater-004-q3",
+      "card": "planet-freshwater-004",
+      "ask": "Which of these milks uses the least water per litre?",
+      "answer": "Soy milk",
+      "distractors": [
+        "Dairy milk",
+        "Almond milk",
+        "Rice milk"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Soy milk needs about 28 litres of water per litre and oat milk about 48. Dairy needs about 628, which is 22 times soy's."
+    },
+    {
+      "id": "planet-freshwater-004-q4",
+      "card": "planet-freshwater-004",
+      "ask": "How do dairy milk's greenhouse gas emissions per litre compare with those of plant milks?",
+      "answer": "About 3 to 4.5 times higher",
+      "distractors": [
+        "About the same",
+        "About 10% higher",
+        "Lower than most plant milks"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Dairy: 3.15 kg CO₂eq per litre. Plant milks: 0.70 (almond) to 1.18 (rice)."
+    },
+    {
+      "id": "planet-freshwater-004-q5",
+      "card": "planet-freshwater-004",
+      "ask": "How does the land needed for a litre of dairy milk compare with a litre of oat milk?",
+      "answer": "About 12 times more",
+      "distractors": [
+        "About the same",
+        "About twice as much",
+        "About half as much"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Dairy needs about 8.95 m² per litre and oat milk about 0.76 m²."
+    },
+    {
+      "id": "planet-freshwater-004-q6",
+      "card": "planet-freshwater-004",
+      "ask": "How does the land needed for dairy milk compare with plant milks in general?",
+      "answer": "About 12 to 26 times more",
+      "distractors": [
+        "About 2 to 3 times more",
+        "About the same",
+        "About half as much"
+      ],
+      "level": "core",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Dairy: 8.95 m² per litre. Plant milks: 0.34 (rice) to 0.76 (oat)."
+    },
+    {
+      "id": "planet-freshwater-004-q7",
+      "card": "planet-freshwater-004",
+      "ask": "Which plant milk has the highest greenhouse gas emissions per litre, and why?",
+      "answer": "Rice milk, because paddies release methane",
+      "distractors": [
+        "Almond milk, because of irrigation",
+        "Oat milk, because of fertiliser use",
+        "Soy milk, because of deforestation"
+      ],
+      "level": "detail",
+      "source": null,
+      "sourceDistractors": [],
+      "explain": "Rice milk: 1.18 kg CO₂eq per litre, still well under dairy's 3.15. Flooded rice paddies release methane."
+    },
+    {
       "id": "planet-freshwater-001-q1",
       "card": "planet-freshwater-001",
       "ask": "Roughly what share of the fresh water withdrawn from rivers, lakes and aquifers worldwide is used by agriculture?",
@@ -2873,85 +2984,6 @@
       "source": null,
       "sourceDistractors": [],
       "explain": "Drinking water is tiny (~0.6%, cited in Weindl et al., 2017). Livestock's water is almost all embedded in feed."
-    },
-    {
-      "id": "planet-freshwater-004-q1",
-      "card": "planet-freshwater-004",
-      "ask": "Which uses more water per litre: almond milk or dairy milk?",
-      "answer": "Dairy milk, by about 70%",
-      "distractors": [
-        "Almond milk, by about 70%",
-        "Almond milk, by about 10 times",
-        "They use about the same"
-      ],
-      "level": "core",
-      "source": "Poore & Nemecek, 2018",
-      "sourceDistractors": [
-        "Mekonnen & Hoekstra, 2012",
-        "UN Food and Agriculture Organization (FAO), 2025",
-        "Our World in Data, 2021"
-      ],
-      "explain": "Dairy milk uses about 628 litres of water per litre, almond milk about 371. Almond is the thirstiest plant milk but still below dairy."
-    },
-    {
-      "id": "planet-freshwater-004-q2",
-      "card": "planet-freshwater-004",
-      "ask": "Roughly how much water is needed to produce one litre of dairy milk?",
-      "answer": "About 628 litres",
-      "distractors": [
-        "About 6 litres",
-        "About 63 litres",
-        "About 6,280 litres"
-      ],
-      "level": "detail",
-      "source": null,
-      "sourceDistractors": [],
-      "explain": "Global average: 628 litres for dairy, against 371 for almond, 270 for rice, 48 for oat and 28 for soy."
-    },
-    {
-      "id": "planet-freshwater-004-q3",
-      "card": "planet-freshwater-004",
-      "ask": "Which of these milks uses the least water per litre?",
-      "answer": "Soy milk",
-      "distractors": [
-        "Dairy milk",
-        "Almond milk",
-        "Rice milk"
-      ],
-      "level": "core",
-      "source": null,
-      "sourceDistractors": [],
-      "explain": "Soy milk needs about 28 litres of water per litre and oat milk about 48. Dairy needs about 628, which is 22 times soy's."
-    },
-    {
-      "id": "planet-freshwater-004-q4",
-      "card": "planet-freshwater-004",
-      "ask": "How do dairy milk's greenhouse gas emissions compare with those of plant milks?",
-      "answer": "About 3 to 4.5 times higher",
-      "distractors": [
-        "About the same",
-        "About 10% higher",
-        "Lower than most plant milks"
-      ],
-      "level": "core",
-      "source": null,
-      "sourceDistractors": [],
-      "explain": "Dairy: 3.15 kg CO₂eq per litre. Plant milks: 0.7 (almond) to 1.18 (rice)."
-    },
-    {
-      "id": "planet-freshwater-004-q5",
-      "card": "planet-freshwater-004",
-      "ask": "How does the land needed for dairy milk compare with oat milk?",
-      "answer": "About 12 times more",
-      "distractors": [
-        "About the same",
-        "About twice as much",
-        "About half as much"
-      ],
-      "level": "detail",
-      "source": null,
-      "sourceDistractors": [],
-      "explain": "Dairy needs about 8.95 m² per litre and oat milk about 0.76 m²."
     },
     {
       "id": "planet-freshwater-003-q1",
