@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28 12:49 UTC",
+  "builtAt": "2026-11-28 12:59 UTC",
   "cards": [
     {
       "id": "culture-religion-001",
@@ -450,7 +450,83 @@
         "Our World in Data, 2022"
       ],
       "takeaway": "Per litre, dairy milk has the biggest footprint on every measure. Compared with plant milks (soy, oat, almond, rice), it causes about 3 to 4.5 times the greenhouse gas emissions, uses about 12 to 26 times the land, and uses more freshwater than any of them: about 13 to 22 times as much as oat or soy milk. Almond milk is the thirstiest plant milk, but dairy still uses about 70% more water (Our World in Data, 2022, from Poore & Nemecek, 2018).",
-      "sayIt": "\"A litre of dairy milk causes about three times the emissions of a plant milk and uses over ten times the land. Even almond milk, the thirstiest plant milk, uses less water than dairy. Oat and soy milk use more than ten times less.\""
+      "sayIt": "\"A litre of dairy milk causes about three times the emissions of a plant milk and uses over ten times the land. Even almond milk, the thirstiest plant milk, uses less water than dairy. Oat and soy milk use more than ten times less.\"",
+      "charts": [
+        {
+          "title": "Greenhouse gas emissions per litre of milk",
+          "unit": "kg CO₂eq",
+          "source": "Our World in Data, 2022",
+          "bars": [
+            {
+              "label": "Dairy",
+              "value": 3.15,
+              "text": "3.15 kg",
+              "animal": true
+            },
+            {
+              "label": "Rice",
+              "value": 1.18,
+              "text": "1.18 kg",
+              "animal": false
+            },
+            {
+              "label": "Soy",
+              "value": 0.98,
+              "text": "0.98 kg",
+              "animal": false
+            },
+            {
+              "label": "Oat",
+              "value": 0.9,
+              "text": "0.90 kg",
+              "animal": false
+            },
+            {
+              "label": "Almond",
+              "value": 0.7,
+              "text": "0.70 kg",
+              "animal": false
+            }
+          ]
+        },
+        {
+          "title": "Freshwater used per litre of milk",
+          "unit": "litres",
+          "source": "Our World in Data, 2022",
+          "bars": [
+            {
+              "label": "Dairy",
+              "value": 628,
+              "text": "628 L",
+              "animal": true
+            },
+            {
+              "label": "Almond",
+              "value": 371,
+              "text": "371 L",
+              "animal": false
+            },
+            {
+              "label": "Rice",
+              "value": 270,
+              "text": "270 L",
+              "animal": false
+            },
+            {
+              "label": "Oat",
+              "value": 48,
+              "text": "48 L",
+              "animal": false
+            },
+            {
+              "label": "Soy",
+              "value": 28,
+              "text": "28 L",
+              "animal": false
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "planet-freshwater-001",
